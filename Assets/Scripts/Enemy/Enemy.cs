@@ -9,6 +9,13 @@ public class Enemy : MonoBehaviour
     public float moveSpeed;
     public float stopDistance;
 
+    public float timeBetweenAttacks;
+    private float cooldown;
+    public Transform firePoint;
+    public GameObject projectile;
+
+    private int placeToGo;
+
     [Range(0,360)]
     public float angle;
 
@@ -23,11 +30,18 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        cooldown = timeBetweenAttacks;
         playerObject = GameObject.FindGameObjectWithTag(playerTag);
+        placeToGo = Random.Range(0, EnemyPath.instance.enemyPath.Count);
     }
     private void Update()
     {
         FieldOfViewCheck();
+
+        if (!canSeePlayer)
+        {
+            PathRoute();
+        }
     }
     public void FieldOfViewCheck()
     {
@@ -44,7 +58,7 @@ public class Enemy : MonoBehaviour
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstaclesMask))
                 {
                     canSeePlayer = true;
-                    enemyMovement(target);
+                    EnemyMovement(target);
                 }
                 else
                 {
@@ -63,7 +77,7 @@ public class Enemy : MonoBehaviour
 
     }
 
-    public void enemyMovement(Transform target)
+    public void EnemyMovement(Transform target)
     {
         if (canSeePlayer)
         {
@@ -77,9 +91,50 @@ public class Enemy : MonoBehaviour
 
             //Movement
             float distanceToTarget = Vector3.Distance(transform.position, target.position);
-            if (distanceToTarget > stopDistance) // Ajusta el umbral según sea necesario
+
+            if (distanceToTarget > stopDistance)
             {
                 transform.Translate(Vector3.forward * Mathf.Min(moveSpeed * Time.deltaTime, distanceToTarget));
+            }
+
+            //Attack
+            timeBetweenAttacks -= Time.deltaTime;
+
+            if (timeBetweenAttacks <= 0)
+            {
+                EnemyAttack();
+                timeBetweenAttacks = cooldown;
+            }
+
+        }
+    }
+
+    public void EnemyAttack()
+    {
+        Instantiate(projectile, firePoint.position, transform.rotation);
+    }
+
+    void PathRoute()
+    {
+        if (!canSeePlayer)
+        {
+            // Rotation
+            Vector3 directionToTarget = EnemyPath.instance.enemyPath[placeToGo].transform.position - transform.position;
+            directionToTarget.y = 0f;
+            Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
+            float step = rotationSpeed * Time.deltaTime;
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, step);
+
+            // Movement
+            float distanceToTarget = Vector3.Distance(transform.position, EnemyPath.instance.enemyPath[placeToGo].transform.position);
+
+            if (distanceToTarget > 3f)
+            {
+                transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                placeToGo = Random.Range(0, EnemyPath.instance.enemyPath.Count);
             }
         }
     }
