@@ -7,6 +7,7 @@ public class DetectRelay : MonoBehaviour
 {
     private VisualElement root;
     private Label infoText;
+    private Label abilityText;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class DetectRelay : MonoBehaviour
         root = GetComponent<UIDocument>().rootVisualElement;
         //Get reference to Label element
         infoText = root.Q<Label>("Label_infoText");
+        abilityText = root.Q<Label>("currentAbility");
     }
 
     // Update is called once per frame
@@ -27,5 +29,6 @@ public class DetectRelay : MonoBehaviour
         //Set Text of object hit
         //Update method good for testing, better to use an event/delegate 
         infoText.text = CameraDetector.DebugName;
+        abilityText.text = AbilityManager.DebugAbility;
     }
 }

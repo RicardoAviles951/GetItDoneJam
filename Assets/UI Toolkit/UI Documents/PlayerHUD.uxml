@@ -4,5 +4,8 @@
         <ui:VisualElement name="Info" style="height: 128px; align-items: center; justify-content: center;">
             <ui:Label text="Nothing..." display-tooltip-when-elided="true" name="Label_infoText" style="font-size: 72px; align-items: auto; justify-content: center;" />
         </ui:VisualElement>
+        <ui:VisualElement name="AbilityInfo" style="width: 50%; height: 25%; left: 0; top: 50%; right: 0; bottom: 0; align-items: flex-start; justify-content: center; margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 45px; text-shadow: 3px 3px 0 rgba(0, 0, 0, 255);">
+            <ui:Label text="Electricity" display-tooltip-when-elided="true" name="currentAbility" style="font-size: 72px; -unity-font-style: bold; color: rgba(255, 255, 255, 255); -unity-text-outline-color: rgba(5, 2, 2, 255); -unity-text-outline-width: 1px;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
