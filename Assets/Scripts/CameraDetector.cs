@@ -7,10 +7,10 @@ public class CameraDetector : MonoBehaviour
     private Camera _camera;
     private Vector3 centerPoint;
     private Ray ray;
-    private bool detected = false;
-    private RaycastHit hit;
+    public bool detected = false;
+    public RaycastHit hit;
 
-    //Just fore testing purposes 
+    //Just for testing purposes 
     public static string DebugName;
 
     [SerializeField] private float detectionDistance = 5.0f;
@@ -45,13 +45,14 @@ public class CameraDetector : MonoBehaviour
         }
         else
         {
+            //clear the out hit information
             DebugName = "Nothing...";
         }
     }
 
     private void FixedUpdate()
     {
-        // Bit shift the index of the layer (8) to get a bit mask
+        // Bit shift the index of the layer (3) to get a bit mask
         //Check against only detectable objects
         int layerMask = 1 << 3; 
 
