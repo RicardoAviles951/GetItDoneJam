@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public float radius = 8f;
+    public float radius = 15f;
     public float rotationSpeed;
     public float moveSpeed;
     public float stopDistance;
@@ -16,14 +17,17 @@ public class Enemy : MonoBehaviour
 
     private int placeToGo;
 
-    [Range(0,360)]
+    [Range(0, 360)]
     public float angle;
+
+    private float angleStart;
 
     public string playerTag = "Player";
 
     public GameObject playerObject;
 
     public LayerMask targetMask;
+
     public LayerMask obstaclesMask;
 
     public bool canSeePlayer;
@@ -31,6 +35,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         cooldown = timeBetweenAttacks;
+        angleStart = angle;
         playerObject = GameObject.FindGameObjectWithTag(playerTag);
         placeToGo = Random.Range(0, EnemyPath.instance.enemyPath.Count);
     }
@@ -40,7 +45,7 @@ public class Enemy : MonoBehaviour
 
         if (!canSeePlayer)
         {
-            PathRoute();
+            angle = angleStart;
         }
     }
     public void FieldOfViewCheck()
@@ -59,6 +64,7 @@ public class Enemy : MonoBehaviour
                 {
                     canSeePlayer = true;
                     EnemyMovement(target);
+                    angle = 360;
                 }
                 else
                 {
@@ -88,54 +94,15 @@ public class Enemy : MonoBehaviour
             float step = rotationSpeed * Time.deltaTime;
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, step);
 
-
-            //Movement
-            float distanceToTarget = Vector3.Distance(transform.position, target.position);
-
-            if (distanceToTarget > stopDistance)
-            {
-                transform.Translate(Vector3.forward * Mathf.Min(moveSpeed * Time.deltaTime, distanceToTarget));
-            }
-
             //Attack
             timeBetweenAttacks -= Time.deltaTime;
 
             if (timeBetweenAttacks <= 0)
             {
-                EnemyAttack();
                 timeBetweenAttacks = cooldown;
             }
 
         }
     }
 
-    public void EnemyAttack()
-    {
-        Instantiate(projectile, firePoint.position, transform.rotation);
-    }
-
-    void PathRoute()
-    {
-        if (!canSeePlayer)
-        {
-            // Rotation
-            Vector3 directionToTarget = EnemyPath.instance.enemyPath[placeToGo].transform.position - transform.position;
-            directionToTarget.y = 0f;
-            Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
-            float step = rotationSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, step);
-
-            // Movement
-            float distanceToTarget = Vector3.Distance(transform.position, EnemyPath.instance.enemyPath[placeToGo].transform.position);
-
-            if (distanceToTarget > 3f)
-            {
-                transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-            }
-            else
-            {
-                placeToGo = Random.Range(0, EnemyPath.instance.enemyPath.Count);
-            }
-        }
-    }
 }
