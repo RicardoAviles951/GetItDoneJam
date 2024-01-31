@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2E454514-1A30-428F-AE8C-4AA8B2252567}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{2E454514-1A30-428F-AE8C-4AA8B2252567}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2E454514-1A30-428F-AE8C-4AA8B2252567}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Ground" ID="{9A9F62BF-186D-425B-946B-2341CD59E9F5}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{76DE2003-79B9-4403-AB20-4CB97C06B712}"/>
+						<Switch Name="Metal" ID="{11C7E2E2-EEA6-48BB-85E1-4D8E9151B26D}"/>
+						<Switch Name="Hardwood" ID="{12E20669-F281-4883-B4B6-ED72861369EF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Jump" ID="{69425895-13CE-40E8-83FD-12DF80656CC9}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{A23C1DB5-0143-46D0-9147-23E8C8689E42}"/>
+						<Switch Name="Metal" ID="{BE7BFEA0-1414-45FA-86DB-E3C9CCAFF1A3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Land" ID="{1352D855-B6F9-448B-B732-257D7BA7D049}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{5A33755B-8DD4-4E2C-B4F1-67C27B504911}"/>
+						<Switch Name="Metal" ID="{72CBCE49-63BD-4411-AE70-2E04A51B323F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

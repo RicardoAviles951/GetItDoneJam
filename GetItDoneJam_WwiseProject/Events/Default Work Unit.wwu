@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Footsteps" ID="{0CB4F120-5A47-48D4-9FBA-41C0228B2672}">
+					<ChildrenList>
+						<Action Name="" ID="{B420DC04-0D79-442B-998A-4E43F53CB5EE}" ShortID="525792097">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{8B193A2E-2E2F-4ED8-B38E-08AFE428187C}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jump" ID="{EBE0D61D-3824-492B-A99F-0041C9E6F7EC}">
+					<ChildrenList>
+						<Action Name="" ID="{776EF034-8A95-4CB1-86E9-F9D31845E45E}" ShortID="813227028">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{E5A2F1C8-E684-4B00-A907-50F5E6D220E0}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Land" ID="{BA505293-F76C-472A-8B9E-C64EA1B2FD97}">
+					<ChildrenList>
+						<Action Name="" ID="{A76A7144-5A44-42D5-B635-5A729C70A6A1}" ShortID="58015324">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Land" ID="{8B76A861-743C-43FF-B236-DD7FCF8E9F71}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
