@@ -1,0 +1,36 @@
+.PromptsVisible {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 38%;
+    width: 25%;
+    height: 25%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 64px;
+    color: rgb(255, 255, 255);
+    top: 25%;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+.PromptsNotVisible {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 38%;
+    width: 25%;
+    height: 25%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 64px;
+    color: rgb(255, 255, 255);
+    top: 25%;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+    opacity: 0;
+}

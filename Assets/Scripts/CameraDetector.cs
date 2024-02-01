@@ -35,18 +35,18 @@ public class CameraDetector : MonoBehaviour
         if (detected)
         {
             //store the name of the object
-            string name = hit.collider.gameObject.name;
+            //string name = hit.collider.gameObject.name;
             //Store into static var for testing 
-            DebugName = name;
+            //DebugName = name;
 
             //Console logs and debug lines
-            print(name);
-            Debug.DrawRay(_camera.transform.position, _camera.transform.forward*detectionDistance);
+            //print(name);
+           // Debug.DrawRay(_camera.transform.position, _camera.transform.forward*detectionDistance);
         }
         else
         {
             //clear the out hit information
-            DebugName = "Nothing...";
+            DebugName = "";
         }
     }
 

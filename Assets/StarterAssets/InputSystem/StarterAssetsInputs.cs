@@ -14,6 +14,7 @@ namespace StarterAssets
 		public bool sprint;
 		public bool fire;
 		public bool change;
+		public bool restart;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -53,6 +54,10 @@ namespace StarterAssets
 		{
 			ChangeInput(value.isPressed);
 		}
+		public void OnRestart(InputValue value)
+		{
+			RestartInput(value.isPressed);
+		}
 #endif
 
 
@@ -82,6 +87,10 @@ namespace StarterAssets
 		public void ChangeInput(bool newChangeState)
 		{
 			change = newChangeState;
+		}
+		public void RestartInput(bool newRestartState)
+		{
+			restart = newRestartState;
 		}
 		
 		private void OnApplicationFocus(bool hasFocus)
