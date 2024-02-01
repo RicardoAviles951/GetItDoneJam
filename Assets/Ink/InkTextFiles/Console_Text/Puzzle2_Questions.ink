@@ -10,6 +10,8 @@ Welcome Volunter 47182. The questions on this examination will determine your un
 
 ===Questions===
 How do you feel about the following statement:
+
+
 ->Question1
 ->Question2
 
@@ -21,6 +23,65 @@ Every person has a role to play in a developed society.
 ===Question2 ===
 Some roles in a society are more important than other roles.
 ->answerchoices
+
+===Question3 ===
+
+->answerchoices
+
+===Question4 ===
+
+->answerchoices
+
+===Question5 ===
+
+->answerchoices
+
+===Question6 ===
+
+->answerchoices
+
+===Question7 ===
+
+->answerchoices
+
+===Question8 ===
+
+->answerchoices
+
+===Question9 ===
+
+->answerchoices
+
+===Question10 ===
+
+->answerchoices
+
+===Question11 ===
+
+->answerchoices
+
+===Question12 ===
+
+->answerchoices
+
+===Question13 ===
+
+->answerchoices
+
+===Question14 ===
+
+->answerchoices
+
+===Question15 ===
+Do you consider your current position of high value to the society?
+->answerchoices
+
+
+
+
+
+
+
 
 
 //answer choices to each of the questions
