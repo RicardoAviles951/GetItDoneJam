@@ -2,6 +2,7 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AbilityManager : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class AbilityManager : MonoBehaviour
     void Update()
     {
         currentAbility.UpdateAbility(this);
-        DebugAbility = currentAbility.ToString();
+        //DebugAbility = currentAbility.ToString();
 
         
         if (input.change)
@@ -43,12 +44,25 @@ public class AbilityManager : MonoBehaviour
             input.change = false;
         }
 
-        
+        if (input.restart)
+        {
+            RestartScene();
+        }
+
     }
 
     public void ChangeAbility(AbilityBase ability)
     {
         currentAbility = ability;
         ability.Activate(this);
+    }
+
+    public void RestartScene()
+    {
+        // Get the current active scene name
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        // Load the current scene again to restart it
+        SceneManager.LoadScene(currentSceneName);
     }
 }
