@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C283E05A-F6F8-4EED-8D27-D8C520E757E5}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{C283E05A-F6F8-4EED-8D27-D8C520E757E5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C283E05A-F6F8-4EED-8D27-D8C520E757E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{CFBA58F6-7538-4E5E-A5B6-ECA3F9086527}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Fire_Attack" ID="{D035C2F9-AD29-42AB-8FD4-F8887CC96643}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Electric_Attack" ID="{BD1BB3EF-CDD4-4729-8C27-56EBFCA6F218}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Land" ID="{BA505293-F76C-472A-8B9E-C64EA1B2FD97}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{0CB4F120-5A47-48D4-9FBA-41C0228B2672}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jump" ID="{EBE0D61D-3824-492B-A99F-0041C9E6F7EC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Powerups" ID="{EAB721FD-08B8-4B88-8C29-857F93B96AC8}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

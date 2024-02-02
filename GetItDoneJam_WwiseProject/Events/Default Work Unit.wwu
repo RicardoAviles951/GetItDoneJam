@@ -36,6 +36,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Powerups" ID="{EAB721FD-08B8-4B88-8C29-857F93B96AC8}" ShortID="581642781">
+					<ChildrenList>
+						<Event Name="Fire_Attack" ID="{D035C2F9-AD29-42AB-8FD4-F8887CC96643}">
+							<ChildrenList>
+								<Action Name="" ID="{49B4A455-2D60-48A1-B5C8-FD1C56F78949}" ShortID="742883329">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire" ID="{D8F24577-A00B-4B59-8C1F-8BDC15766D8D}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Electric_Attack" ID="{BD1BB3EF-CDD4-4729-8C27-56EBFCA6F218}">
+							<ChildrenList>
+								<Action Name="" ID="{058AE335-7DEB-40E0-9FEB-EC16A247CB48}" ShortID="209499069">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Electric" ID="{A609CD4D-1388-4DEA-B5DA-7F33BA50458E}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

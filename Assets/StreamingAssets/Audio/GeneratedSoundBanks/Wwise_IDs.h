@@ -11,6 +11,59 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID ELECTRIC_ATTACK = 1242796459U;
+        static const AkUniqueID FIRE_ATTACK = 1422166728U;
+        static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID LAND = 674522502U;
+    } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace GROUND
+        {
+            static const AkUniqueID GROUP = 2528658256U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID HARDWOOD = 3598975185U;
+                static const AkUniqueID METAL = 2473969246U;
+            } // namespace SWITCH
+        } // namespace GROUND
+
+        namespace JUMP
+        {
+            static const AkUniqueID GROUP = 3833651337U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID METAL = 2473969246U;
+            } // namespace SWITCH
+        } // namespace JUMP
+
+        namespace LAND
+        {
+            static const AkUniqueID GROUP = 674522502U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID METAL = 2473969246U;
+            } // namespace SWITCH
+        } // namespace LAND
+
+    } // namespace SWITCHES
+
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MAIN = 3161908922U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;

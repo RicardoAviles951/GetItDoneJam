@@ -21,7 +21,118 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="674522502" Name="Land">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2528658256" Name="Ground">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="3598975185" Name="Hardwood"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3833651337" Name="Jump">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D72F1DBE-D2B5-ED07-262E-446A9EDD6AF8}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="20874511" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_02.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="207731260" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_03.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="517427919" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_03.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="615797749" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_04.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="660334491" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_05.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="792168768" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_04.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="897209008" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_05.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="950110775" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_01.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="997805212" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_01.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1049261634" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_02.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_02_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1242796459" Name="Electric_Attack" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="517427919"/>
+						<MediaRef Id="660334491"/>
+						<MediaRef Id="792168768"/>
+						<MediaRef Id="997805212"/>
+						<MediaRef Id="1049261634"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1422166728" Name="Fire_Attack" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="20874511"/>
+						<MediaRef Id="207731260"/>
+						<MediaRef Id="615797749"/>
+						<MediaRef Id="897209008"/>
+						<MediaRef Id="950110775"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="674522502" Name="Land">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2528658256" Name="Ground">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="3598975185" Name="Hardwood"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3833651337" Name="Jump">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6C0CB101-D74B-DE5C-AD81-F4CF05FD2B8E}</FileHash>
+	<FileHash>{B625367D-4454-EA58-48CD-32AAFAE113EC}</FileHash>
 </SoundBanksInfo>
