@@ -14,6 +14,7 @@ public class ElectricityAbility : AbilityBase
 
     public override void Activate(AbilityManager ability)
     {
+        ability.GetAbilityText(Name);
         Debug.Log("Current Ability: Electricity");
     }
 

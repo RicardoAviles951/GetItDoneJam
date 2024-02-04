@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CameraDetector : MonoBehaviour
 {
+    public static UnityAction triggerPrompt;
+    public static UnityAction triggerNoPrompt;
+
+
     private Camera _camera;
     private Vector3 centerPoint;
     private Ray ray;
     public bool detected = false;
+    
     public RaycastHit hit;
-
-    //Just for testing purposes 
-    public static string DebugName;
 
     [SerializeField] private float detectionDistance = 5.0f;
 
@@ -32,22 +35,7 @@ public class CameraDetector : MonoBehaviour
         //Shoots ray every frame
         ray = _camera.ScreenPointToRay(centerPoint);
 
-        if (detected)
-        {
-            //store the name of the object
-            //string name = hit.collider.gameObject.name;
-            //Store into static var for testing 
-            //DebugName = name;
-
-            //Console logs and debug lines
-            //print(name);
-           // Debug.DrawRay(_camera.transform.position, _camera.transform.forward*detectionDistance);
-        }
-        else
-        {
-            //clear the out hit information
-            DebugName = "";
-        }
+        CheckForExaminables();
     }
 
     private void FixedUpdate()
@@ -59,4 +47,23 @@ public class CameraDetector : MonoBehaviour
         //Fires a raycast from the center point of the camera. Returns if hit or not. 
         detected = Physics.Raycast(ray, out hit, detectionDistance, layerMask);
     }
+
+    void CheckForExaminables()
+    {
+        if (detected)
+        {
+            IExaminable examinable = hit.collider.GetComponent<IExaminable>();
+
+            if (examinable != null)
+            {
+                triggerPrompt?.Invoke();
+            }
+        }
+        else
+        {
+            triggerNoPrompt?.Invoke();
+        }
+        
+    }
+    
 }

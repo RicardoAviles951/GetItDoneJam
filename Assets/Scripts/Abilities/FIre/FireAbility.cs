@@ -15,6 +15,8 @@ public class FireAbility : AbilityBase
     }
     public override void Activate(AbilityManager ability)
     {
+        ability.GetAbilityText(Name);
+
         Debug.Log("Current Ability: Fire");
     }
 

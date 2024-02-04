@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="EntireScreen" style="width: 100%; height: 100%; flex-direction: row; visibility: visible; display: none;">
+        <ui:VisualElement name="LeftSide" style="width: 50%; height: 100%;" />
+        <ui:VisualElement name="RightSide" style="width: 50%; height: 100%; background-color: rgba(79, 79, 79, 0.49); padding-left: 24px; padding-right: 24px; padding-top: 24px; padding-bottom: 24px;">
+            <ui:VisualElement name="ObjectName" style="width: 100%; height: 15%; align-items: center; justify-content: center;">
+                <ui:Label text="Super Cool Item" display-tooltip-when-elided="true" name="Label_name" style="font-size: 72px; align-items: stretch; color: rgb(255, 255, 255); -unity-font-style: bold;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TextContainer" style="width: 100%; height: 75%; flex-wrap: nowrap;">
+                <ui:Label text="This is a placeholder item description for testing purposes:&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, velit eu lacinia dictum, felis ligula commodo arcu, vitae facilisis elit purus a orci. Proin euismod orci eget mi scelerisque, non facilisis elit vestibulum. Nulla facilisi. Nunc vitae ligula nec sapien vehicula tincidunt. Duis euismod bibendum augue, et ullamcorper nisl efficitur id. Vivamus ullamcorper nunc a lorem eleifend, vel ultricies ipsum volutpat. Phasellus at tristique turpis. Integer dictum metus ac turpis bibendum, nec fermentum arcu tincidunt.&#10;&#10;Suspendisse potenti. Quisque suscipit varius diam, id tincidunt elit consectetur eu. Nam accumsan nisl vel sapien auctor, vel blandit elit consequat. Fusce id augue vitae mi varius aliquet. In hac habitasse platea dictumst. Vestibulum luctus, nunc vel pharetra malesuada, justo sapien iaculis felis, id vehicula justo tortor vel risus. In euismod est ac sapien eleifend, et laoreet arcu dignissim. Sed malesuada quam vel libero venenatis, vel ultrices nunc consequat." display-tooltip-when-elided="true" name="Label_description" style="flex-wrap: nowrap; height: auto; width: auto; flex-basis: auto; font-size: 32px; align-items: stretch; white-space: normal; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
