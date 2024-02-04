@@ -80,8 +80,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584950172836730958
-    List: []
+    m_lastTime: -8584948419240898743
+    List:
+    - name: Footsteps
+      guid: 20f1b40c475ad4489fba41c0228b2672
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Footsteps
+        ObjectType: 3
+        guid: 20f1b40c475ad4489fba41c0228b2672
+      Path: Events\Default Work Unit\Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Jump
+      guid: 1dd6e0eb24382b49a99f0041c9e6f7ec
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Jump
+        ObjectType: 3
+        guid: 1dd6e0eb24382b49a99f0041c9e6f7ec
+      Path: Events\Default Work Unit\Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Land
+      guid: 935250ba6cf72a478b9ec64ea1b2fd97
+      id: 674522502
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Land
+        ObjectType: 3
+        guid: 935250ba6cf72a478b9ec64ea1b2fd97
+      Path: Events\Default Work Unit\Land
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -122,8 +173,174 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584950172836590902
-    List: []
+    m_lastTime: -8584948419240240169
+    List:
+    - name: Ground
+      guid: bf629f9a6d185b42946b2341cd59e9f5
+      id: 2528658256
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1445452e301a8f42ae8c4aa8b2252567
+      - ElementName: Ground
+        ObjectType: 11
+        guid: bf629f9a6d185b42946b2341cd59e9f5
+      Path: Switches\Default Work Unit\Ground
+      values:
+      - name: Concrete
+        guid: 0320de76b9790344ab204cb97c06b712
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Ground
+          ObjectType: 11
+          guid: bf629f9a6d185b42946b2341cd59e9f5
+        - ElementName: Concrete
+          ObjectType: 10
+          guid: 0320de76b9790344ab204cb97c06b712
+      - name: Hardwood
+        guid: 6906e21281f28348b4b6ed72861369ef
+        id: 3598975185
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Ground
+          ObjectType: 11
+          guid: bf629f9a6d185b42946b2341cd59e9f5
+        - ElementName: Hardwood
+          ObjectType: 10
+          guid: 6906e21281f28348b4b6ed72861369ef
+      - name: Metal
+        guid: e2e2c711a6eebb4885e14d8e9151b26d
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Ground
+          ObjectType: 11
+          guid: bf629f9a6d185b42946b2341cd59e9f5
+        - ElementName: Metal
+          ObjectType: 10
+          guid: e2e2c711a6eebb4885e14d8e9151b26d
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Jump
+      guid: 95584269ce13e84083fd12df80656cc9
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1445452e301a8f42ae8c4aa8b2252567
+      - ElementName: Jump
+        ObjectType: 11
+        guid: 95584269ce13e84083fd12df80656cc9
+      Path: Switches\Default Work Unit\Jump
+      values:
+      - name: Concrete
+        guid: b51d3ca24301d046914723e8c8689e42
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Jump
+          ObjectType: 11
+          guid: 95584269ce13e84083fd12df80656cc9
+        - ElementName: Concrete
+          ObjectType: 10
+          guid: b51d3ca24301d046914723e8c8689e42
+      - name: Metal
+        guid: a0fe7bbe1414fa4586dbe3c9ccaff1a3
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Jump
+          ObjectType: 11
+          guid: 95584269ce13e84083fd12df80656cc9
+        - ElementName: Metal
+          ObjectType: 10
+          guid: a0fe7bbe1414fa4586dbe3c9ccaff1a3
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Land
+      guid: 55d85213f9b68b44b732257d7ba7d049
+      id: 674522502
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1445452e301a8f42ae8c4aa8b2252567
+      - ElementName: Land
+        ObjectType: 11
+        guid: 55d85213f9b68b44b732257d7ba7d049
+      Path: Switches\Default Work Unit\Land
+      values:
+      - name: Concrete
+        guid: 5b75335ad48d2c4eb4f167c27b504911
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Land
+          ObjectType: 11
+          guid: 55d85213f9b68b44b732257d7ba7d049
+        - ElementName: Concrete
+          ObjectType: 10
+          guid: 5b75335ad48d2c4eb4f167c27b504911
+      - name: Metal
+        guid: 49cecb72bd631144ae702e04a51b323f
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Land
+          ObjectType: 11
+          guid: 55d85213f9b68b44b732257d7ba7d049
+        - ElementName: Metal
+          ObjectType: 10
+          guid: 49cecb72bd631144ae702e04a51b323f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

@@ -15,6 +15,7 @@ namespace StarterAssets
 		public bool fire;
 		public bool change;
 		public bool restart;
+		public bool interact;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -58,6 +59,10 @@ namespace StarterAssets
 		{
 			RestartInput(value.isPressed);
 		}
+		public void OnInteract(InputValue value)
+		{
+			InteractInput(value.isPressed);
+		}
 #endif
 
 
@@ -91,6 +96,10 @@ namespace StarterAssets
 		public void RestartInput(bool newRestartState)
 		{
 			restart = newRestartState;
+		}
+		public void InteractInput(bool newInteractState)
+		{
+			interact = newInteractState;
 		}
 		
 		private void OnApplicationFocus(bool hasFocus)

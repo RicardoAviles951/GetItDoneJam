@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class EmptyAbility : AbilityBase
 {
-    public override string Name { get; set; }
+    public override string Name { get; set; } = "";
 
     public override void Activate(AbilityManager ability)
     {
+        ability.GetAbilityText(Name);
         Debug.Log("No ability");
     }
 
