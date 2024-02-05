@@ -13,11 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AIRVENT_START = 4112548455U;
+        static const AkUniqueID DOOR_OPEN_CLOSE = 1873899129U;
         static const AkUniqueID ELECTRIC_ATTACK = 1242796459U;
         static const AkUniqueID FIRE_ATTACK = 1422166728U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
+        static const AkUniqueID POISON_GAS = 4209290139U;
     } // namespace EVENTS
 
     namespace SWITCHES

@@ -62,6 +62,43 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Environment" ID="{0F611150-4F34-4428-A3FA-7D6790DC868C}" ShortID="1041123809">
+					<ChildrenList>
+						<Event Name="AirVent_Start" ID="{0997A857-EE31-4ABD-AE4E-315D213A5DC8}">
+							<ChildrenList>
+								<Action Name="" ID="{1D85CFF1-3CEE-4894-9EE7-78C220B32F68}" ShortID="116267315">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AirVent" ID="{D7554FAF-177F-4770-B145-FA615BA33A33}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Poison_Gas" ID="{07865858-3B7B-4E50-B2F5-18F7ABD2C2BC}">
+							<ChildrenList>
+								<Action Name="" ID="{40965458-D52A-4BF0-825D-111D80FE02FB}" ShortID="950720993">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PoisonGas" ID="{E863BC7A-FCCB-4AED-A21B-3256586813E5}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_Open_Close" ID="{15AEE34A-5B27-47C0-9E6D-FACF84980A22}">
+							<ChildrenList>
+								<Action Name="" ID="{140AB00A-DAEF-4BEE-8FCB-3F18DE71AD94}" ShortID="320018104">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElectricDoor" ID="{697289A4-BB22-40DD-8C2C-37A4C1E068C2}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

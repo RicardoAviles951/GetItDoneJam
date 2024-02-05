@@ -6,11 +6,15 @@
 				<SoundBank Name="Main" ID="{CFBA58F6-7538-4E5E-A5B6-ECA3F9086527}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Fire_Attack" ID="{D035C2F9-AD29-42AB-8FD4-F8887CC96643}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Environment" ID="{0F611150-4F34-4428-A3FA-7D6790DC868C}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Electric_Attack" ID="{BD1BB3EF-CDD4-4729-8C27-56EBFCA6F218}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{BA505293-F76C-472A-8B9E-C64EA1B2FD97}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Door_Open_Close" ID="{15AEE34A-5B27-47C0-9E6D-FACF84980A22}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{0CB4F120-5A47-48D4-9FBA-41C0228B2672}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{EBE0D61D-3824-492B-A99F-0041C9E6F7EC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AirVent_Start" ID="{0997A857-EE31-4ABD-AE4E-315D213A5DC8}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Powerups" ID="{EAB721FD-08B8-4B88-8C29-857F93B96AC8}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Poison_Gas" ID="{07865858-3B7B-4E50-B2F5-18F7ABD2C2BC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

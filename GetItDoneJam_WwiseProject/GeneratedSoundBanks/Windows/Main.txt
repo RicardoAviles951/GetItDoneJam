@@ -2,8 +2,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	674522502	Land			\Default Work Unit\Land	
 	1242796459	Electric_Attack			\Default Work Unit\Powerups\Electric_Attack	
 	1422166728	Fire_Attack			\Default Work Unit\Powerups\Fire_Attack	
+	1873899129	Door_Open_Close			\Default Work Unit\Environment\Door_Open_Close	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	3833651337	Jump			\Default Work Unit\Jump	
+	4112548455	AirVent_Start			\Default Work Unit\Environment\AirVent_Start	
+	4209290139	Poison_Gas			\Default Work Unit\Environment\Poison_Gas	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	674522502	Land			\Default Work Unit\Land	
@@ -21,11 +24,14 @@ Switch	ID	Name	Switch Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20874511	Attack_Fire_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_02		96096
+	156845914	AirVent	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\AirVent_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AirVent		3024096
 	207731260	Attack_Fire_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_03		96096
 	517427919	Attack_Electric_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_03		96096
 	615797749	Attack_Fire_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_04		96096
+	644338545	PoisonGas	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\PoisonGas_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\PoisonGas		240096
 	660334491	Attack_Electric_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_05		96096
 	792168768	Attack_Electric_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_04		96096
+	849647510	ElectricDoor	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\ElectricDoor_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\ElectricDoor		288096
 	897209008	Attack_Fire_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_05		96096
 	950110775	Attack_Fire_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_01		96096
 	997805212	Attack_Electric_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_01		96096

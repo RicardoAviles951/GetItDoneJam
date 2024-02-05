@@ -1349,6 +1349,76 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Environment" ID="{BD0B8AC4-FA90-48BC-B12C-4432C28C645D}" ShortID="271872115">
+					<ChildrenList>
+						<Sound Name="AirVent" ID="{D7554FAF-177F-4770-B145-FA615BA33A33}" ShortID="955517949">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AirVent" ID="{F6D61EB3-A1AD-4DAB-A922-13F5C0B1F4FB}">
+									<Language>SFX</Language>
+									<AudioFile>AirVent.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="156845914"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AirVent" ID="{F6D61EB3-A1AD-4DAB-A922-13F5C0B1F4FB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ElectricDoor" ID="{697289A4-BB22-40DD-8C2C-37A4C1E068C2}" ShortID="931385757">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ElectricDoor" ID="{0B87C19C-E383-4441-83AA-B08DA6D74E8A}">
+									<Language>SFX</Language>
+									<AudioFile>ElectricDoor.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="849647510"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ElectricDoor" ID="{0B87C19C-E383-4441-83AA-B08DA6D74E8A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PoisonGas" ID="{E863BC7A-FCCB-4AED-A21B-3256586813E5}" ShortID="335307730">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PoisonGas" ID="{3F74D095-868B-49C7-8ABE-11C389B24626}">
+									<Language>SFX</Language>
+									<AudioFile>PoisonGas.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="644338545"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PoisonGas" ID="{3F74D095-868B-49C7-8ABE-11C389B24626}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

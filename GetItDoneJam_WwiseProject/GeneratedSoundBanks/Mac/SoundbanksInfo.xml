@@ -43,13 +43,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D72F1DBE-D2B5-ED07-262E-446A9EDD6AF8}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7A9882F3-6DDB-5D33-3F3A-86A35E60A2AE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="20874511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_02.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="156845914" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AirVent.wav</ShortName>
+					<CachePath>SFX/AirVent_818F3B66.wem</CachePath>
 				</File>
 				<File Id="207731260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_03.wav</ShortName>
@@ -63,6 +67,10 @@
 					<ShortName>Attack_Fire_04.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="644338545" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PoisonGas.wav</ShortName>
+					<CachePath>SFX/PoisonGas_818F3B66.wem</CachePath>
+				</File>
 				<File Id="660334491" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_05.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_05_818F3B66.wem</CachePath>
@@ -70,6 +78,10 @@
 				<File Id="792168768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_04.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="849647510" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ElectricDoor.wav</ShortName>
+					<CachePath>SFX/ElectricDoor_818F3B66.wem</CachePath>
 				</File>
 				<File Id="897209008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_05.wav</ShortName>
@@ -89,6 +101,16 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="4112548455" Name="AirVent_Start" DurationType="OneShot" DurationMin="31.5" DurationMax="31.5">
+					<MediaRefs>
+						<MediaRef Id="156845914"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1873899129" Name="Door_Open_Close" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<MediaRefs>
+						<MediaRef Id="849647510"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1242796459" Name="Electric_Attack" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<MediaRefs>
 						<MediaRef Id="517427919"/>
@@ -110,6 +132,11 @@
 				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4209290139" Name="Poison_Gas" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<MediaRefs>
+						<MediaRef Id="644338545"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="674522502" Name="Land">
@@ -134,5 +161,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B625367D-4454-EA58-48CD-32AAFAE113EC}</FileHash>
+	<FileHash>{B7EB9A42-E9B2-0623-2BB7-C4CED759A032}</FileHash>
 </SoundBanksInfo>
