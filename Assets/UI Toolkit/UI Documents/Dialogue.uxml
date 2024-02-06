@@ -1,11 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/Button.uss?fileID=7433441132597879392&amp;guid=a9fed50691aa25a43add3774a90823ef&amp;type=3#Button" />
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/DialogueText.uss?fileID=7433441132597879392&amp;guid=3006dcd9debbf2b46842ad99a9a965d1&amp;type=3#DialogueText" />
     <ui:VisualElement name="EntireScreen" style="height: 100%; width: 100%;">
-        <ui:VisualElement name="DialogueBox" style="bottom: 0; top: 50%; height: 50%; background-color: rgba(108, 108, 108, 0.36); -unity-background-image-tint-color: rgb(255, 255, 255); -unity-slice-left: 0; border-left-color: rgb(255, 255, 255);">
-            <ui:VisualElement name="Paragraph" style="height: 50%;">
-                <ui:Label display-tooltip-when-elided="true" name="Text_Paragraph" style="font-size: 48px; -unity-font-style: bold; height: 100%; color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="DialogueBox" style="bottom: 0; top: 0; height: 100%; background-color: rgba(108, 108, 108, 0.36); -unity-background-image-tint-color: rgb(255, 255, 255); -unity-slice-left: 0; border-left-color: rgb(255, 255, 255); width: 100%;">
+            <ui:VisualElement name="Paragraph" style="height: 50%; padding-left: 24px; padding-right: 24px; padding-top: 24px; padding-bottom: 24px;">
+                <ui:Label display-tooltip-when-elided="true" name="Text_Paragraph" class="Normal" style="height: 329px;" />
             </ui:VisualElement>
-            <ui:VisualElement name="Choices" style="height: 50%; align-items: center; width: 100%; background-color: rgba(161, 157, 157, 0.53);" />
+            <ui:VisualElement name="Choices" style="height: 50%; align-items: center; width: 100%; background-color: rgba(161, 157, 157, 0.53); color: rgba(154, 150, 150, 0.59); padding-left: 24px; padding-right: 24px; padding-top: 24px; padding-bottom: 24px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
