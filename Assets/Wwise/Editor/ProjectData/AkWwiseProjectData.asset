@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584944397365205894
+    m_lastTime: -8584944293949870699
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,8 +94,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584944397365565924
+    m_lastTime: -8584944293955277282
     List:
+    - name: AirVent_Start
+      guid: 57a8970931eebd4aae4e315d213a5dc8
+      id: 4112548455
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: AirVent_Start
+        ObjectType: 3
+        guid: 57a8970931eebd4aae4e315d213a5dc8
+      Path: Events\Default Work Unit\Environment\AirVent_Start
+      maxAttenuation: 0
+      maxDuration: 31.5
+      minDuration: 31.5
+    - name: Door_Open_Close
+      guid: 4ae3ae15275bc0479e6dfacf84980a22
+      id: 1873899129
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Door_Open_Close
+        ObjectType: 3
+        guid: 4ae3ae15275bc0479e6dfacf84980a22
+      Path: Events\Default Work Unit\Environment\Door_Open_Close
+      maxAttenuation: 0
+      maxDuration: 3
+      minDuration: 3
     - name: Electric_Attack
       guid: efb31bbdd4cd29478c2756ebfca6f218
       id: 1242796459
@@ -116,6 +156,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Environment
+      guid: 5011610f344f2844a3fa7d6790dc868c
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      Path: Events\Default Work Unit\Environment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Fire_Attack
       guid: f9c235d029adab428fd4f8887cc96643
       id: 1422166728
@@ -187,6 +244,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Poison_Gas
+      guid: 585886077b3b504eb2f518f7abd2c2bc
+      id: 4209290139
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Poison_Gas
+        ObjectType: 3
+        guid: 585886077b3b504eb2f518f7abd2c2bc
+      Path: Events\Default Work Unit\Environment\Poison_Gas
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.5
     - name: Powerups
       guid: fd21b7eab808884b8c29857f93b96ac8
       id: 2600048462
@@ -244,7 +321,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584948512374366003
+    m_lastTime: -8584947937478581884
     List:
     - name: Ground
       guid: bf629f9a6d185b42946b2341cd59e9f5
