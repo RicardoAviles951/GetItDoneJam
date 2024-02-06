@@ -52,7 +52,7 @@ public class PlayerStateManager : MonoBehaviour
         input = GetComponent<StarterAssetsInputs>();
 
         //Set state
-        currentState = dialogueState;
+        currentState = moveState;
 
         currentState.EnterState(this);
     }

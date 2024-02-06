@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ShockingObject : MonoBehaviour, IElectrifiable
+public class SimpleSwitch : MonoBehaviour, IElectrifiable
 {
+    public UnityEvent LinkedEvent;
+
+    [Tooltip("Particles that play when the switch is electrified")]
     public ParticleSystem electricParticles;
-    public UnityEvent triggerEvent;//Created for linking events
-    private bool isElectrified = false;//Let's us know if the object is electrified
+    public bool isElectrified = false;
+    [Tooltip("How long until the switch can be fired again.")]
+    public float cooldown = 0.5f;
     [field: SerializeField] public bool useParticleCollisions { get; set; } = false; //Toggle for particle collisions
 
-    //Trigger what happens when the object becomes electrified
     public void Electrify()
     {
         if (isElectrified == false)
@@ -23,16 +26,18 @@ public class ShockingObject : MonoBehaviour, IElectrifiable
             }
             else
             {
-                Debug.LogWarning("Shockable Object: No particles referenced for object");
+                Debug.LogWarning("Switch Object: No particles referenced for object");
             }
 
             //Trigger a custom event
-            triggerEvent.Invoke();
+            LinkedEvent.Invoke();
             isElectrified = true;
+
+            //Timer for setting electrified back to false
             StartCoroutine(CoolDown());
 
         }
-        
+
     }
 
     //If using particle collisions to trigger 
@@ -47,9 +52,7 @@ public class ShockingObject : MonoBehaviour, IElectrifiable
     IEnumerator CoolDown()
     {
         Debug.Log("Cooling down...");
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(cooldown);
         isElectrified = false;
     }
-
-
 }
