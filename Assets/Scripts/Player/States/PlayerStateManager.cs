@@ -18,8 +18,9 @@ public class PlayerStateManager : MonoBehaviour
 
     PlayerBaseState currentState;
 
-    public PlayerMoveState moveState       = new PlayerMoveState();
-    public PlayerExamineState examineState = new PlayerExamineState();
+    public PlayerMoveState moveState         = new PlayerMoveState();
+    public PlayerExamineState examineState   = new PlayerExamineState();
+    public PlayerDialogueState dialogueState = new PlayerDialogueState();
 
     [HideInInspector] public _FirstPersonController movementController;
     [HideInInspector] public StarterAssetsInputs input;
@@ -51,7 +52,7 @@ public class PlayerStateManager : MonoBehaviour
         input = GetComponent<StarterAssetsInputs>();
 
         //Set state
-        currentState = moveState;
+        currentState = dialogueState;
 
         currentState.EnterState(this);
     }
