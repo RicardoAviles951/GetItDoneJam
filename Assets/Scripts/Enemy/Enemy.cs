@@ -9,11 +9,10 @@ public class Enemy : MonoBehaviour
     public float rotationSpeed;
     public float moveSpeed;
     public float stopDistance;
+    public float laserDmage;
 
     public float timeBetweenAttacks;
     private float cooldown;
-    public Transform firePoint;
-    public GameObject projectile;
 
     private int placeToGo;
 
@@ -26,14 +25,29 @@ public class Enemy : MonoBehaviour
 
     public GameObject playerObject;
 
-    public LayerMask targetMask;
-
+    public LayerMask playerMask;
     public LayerMask obstaclesMask;
+
+
 
     public bool canSeePlayer;
 
+    [SerializeField] private LineRenderer beam;
+    [SerializeField] private Transform firePoint;
+
+    [SerializeField] private ParticleSystem StartFX;
+    [SerializeField] private ParticleSystem EndFX;
+
+    public Vector3 offset;
+
+    private bool isLockOnTarget;
+
+
+
     private void Start()
     {
+        beam.enabled = false;
+        isLockOnTarget = false;
         cooldown = timeBetweenAttacks;
         angleStart = angle;
         playerObject = GameObject.FindGameObjectWithTag(playerTag);
@@ -41,6 +55,11 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
+        if (GameManager.instance.lostGame || GameManager.instance.wonGame)
+        {
+            return;
+        }
+
         FieldOfViewCheck();
 
         if (!canSeePlayer)
@@ -50,35 +69,97 @@ public class Enemy : MonoBehaviour
     }
     public void FieldOfViewCheck()
     {
-        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask);
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, playerMask);
 
-        if (rangeChecks.Length != 0)
+        Collider[] bunrningChecks = Physics.OverlapSphere(transform.position, radius);
+
+        List<Collider> validColliders = new List<Collider>();
+
+        foreach (Collider col in bunrningChecks)
         {
-            Transform target = rangeChecks[0].transform;
-            Vector3 directionToTarget = (target.position - transform.position).normalized;
+            BurningObject burningObject = col.GetComponent<BurningObject>();
 
-            if (Vector3.Angle(transform.forward, directionToTarget) < angle * 0.5f)//Dividido para dor para tener un angulo claro y detallado
+            if (burningObject != null && burningObject.isBurning)
             {
-                float distanceToTarget = Vector3.Distance(transform.position, target.position);
-                if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstaclesMask))
+                validColliders.Add(col);
+            }
+        }
+
+        bunrningChecks = validColliders.ToArray();
+
+        if (bunrningChecks != null)
+        {
+            if (bunrningChecks.Length != 0)
+            {
+                Transform target = bunrningChecks[0].transform;
+                Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+                if (Vector3.Angle(transform.forward, directionToTarget) < angle * 0.5f)//Dividido para dor para tener un angulo claro y detallado
                 {
-                    canSeePlayer = true;
-                    EnemyMovement(target);
-                    angle = 360;
+                    float distanceToTarget = Vector3.Distance(transform.position, target.position);
+                    if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstaclesMask))
+                    {
+                        canSeePlayer = true;
+                        EnemyMovement(target);
+                        angle = 360;
+                        return;
+                    }
+                    else
+                    {
+                        DeactivateLaser();
+                        canSeePlayer = false;
+                    }
                 }
                 else
                 {
+                    DeactivateLaser();
                     canSeePlayer = false;
                 }
             }
-            else
+            else if (canSeePlayer)
             {
+                DeactivateLaser();
                 canSeePlayer = false;
             }
         }
-        else if (canSeePlayer)
+
+        if (rangeChecks != null)
         {
-            canSeePlayer = false;
+            if (rangeChecks.Length != 0)
+            {
+                Transform target = rangeChecks[0].transform;
+                Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+                if (Vector3.Angle(transform.forward, directionToTarget) < angle * 0.5f)//Dividido para dor para tener un angulo claro y detallado
+                {
+                    float distanceToTarget = Vector3.Distance(transform.position, target.position);
+                    if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstaclesMask))
+                    {
+                        canSeePlayer = true;
+                        EnemyMovement(target);
+                        angle = 360;
+                        if (target.GetComponent<PlayerHealth>())
+                        {
+                            target.GetComponent<PlayerHealth>().TakeDamage(laserDmage * Time.deltaTime);
+                        }
+                    }
+                    else
+                    {
+                        DeactivateLaser();
+                        canSeePlayer = false;
+                    }
+                }
+                else
+                {
+                    DeactivateLaser();
+                    canSeePlayer = false;
+                }
+            }
+            else if (canSeePlayer)
+            {
+                DeactivateLaser();
+                canSeePlayer = false;
+            }
         }
 
     }
@@ -95,14 +176,33 @@ public class Enemy : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, step);
 
             //Attack
-            timeBetweenAttacks -= Time.deltaTime;
-
-            if (timeBetweenAttacks <= 0)
-            {
-                timeBetweenAttacks = cooldown;
-            }
+            ActivateLaser();
 
         }
+    }
+
+    private void ActivateLaser()
+    {
+        beam.enabled = true;
+        StartFX.Play();
+        EndFX.Play();
+
+        Ray ray = new Ray(firePoint.position, firePoint.forward);
+        bool cast = Physics.Raycast(ray, out RaycastHit hit, radius);
+        Vector3 hitPosition = cast ? hit.point : firePoint.position + firePoint.forward * radius;
+
+        beam.SetPosition(0, firePoint.position);
+        beam.SetPosition(1, hitPosition - offset);
+
+        EndFX.transform.position = hitPosition - offset;
+    }
+    private void DeactivateLaser()
+    {
+        beam.enabled = false;
+        beam.SetPosition(0, firePoint.position);
+        beam.SetPosition(1, firePoint.position);
+        StartFX.Stop();
+        EndFX.Stop();
     }
 
 }
