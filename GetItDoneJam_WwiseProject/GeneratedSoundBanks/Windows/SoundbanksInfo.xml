@@ -43,65 +43,233 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6C37AD14-49F0-CC05-787C-CD141F2C5ABF}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2CBCE403-8BFA-B5F7-2E49-9E5C0D074A3E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="4635829" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Metal_03.wav</ShortName>
+					<CachePath>SFX/Jump_Metal_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="17317871" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Concrete_02.wav</ShortName>
+					<CachePath>SFX/Jump_Concrete_02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="20874511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_02.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="62944129" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Concrete_03.wav</ShortName>
+					<CachePath>SFX/Footsteps_Concrete_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="91147129" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Metal_02.wav</ShortName>
+					<CachePath>SFX/Jump_Metal_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="105432845" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Hardwood_04.wav</ShortName>
+					<CachePath>SFX/Footsteps_Hardwood_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="110062261" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Concrete_05.wav</ShortName>
+					<CachePath>SFX/Land_Concrete_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="116435935" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Concrete_01.wav</ShortName>
+					<CachePath>SFX/Jump_Concrete_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="156845914" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AirVent.wav</ShortName>
 					<CachePath>SFX/AirVent_818F3B66.wem</CachePath>
 				</File>
+				<File Id="169965748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Concrete_02.wav</ShortName>
+					<CachePath>SFX/Footsteps_Concrete_02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="172971718" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RoomToneLarge_SI.3012.14.wav</ShortName>
-					<CachePath>SFX/RoomToneLarge_SI.3012.14_0A316C29.wem</CachePath>
+					<CachePath>SFX/RoomToneLarge_SI.3012.14_37FA0D17.wem</CachePath>
+				</File>
+				<File Id="181447207" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Metal_03.wav</ShortName>
+					<CachePath>SFX/Footsteps_Metal_03_818F3B66.wem</CachePath>
 				</File>
 				<File Id="207731260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_03.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="331492498" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Concrete_03.wav</ShortName>
+					<CachePath>SFX/Land_Concrete_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="345942114" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Hardwood_01.wav</ShortName>
+					<CachePath>SFX/Footsteps_Hardwood_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="351607167" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Concrete_03.wav</ShortName>
+					<CachePath>SFX/Jump_Concrete_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="351766098" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Concrete_06.wav</ShortName>
+					<CachePath>SFX/Footsteps_Concrete_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="357183462" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Concrete_01.wav</ShortName>
+					<CachePath>SFX/Footsteps_Concrete_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="368088468" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Metal_02.wav</ShortName>
+					<CachePath>SFX/Land_Metal_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="373506113" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Hardwood_03.wav</ShortName>
+					<CachePath>SFX/Footsteps_Hardwood_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="404483168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Metal_02.wav</ShortName>
+					<CachePath>SFX/Footsteps_Metal_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="418092226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Metal_01.wav</ShortName>
+					<CachePath>SFX/Jump_Metal_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="458181123" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Concrete_05.wav</ShortName>
+					<CachePath>SFX/Jump_Concrete_05_818F3B66.wem</CachePath>
+				</File>
 				<File Id="517427919" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_03.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="547916028" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Metal_06.wav</ShortName>
+					<CachePath>SFX/Jump_Metal_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="550176406" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Metal_06.wav</ShortName>
+					<CachePath>SFX/Footsteps_Metal_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="598339404" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Concrete_06.wav</ShortName>
+					<CachePath>SFX/Jump_Concrete_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="604795312" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Metal_01.wav</ShortName>
+					<CachePath>SFX/Land_Metal_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="607396053" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Metal_04.wav</ShortName>
+					<CachePath>SFX/Land_Metal_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="607829222" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Concrete_04.wav</ShortName>
+					<CachePath>SFX/Land_Concrete_04_818F3B66.wem</CachePath>
 				</File>
 				<File Id="615797749" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_04.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="626498112" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Concrete_01.wav</ShortName>
+					<CachePath>SFX/Land_Concrete_01_818F3B66.wem</CachePath>
+				</File>
 				<File Id="644338545" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PoisonGas.wav</ShortName>
 					<CachePath>SFX/PoisonGas_818F3B66.wem</CachePath>
+				</File>
+				<File Id="650964719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Hardwood_02.wav</ShortName>
+					<CachePath>SFX/Footsteps_Hardwood_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="660334491" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_05.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_05_818F3B66.wem</CachePath>
 				</File>
+				<File Id="667531920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Concrete_04.wav</ShortName>
+					<CachePath>SFX/Jump_Concrete_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="686832934" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Concrete_05.wav</ShortName>
+					<CachePath>SFX/Footsteps_Concrete_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="724678822" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Metal_05.wav</ShortName>
+					<CachePath>SFX/Jump_Metal_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="734335470" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Metal_05.wav</ShortName>
+					<CachePath>SFX/Footsteps_Metal_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="742115735" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Concrete_04.wav</ShortName>
+					<CachePath>SFX/Footsteps_Concrete_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="757609955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Metal_01.wav</ShortName>
+					<CachePath>SFX/Footsteps_Metal_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="787018951" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jump_Metal_04.wav</ShortName>
+					<CachePath>SFX/Jump_Metal_04_818F3B66.wem</CachePath>
+				</File>
 				<File Id="792168768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_04.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="814903740" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Hardwood_05.wav</ShortName>
+					<CachePath>SFX/Footsteps_Hardwood_05_818F3B66.wem</CachePath>
 				</File>
 				<File Id="849647510" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ElectricDoor.wav</ShortName>
 					<CachePath>SFX/ElectricDoor_818F3B66.wem</CachePath>
 				</File>
+				<File Id="851218037" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Metal_06.wav</ShortName>
+					<CachePath>SFX/Land_Metal_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="887167557" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Metal_05.wav</ShortName>
+					<CachePath>SFX/Land_Metal_05_818F3B66.wem</CachePath>
+				</File>
 				<File Id="897209008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_05.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="905457450" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Concrete_02.wav</ShortName>
+					<CachePath>SFX/Land_Concrete_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="950110775" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_01.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="972945321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Concrete_06.wav</ShortName>
+					<CachePath>SFX/Land_Concrete_06_818F3B66.wem</CachePath>
+				</File>
 				<File Id="997805212" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_01.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1036869714" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Metal_04.wav</ShortName>
+					<CachePath>SFX/Footsteps_Metal_04_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1049261634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_02.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1056490375" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Hardwood_06.wav</ShortName>
+					<CachePath>SFX/Footsteps_Hardwood_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1066200726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Land_Metal_03.wav</ShortName>
+					<CachePath>SFX/Land_Metal_03_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -133,9 +301,95 @@
 						<MediaRef Id="950110775"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="841620460" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="62944129"/>
+								<MediaRef Id="169965748"/>
+								<MediaRef Id="351766098"/>
+								<MediaRef Id="357183462"/>
+								<MediaRef Id="686832934"/>
+								<MediaRef Id="742115735"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="3598975185"/>
+							<MediaRefs>
+								<MediaRef Id="105432845"/>
+								<MediaRef Id="345942114"/>
+								<MediaRef Id="373506113"/>
+								<MediaRef Id="650964719"/>
+								<MediaRef Id="814903740"/>
+								<MediaRef Id="1056490375"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="181447207"/>
+								<MediaRef Id="404483168"/>
+								<MediaRef Id="550176406"/>
+								<MediaRef Id="734335470"/>
+								<MediaRef Id="757609955"/>
+								<MediaRef Id="1036869714"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.5" DurationMax="1">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3833651337" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="4635829"/>
+								<MediaRef Id="91147129"/>
+								<MediaRef Id="418092226"/>
+								<MediaRef Id="547916028"/>
+								<MediaRef Id="724678822"/>
+								<MediaRef Id="787018951"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3833651337" Id="841620460" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="17317871"/>
+								<MediaRef Id="116435935"/>
+								<MediaRef Id="351607167"/>
+								<MediaRef Id="458181123"/>
+								<MediaRef Id="598339404"/>
+								<MediaRef Id="667531920"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="1" DurationMax="1.5">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="674522502" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="368088468"/>
+								<MediaRef Id="604795312"/>
+								<MediaRef Id="607396053"/>
+								<MediaRef Id="851218037"/>
+								<MediaRef Id="887167557"/>
+								<MediaRef Id="1066200726"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="674522502" Id="841620460" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="110062261"/>
+								<MediaRef Id="331492498"/>
+								<MediaRef Id="607829222"/>
+								<MediaRef Id="626498112"/>
+								<MediaRef Id="905457450"/>
+								<MediaRef Id="972945321"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1898179168" Name="Map_Ambience" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="172971718"/>
@@ -170,5 +424,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{236C30B7-04E1-02DC-FCEF-0C2D3C27AC37}</FileHash>
+	<FileHash>{E53B6C4D-8DFF-A568-D95B-82B53F088A98}</FileHash>
 </SoundBanksInfo>

@@ -467,6 +467,26 @@
 								<ItemRef Name="Concrete" ID="{59F22FF5-9C42-4EA3-911A-2A710671152A}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{76DE2003-79B9-4403-AB20-4CB97C06B712}"/>
+								<ItemList>
+									<ItemRef Name="Concrete" ID="{59F22FF5-9C42-4EA3-911A-2A710671152A}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Hardwood" ID="{12E20669-F281-4883-B4B6-ED72861369EF}"/>
+								<ItemList>
+									<ItemRef Name="Hardwood" ID="{076E502B-B1D4-418E-93A5-4CC80CAABC9D}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Metal" ID="{11C7E2E2-EEA6-48BB-85E1-4D8E9151B26D}"/>
+								<ItemList>
+									<ItemRef Name="Metal" ID="{108AA112-3EE3-49EA-A935-CDAE5FCBFF10}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="Jump" ID="{E5A2F1C8-E684-4B00-A907-50F5E6D220E0}" ShortID="442854012">
@@ -783,6 +803,20 @@
 								<ItemRef Name="Concrete" ID="{6D0C1F64-C655-4072-A92E-0BA826314C3A}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Metal" ID="{BE7BFEA0-1414-45FA-86DB-E3C9CCAFF1A3}"/>
+								<ItemList>
+									<ItemRef Name="Metal" ID="{A9BA5E2B-DD14-48C4-8356-C66F1FF33E4B}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{A23C1DB5-0143-46D0-9147-23E8C8689E42}"/>
+								<ItemList>
+									<ItemRef Name="Concrete" ID="{6D0C1F64-C655-4072-A92E-0BA826314C3A}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="Land" ID="{8B76A861-743C-43FF-B236-DD7FCF8E9F71}" ShortID="816864072">
@@ -1099,6 +1133,20 @@
 								<ItemRef Name="Metal" ID="{0F5F0EAB-C31A-4828-8634-6246D4B4BA83}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Metal" ID="{72CBCE49-63BD-4411-AE70-2E04A51B323F}"/>
+								<ItemList>
+									<ItemRef Name="Metal" ID="{0F5F0EAB-C31A-4828-8634-6246D4B4BA83}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{5A33755B-8DD4-4E2C-B4F1-67C27B504911}"/>
+								<ItemList>
+									<ItemRef Name="Concrete" ID="{FE98ED10-704D-4B82-88A5-2A2DEF2E99C5}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<Folder Name="Powerups" ID="{4CD8F93F-8ECA-4965-8FFF-628A6DCEF839}" ShortID="650386881">
