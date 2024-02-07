@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7A9882F3-6DDB-5D33-3F3A-86A35E60A2AE}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6C37AD14-49F0-CC05-787C-CD141F2C5ABF}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -54,6 +54,10 @@
 				<File Id="156845914" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AirVent.wav</ShortName>
 					<CachePath>SFX/AirVent_818F3B66.wem</CachePath>
+				</File>
+				<File Id="172971718" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RoomToneLarge_SI.3012.14.wav</ShortName>
+					<CachePath>SFX/RoomToneLarge_SI.3012.14_0A316C29.wem</CachePath>
 				</File>
 				<File Id="207731260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_03.wav</ShortName>
@@ -132,6 +136,11 @@
 				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1898179168" Name="Map_Ambience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="172971718"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4209290139" Name="Poison_Gas" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
 						<MediaRef Id="644338545"/>
@@ -161,5 +170,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B7EB9A42-E9B2-0623-2BB7-C4CED759A032}</FileHash>
+	<FileHash>{ABD29064-A3DA-F0FA-8BFD-D76986AA5028}</FileHash>
 </SoundBanksInfo>

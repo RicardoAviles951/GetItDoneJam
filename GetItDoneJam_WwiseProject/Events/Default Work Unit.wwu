@@ -99,6 +99,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambience" ID="{BF287F94-422E-44C1-B815-8CDA6283417D}" ShortID="839195472">
+					<ChildrenList>
+						<Event Name="Map_Ambience" ID="{C960F4CC-ED18-4769-822F-54E40D2C3923}">
+							<ChildrenList>
+								<Action Name="" ID="{28ACAED9-A4A8-48B3-BD5A-583E2BA086D2}" ShortID="625512283">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoomToneLarge_SI_3012_14" ID="{724D4C89-78E2-416B-8BD8-3DC5E107F20D}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

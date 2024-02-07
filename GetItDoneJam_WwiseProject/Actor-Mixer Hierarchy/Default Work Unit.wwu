@@ -1419,6 +1419,41 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambience" ID="{2F7C3064-CDE9-4622-9182-ADC4548BD542}" ShortID="372986561">
+					<ChildrenList>
+						<Sound Name="RoomToneLarge_SI_3012_14" ID="{724D4C89-78E2-416B-8BD8-3DC5E107F20D}" ShortID="1022175095">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RoomToneLarge_SI_3012_14" ID="{68814304-147F-477C-A066-FC09B1428D40}">
+									<PropertyList>
+										<Property Name="FadeInShape" Type="int16" Value="6"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.906965648973621"/>
+										<Property Name="TrimEnd" Type="Real64" Value="240.332324117553"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>RoomToneLarge_SI.3012.14.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="172971718"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RoomToneLarge_SI_3012_14" ID="{68814304-147F-477C-A066-FC09B1428D40}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

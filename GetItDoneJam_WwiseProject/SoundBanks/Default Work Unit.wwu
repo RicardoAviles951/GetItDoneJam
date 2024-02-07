@@ -7,8 +7,10 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Fire_Attack" ID="{D035C2F9-AD29-42AB-8FD4-F8887CC96643}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Environment" ID="{0F611150-4F34-4428-A3FA-7D6790DC868C}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambience" ID="{BF287F94-422E-44C1-B815-8CDA6283417D}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Electric_Attack" ID="{BD1BB3EF-CDD4-4729-8C27-56EBFCA6F218}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{BA505293-F76C-472A-8B9E-C64EA1B2FD97}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Map_Ambience" ID="{C960F4CC-ED18-4769-822F-54E40D2C3923}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Door_Open_Close" ID="{15AEE34A-5B27-47C0-9E6D-FACF84980A22}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{0CB4F120-5A47-48D4-9FBA-41C0228B2672}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{EBE0D61D-3824-492B-A99F-0041C9E6F7EC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>

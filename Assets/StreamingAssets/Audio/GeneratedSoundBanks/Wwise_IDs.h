@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
+        static const AkUniqueID MAP_AMBIENCE = 1898179168U;
         static const AkUniqueID POISON_GAS = 4209290139U;
     } // namespace EVENTS
 
