@@ -14,7 +14,10 @@ public class PlayerStateManager : MonoBehaviour
     public static UnityAction ShowPlayerHUD;
     public static UnityAction HidePlayerHUD;
 
-    
+    public static UnityAction ShowDialogue;
+    public static UnityAction HideDialogue;
+
+
 
     PlayerBaseState currentState;
 
@@ -103,6 +106,16 @@ public class PlayerStateManager : MonoBehaviour
             case "show": ShowPlayerHUD?.Invoke(); break;
             case "hide": HidePlayerHUD?.Invoke(); break;
         }
+    }
+
+    public void ToggleDialogue(string toggleDialogue)
+    {
+        switch (toggleDialogue)
+        {
+            case "show": ShowDialogue?.Invoke(); break;
+            case "hide": HideDialogue?.Invoke(); break;
+        }
+
     }
 
     void InputResets()

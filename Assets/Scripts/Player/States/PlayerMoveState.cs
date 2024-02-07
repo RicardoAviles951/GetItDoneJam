@@ -23,6 +23,7 @@ public class PlayerMoveState : PlayerBaseState
         if (detector.detected)
         {
             IExaminable examinable = detector.hit.collider.GetComponent<IExaminable>();
+            IDialogue dialogue = detector.hit.collider.GetComponent<IDialogue>();
             if (examinable != null)
             {
                 if (player.input.interact)
@@ -32,6 +33,14 @@ public class PlayerMoveState : PlayerBaseState
                     player.ChangeState(player.examineState);
                 }
                 
+            }
+            else if(dialogue != null)
+            {
+                if(player.input.interact)
+                {
+                    player.TogglePlayerHUD("hide");
+                    player.ChangeState(player.dialogueState);
+                }
             }
         }
 

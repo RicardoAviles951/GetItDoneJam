@@ -9,11 +9,18 @@ public class PlayerDialogueState : PlayerBaseState
         Debug.Log("Player State: Dialogue state");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        player.ToggleDialogue("show");
     }
 
     public override void UpdateState(PlayerStateManager player)
     {
-        
+        if (player.input.interact)
+        {
+            player.ToggleDialogue("hide");
+            CursorReturn(player);
+            player.ChangeState(player.moveState);
+        }
     }
 
     public override void FixedUpdateState(PlayerStateManager player)
@@ -36,5 +43,9 @@ public class PlayerDialogueState : PlayerBaseState
         
     }
 
-    
+    void CursorReturn(PlayerStateManager player)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 }

@@ -8,11 +8,12 @@ using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
-    public VisualElement root;
-    private VisualElement container;
+    private VisualElement choicesContainer;
     public Label text;
     public Story currentStory;
     public TextAsset InkJSONAsset;
+
+    private VisualElement EntireScreen;
     public VisualTreeAsset item;
     private Button button;
     private List<Button> buttonList = new List<Button>();
@@ -20,15 +21,32 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        root = GetComponent<UIDocument>().rootVisualElement;
-        text = root.Q<Label>("Text_Paragraph");
-        container = root.Q<VisualElement>("Choices");
+        var root  = GetComponent<UIDocument>().rootVisualElement;
+        EntireScreen = root.Q<VisualElement>("EntireScreen");
+        text      = root.Q<Label>("Text_Paragraph");
+        choicesContainer = root.Q<VisualElement>("Choices");
+    }
+    private void OnEnable()
+    {
+        PlayerStateManager.ShowDialogue += ShowDisplay;
+        PlayerStateManager.HideDialogue += HideDisplay;
+
+        
+
     }
 
+    private void OnDisable()
+    {
+        PlayerStateManager.ShowDialogue -= ShowDisplay;
+        PlayerStateManager.HideDialogue -= HideDisplay;
+
+        
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        EntireScreen.style.display = DisplayStyle.None;
         // Create a new Story object using the compiled (JSON) Ink story text
         currentStory = new Story(InkJSONAsset.text);
         GenerateDialogue();
@@ -78,7 +96,7 @@ public class DialogueManager : MonoBehaviour
                 //Generates a button based on a template created in UI Builder
                 TemplateContainer itemButton = item.Instantiate();
                 //Add the item to the choices container
-                container.Add(itemButton);
+                choicesContainer.Add(itemButton);
                
                 //Get's reference to the button
                 button = itemButton.Q<Button>("Button");
@@ -91,7 +109,7 @@ public class DialogueManager : MonoBehaviour
                     //Get the index of the choice
                     currentStory.ChooseChoiceIndex(choice.index);
                     //Remove all the buttons
-                    container.Clear();
+                    choicesContainer.Clear();
                     
                     //Regenerate the dialogue. 
                     GenerateDialogue();
@@ -104,7 +122,7 @@ public class DialogueManager : MonoBehaviour
 
             
             //Separately adjust the width of the buttons so that it adjusts their width in relation to the container they are in.
-            foreach (var Child in container.Children())
+            foreach (var Child in choicesContainer.Children())
             {
                 //Set the width/height to 100% using the percentage value
                 Child.style.width  = Length.Percent(100);
@@ -132,6 +150,18 @@ public class DialogueManager : MonoBehaviour
             text.AddToClassList("InvisibleText");
         }
         
+    }
+
+    void ShowDisplay()
+    {
+
+        EntireScreen.style.display = DisplayStyle.Flex;
+
+    }
+
+    void HideDisplay()
+    {
+        EntireScreen.style.display = DisplayStyle.None;
     }
 }
 

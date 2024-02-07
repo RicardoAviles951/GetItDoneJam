@@ -43,6 +43,14 @@ namespace StarterAssets
 		[Tooltip("What layers the character uses as ground")]
 		public LayerMask GroundLayers;
 
+        [Header("Wwise Events")]
+        public AK.Wwise.Event footsteps;
+        [Tooltip("Time between footstep sounds in seconds.")]
+        public float footstepDelay = 0.5f;
+        public AK.Wwise.Event jumping;
+		
+
+
 		[Header("Cinemachine")]
 		[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
 		public GameObject CinemachineCameraTarget;
@@ -64,9 +72,14 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
-	
+        //Wwise
+        private bool isStepping = false;
+		private bool isJumping = false;
+        private float LastFootstepTime = 0;
+
+
 #if ENABLE_INPUT_SYSTEM
-		private PlayerInput _playerInput;
+        private PlayerInput _playerInput;
 #endif
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
@@ -108,6 +121,7 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
 		}
 
 		private void Update()
@@ -192,6 +206,7 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+				HandleFootstepSounds();
 			}
 
 			// move the player
@@ -216,6 +231,12 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    if (!isJumping)
+                    {
+                        jumping.Post(gameObject);
+                        isJumping = true;
+                    }
+                    Debug.Log("JUMP COUNT");
 				}
 
 				// jump timeout
@@ -223,6 +244,7 @@ namespace StarterAssets
 				{
 					_jumpTimeoutDelta -= Time.deltaTime;
 				}
+				
 			}
 			else
 			{
@@ -237,6 +259,7 @@ namespace StarterAssets
 
 				// if we are not grounded, do not jump
 				_input.jump = false;
+				isJumping = false;
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
@@ -264,5 +287,31 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
-	}
+
+        void HandleFootstepSounds()
+        {
+
+            if (Grounded)
+            {
+                if (!isStepping)
+                {
+                    footsteps.Post(gameObject);
+                    LastFootstepTime = Time.time;
+                    isStepping = true;
+                }
+                else
+                {
+                    // Calculate the time since the last footstep
+                    float timeSinceLastStep = Time.time - LastFootstepTime;
+					float adjustedDelay = (footstepDelay * 1000);
+                    if (timeSinceLastStep > adjustedDelay / _speed * Time.deltaTime)
+                    {
+                        isStepping = false;
+                    }
+                }
+            }
+
+
+        }
+    }
 }
