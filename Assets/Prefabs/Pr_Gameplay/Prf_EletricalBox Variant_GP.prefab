@@ -15,17 +15,17 @@ PrefabInstance:
     - target: {fileID: 6772303009556553456, guid: bcd4725c9a743a7459ac26f2bacf35ae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.039678454
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6772303009556553456, guid: bcd4725c9a743a7459ac26f2bacf35ae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.011900187
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6772303009556553456, guid: bcd4725c9a743a7459ac26f2bacf35ae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.549026
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6772303009556553456, guid: bcd4725c9a743a7459ac26f2bacf35ae,
         type: 3}
@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 6772303009556553459, guid: bcd4725c9a743a7459ac26f2bacf35ae,
         type: 3}
       propertyPath: m_Name
-      value: Prf_EletricalBox
+      value: Prf_EletricalBox Variant_GP
       objectReference: {fileID: 0}
     - target: {fileID: 6772303009556553459, guid: bcd4725c9a743a7459ac26f2bacf35ae,
         type: 3}

@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 8867571483495151606, guid: ec5db89d88d03054987835fec5b2e2ec,
         type: 3}
       propertyPath: m_Name
-      value: Prf_Door
+      value: Prf_Door_ Variant_GP
       objectReference: {fileID: 0}
     - target: {fileID: 8970799531541335301, guid: ec5db89d88d03054987835fec5b2e2ec,
         type: 3}

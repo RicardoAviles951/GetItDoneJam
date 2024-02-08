@@ -60,4 +60,16 @@ public class Lift : MonoBehaviour
         Gizmos.DrawLine(position, transform.position);
         Gizmos.DrawCube(position, size);
     }
+
+    public void OnTriggerStay(Collider trig)
+    {
+        if (trig.tag == "Player")
+            trig.transform.SetParent(transform);
+    }
+
+    public void OnTriggerExit(Collider trig)
+    {
+        if (trig.tag == "Player")
+            trig.transform.SetParent(null);
+    }
 }
