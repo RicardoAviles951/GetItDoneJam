@@ -1,3 +1,3 @@
-Opening Dialogue Line 1
-Opening Dialogue Line 2
-Opening Dialogue Line 3
+//When Player first enters game
+
+Proctor: Volunteer X732

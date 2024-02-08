@@ -2,15 +2,15 @@ VAR answers = 0
 VAR turns = 0
 
 
-Welcome Volunter 47182, Citizen Classification Blue X
-The questions on this examination will determine your understanding of our society and your acceptance of it. Changing the dynamics of your position in this society cannot be done lightly. When you are ready, proceed.
+Welcome Volunteer 732, Citizen Classification Blue X
+The sociological assessment will determine your understanding of THE SOCIETY and your acceptance of it. Elevating your position in THE SOCIETY cannot be done lightly. When you are ready, proceed.
 #CLEAR
 
 *[BEGIN EXAMINATION]
 -->Questions
 
 ===Questions===
-How do you feel about the following statement:
+Evaluate the following statement:
 {turns==0: ->Question1|->QuestionBranchManager}
 
 ->DONE
@@ -40,43 +40,47 @@ Every person has a role to play in a developed society.
 
 ===Question2 ===
 
-Some roles in a society are more important than other roles.
+Some roles in a society have more value than other roles.
 ->answerchoices
 
 ===Question3 ===
-The Society knows what's best for the society.
 
+Those in a society knows what's best for the society.
 ->answerchoices
 
 ===Question4 ===
-question 4
 
+Progress is important to a continually developing any society.
 ->answerchoices
 
 ===Question5 ===
 
-question 5
+Peace is more important than truth.
 ->answerchoices
 
 ===Question6 ===
-question 6
+
+The value of the next generation is a measure of worth in a society.
 ->answerchoices
 
 ===Question7 ===
-question 7
+
+Trust given should be reciprocated.
 ->answerchoices
 
 ===Question8 ===
-question 8
+
+Everything in a society has a value.
 ->answerchoices
 
 ===Question9 ===
-question 9
+
+Individuals in a society can become more or less valuable to that society.
 ->answerchoices
 
 ===Question10 ===
-Do you consider your current position BLUE X of high value to the society?
 
+The citizen color ranking adequately measures an individual's worth in a society.
 ->answerchoices
 
 
@@ -104,9 +108,9 @@ Do you consider your current position BLUE X of high value to the society?
 -{turns == 6: ->WRAPUP| ->Questions}
 
 ===WRAPUP===
-Thank you Volunteer 47182. Your results will be calculated, and you will be rewarded based on your efforts. 
+Thank you Volunteer 732. Your results will be calculated, and you will be rewarded based on your efforts. 
 
-When you exit the examination, you will discover your prosthetic has been upgraded again. A thanks for your participation.
+When you exit the examination, you will discover your prosthetic has been upgraded. A thanks for your participation.
 
 #CLEAR
 
@@ -125,29 +129,53 @@ When you exit the examination, you will discover your prosthetic has been upgrad
  
  
 ===RESULT1===
-result 1
+Volunteer 732,
+
+Completion of the entire test will result in a citizen rank elevation. As such, you will continued to be tested.
+
+The results of this questionnaire have warranted a general health decrease. May you continue to understand the dynamics of THE SOCIETY.
+
 #outcome1
-->FINAL
+*[ACCEPT RESULTS]
+-->FINAL
 
 ===RESULT2===
-result 2
-#outcome2
-->FINAL
-===RESULT3===
-result 3
-#outcome3
+Volunteer 732,
 
-->FINAL
+Completion of the entire test will result in a citizen classification elevation. As such, you will continued to be tested.
+
+The results of this questionnare have warranted a general movement decrease. May you continue to understand the dynamics of THE SOCIETY.
+#outcome2
+*[ACCEPT RESULTS]
+-->FINAL
+===RESULT3===
+Volunteer 732,
+
+Completion of the entire test will result in a citizen classification elevation. As such, you will continued to be tested.
+
+The results of this questionnare have warranted a general movement increase. It appears you have some understanding of the dynamics of THE SOCIETY.
+#outcome3
+*[ACCEPT RESULTS]
+-->FINAL
 ===RESULT4===
-result 4
+Volunteer 732,
+
+Completion of the entire test will result in a citizen classification elevation. As such, you will continued to be tested.
+
+The results of this questionnare have warranted a general health increase. It appears you have some understanding of the dynamics of THE SOCIETY.
+
 #outcome4
-->FINAL
+*[ACCEPT RESULTS]
+-->FINAL
 
 ===FINAL===
 #CLEAR
 
-end of examination
-->END
+This concludes the sociological assessment portion of this test. Thank you for volunteering.
+
+Eden awaits.
+*[EXIT]
+-->END
 
 
 
