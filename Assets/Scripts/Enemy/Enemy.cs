@@ -10,6 +10,10 @@ public class Enemy : MonoBehaviour
     public float moveSpeed;
     public float stopDistance;
     public float laserDmage;
+    public float speed;
+    public float attackSpeed;
+
+    public Rotate rotationAlas;
 
     public float timeBetweenAttacks;
     private float cooldown;
@@ -46,6 +50,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        speed = rotationAlas.speed;
         beam.enabled = false;
         isLockOnTarget = false;
         cooldown = timeBetweenAttacks;
@@ -186,6 +191,7 @@ public class Enemy : MonoBehaviour
         beam.enabled = true;
         StartFX.Play();
         EndFX.Play();
+        rotationAlas.speed = attackSpeed;
 
         Ray ray = new Ray(firePoint.position, firePoint.forward);
         bool cast = Physics.Raycast(ray, out RaycastHit hit, radius);
@@ -198,6 +204,7 @@ public class Enemy : MonoBehaviour
     }
     private void DeactivateLaser()
     {
+        rotationAlas.speed = speed;
         beam.enabled = false;
         beam.SetPosition(0, firePoint.position);
         beam.SetPosition(1, firePoint.position);
