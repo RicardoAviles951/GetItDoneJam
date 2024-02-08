@@ -7,7 +7,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             Vector3 cameraPosition = Camera.main.transform.position;
 
