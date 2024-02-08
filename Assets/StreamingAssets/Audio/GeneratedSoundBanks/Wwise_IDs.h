@@ -21,7 +21,9 @@ namespace AK
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MAP_AMBIENCE = 1898179168U;
+        static const AkUniqueID MENU_MUSIC = 4055567060U;
         static const AkUniqueID POISON_GAS = 4209290139U;
+        static const AkUniqueID PUZZLE_MUSIC = 2221424041U;
     } // namespace EVENTS
 
     namespace SWITCHES

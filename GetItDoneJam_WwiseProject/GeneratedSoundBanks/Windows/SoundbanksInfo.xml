@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2CBCE403-8BFA-B5F7-2E49-9E5C0D074A3E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{99D22610-F3C5-C89A-A91E-9C770D4F166E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -58,6 +58,14 @@
 				<File Id="20874511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_02.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="56883088" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Menu_Music.wav</ShortName>
+					<CachePath>SFX/Menu_Music_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="60988815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle_Music.wav</ShortName>
+					<CachePath>SFX/Puzzle_Music_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="62944129" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Concrete_03.wav</ShortName>
@@ -395,9 +403,19 @@
 						<MediaRef Id="172971718"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4055567060" Name="Menu_Music" DurationType="OneShot" DurationMin="73.846146" DurationMax="73.846146">
+					<MediaRefs>
+						<MediaRef Id="56883088"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4209290139" Name="Poison_Gas" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
 						<MediaRef Id="644338545"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2221424041" Name="Puzzle_Music" DurationType="OneShot" DurationMin="50.526314" DurationMax="50.526314">
+					<MediaRefs>
+						<MediaRef Id="60988815"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -424,5 +442,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E53B6C4D-8DFF-A568-D95B-82B53F088A98}</FileHash>
+	<FileHash>{FAF647F8-E150-D3F0-2601-565898B795DE}</FileHash>
 </SoundBanksInfo>

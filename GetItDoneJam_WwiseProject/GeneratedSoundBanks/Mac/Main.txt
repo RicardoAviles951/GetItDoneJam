@@ -4,8 +4,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1422166728	Fire_Attack			\Default Work Unit\Powerups\Fire_Attack	
 	1873899129	Door_Open_Close			\Default Work Unit\Environment\Door_Open_Close	
 	1898179168	Map_Ambience			\Default Work Unit\Ambience\Map_Ambience	
+	2221424041	Puzzle_Music			\Default Work Unit\Music\Puzzle_Music	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	3833651337	Jump			\Default Work Unit\Jump	
+	4055567060	Menu_Music			\Default Work Unit\Music\Menu_Music	
 	4112548455	AirVent_Start			\Default Work Unit\Environment\AirVent_Start	
 	4209290139	Poison_Gas			\Default Work Unit\Environment\Poison_Gas	
 
@@ -27,6 +29,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4635829	Jump_Metal_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Jump_Metal_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Metal\Jump_Metal_03		48096
 	17317871	Jump_Concrete_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Jump_Concrete_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Concrete\Jump_Concrete_02		96096
 	20874511	Attack_Fire_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Attack_Fire_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_02		96096
+	56883088	Menu_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Menu_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Menu_Music\Menu_Music		14178556
+	60988815	Puzzle_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Puzzle_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Puzzle_Music\Puzzle_Music		9701148
 	62944129	Footsteps_Concrete_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Footsteps_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_Concrete_03		48096
 	91147129	Jump_Metal_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Jump_Metal_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Metal\Jump_Metal_02		48096
 	105432845	Footsteps_Hardwood_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Mac\SFX\Footsteps_Hardwood_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Hardwood\Footsteps_Hardwood_04		48096
