@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
         cooldown = timeBetweenAttacks;
         angleStart = angle;
         playerObject = GameObject.FindGameObjectWithTag(playerTag);
-        placeToGo = Random.Range(0, EnemyPath.instance.enemyPath.Count);
+        //placeToGo = Random.Range(0, EnemyPath.instance.enemyPath.Count);
     }
     private void Update()
     {

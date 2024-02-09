@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 277315082291cd4cbb02e81197f4e1ab
     GuidInternal: 
-    m_lastTime: -8584941727628866292
+    m_lastTime: -8584950169244433701
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7433b8e6e7181348a6fe56eb5501fe66
     GuidInternal: 
-    m_lastTime: -8584941727634932802
+    m_lastTime: -8584950169244573324
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584941727628876295
+    m_lastTime: -8584942412279472720
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584941727642572794
+    m_lastTime: -8584941651774157347
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -133,6 +133,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Correct
+      guid: ea009e2ddbe62745bc5133de3b7cf921
+      id: 4126251273
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Correct
+        ObjectType: 3
+        guid: ea009e2ddbe62745bc5133de3b7cf921
+      Path: Events\Default Work Unit\UI\Correct
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Door_Open_Close
       guid: 4ae3ae15275bc0479e6dfacf84980a22
       id: 1873899129
@@ -190,6 +210,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Error
+      guid: f37e4515fc0f9240b48c5b36ac2c64c2
+      id: 1880695829
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Error
+        ObjectType: 3
+        guid: f37e4515fc0f9240b48c5b36ac2c64c2
+      Path: Events\Default Work Unit\UI\Error
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Fire_Attack
       guid: f9c235d029adab428fd4f8887cc96643
       id: 1422166728
@@ -227,6 +267,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5
       minDuration: 0.5
+    - name: Health
+      guid: 783b7dd2b4f3b34bbacec8186af714da
+      id: 3677180323
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Health
+        ObjectType: 3
+        guid: 783b7dd2b4f3b34bbacec8186af714da
+      Path: Events\Default Work Unit\UI\Health
+      maxAttenuation: 0
+      maxDuration: 21
+      minDuration: 21
+    - name: Hologram_Blast
+      guid: 142efac4da83064992c02f5affdb7cb3
+      id: 1472083991
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Hologram_Blast
+        ObjectType: 3
+        guid: 142efac4da83064992c02f5affdb7cb3
+      Path: Events\Default Work Unit\Environment\Hologram_Blast
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
+    - name: Hologram_Impact
+      guid: 26e40740cc11e44a88df1900232c21fb
+      id: 1733942329
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Hologram_Impact
+        ObjectType: 3
+        guid: 26e40740cc11e44a88df1900232c21fb
+      Path: Events\Default Work Unit\Environment\Hologram_Impact
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
     - name: Jump
       guid: 1dd6e0eb24382b49a99f0041c9e6f7ec
       id: 3833651337
@@ -318,6 +418,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pause
+      guid: 87432b6b17d8684dbe0f9242f64a175b
+      id: 3092587493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Pause
+        ObjectType: 3
+        guid: 87432b6b17d8684dbe0f9242f64a175b
+      Path: Events\Default Work Unit\UI\Pause
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Poison_Gas
       guid: 585886077b3b504eb2f518f7abd2c2bc
       id: 4209290139
@@ -375,6 +495,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 50.526314
       minDuration: 50.526314
+    - name: UI
+      guid: 5bdaeebba802264b88864302fdbe0664
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -387,7 +524,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 531635c31a24e4418bc5f398cc1c64e8
     GuidInternal: 
-    m_lastTime: -8584941727642572794
+    m_lastTime: -8584950169244702988
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -401,7 +538,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0a933c593427f3499de37131beb18770
     GuidInternal: 
-    m_lastTime: -8584941727628866292
+    m_lastTime: -8584950169244463539
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -415,7 +552,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584941727628866292
+    m_lastTime: -8584942412279452773
     List:
     - name: Ground
       guid: bf629f9a6d185b42946b2341cd59e9f5
@@ -595,7 +732,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 27d465f206536d40bed3902056328c88
     GuidInternal: 
-    m_lastTime: -8584941727628866292
+    m_lastTime: -8584950169244443674
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
