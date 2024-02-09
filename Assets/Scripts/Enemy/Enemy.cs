@@ -143,9 +143,11 @@ public class Enemy : MonoBehaviour
                         canSeePlayer = true;
                         EnemyMovement(target);
                         angle = 360;
-                        if (target.GetComponent<PlayerHealth>())
+
+                        PlayerHealth player = target.GetComponent<PlayerHealth>();
+                        if (player != null)
                         {
-                            target.GetComponent<PlayerHealth>().TakeDamage(laserDmage * Time.deltaTime);
+                            player.TakeDamage(laserDmage*Time.deltaTime);
                         }
                     }
                     else

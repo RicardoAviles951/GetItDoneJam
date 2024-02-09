@@ -8,12 +8,15 @@ public class PlayerHUDManager : MonoBehaviour
     private VisualElement EntireScreen;
     private VisualElement Container;
     private Label abilityText;
+    private VisualElement healthBar;
     private void Awake()
     {
         var root     = GetComponent<UIDocument>().rootVisualElement;
         EntireScreen = root.Q<VisualElement>("EntireScreen");
         Container    = root.Q<VisualElement>("Prompts");
         abilityText  = root.Q<Label>("currentAbility");
+        healthBar = root.Q(className: "unity-progress-bar__progress");
+        
     }
 
     private void OnEnable()
@@ -29,6 +32,8 @@ public class PlayerHUDManager : MonoBehaviour
 
         AbilityManager.SendAbilityUI     += AbilityChanged;
 
+        PlayerHealth.OnHealthChange      += UpdateHealth;
+
     }
 
     private void OnDisable()
@@ -43,6 +48,8 @@ public class PlayerHUDManager : MonoBehaviour
         PlayerStateManager.HidePlayerHUD -= HideDisplay;
 
         AbilityManager.SendAbilityUI     -= AbilityChanged;
+
+        PlayerHealth.OnHealthChange      -= UpdateHealth;
     }
     
 
@@ -78,6 +85,11 @@ public class PlayerHUDManager : MonoBehaviour
     void AbilityChanged(string text)
     {
         abilityText.text = text;
+    }
+
+    private void UpdateHealth(float value)
+    {
+        healthBar.style.width = Length.Percent(value);
     }
 
 }

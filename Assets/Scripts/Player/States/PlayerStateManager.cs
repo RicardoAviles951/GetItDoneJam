@@ -24,11 +24,13 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerMoveState moveState         = new PlayerMoveState();
     public PlayerExamineState examineState   = new PlayerExamineState();
     public PlayerDialogueState dialogueState = new PlayerDialogueState();
+    public PlayerDeathState deathState       = new PlayerDeathState();
 
     [HideInInspector] public _FirstPersonController movementController;
     [HideInInspector] public StarterAssetsInputs input;
     [HideInInspector] public AbilityManager abilityManager;
     [HideInInspector] public CameraDetector detector;
+    [HideInInspector] public PlayerHealth health;
 
 
 
@@ -44,7 +46,12 @@ public class PlayerStateManager : MonoBehaviour
     public Dictionary<Transform, Quaternion> originalRot = new Dictionary<Transform, Quaternion>();
     private void OnEnable()
     {
-        
+        PlayerHealth.OnDeath += Die;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealth.OnDeath -= Die;
     }
     private void Start()
     {
@@ -53,6 +60,7 @@ public class PlayerStateManager : MonoBehaviour
         movementController = GetComponent<_FirstPersonController>();
         detector = GetComponent<CameraDetector>();
         input = GetComponent<StarterAssetsInputs>();
+        health = GetComponent<PlayerHealth>();
 
         //Set state
         currentState = moveState;
@@ -130,6 +138,11 @@ public class PlayerStateManager : MonoBehaviour
         {
             input.interact = false;
         }
+    }
+
+    void Die()
+    {
+        ChangeState(deathState);
     }
 
     
