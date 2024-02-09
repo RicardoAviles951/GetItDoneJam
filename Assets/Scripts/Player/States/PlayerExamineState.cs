@@ -15,6 +15,7 @@ public class PlayerExamineState : PlayerBaseState
         {
             examinedObj = player.CurrentObject.GetComponent<IExaminable>();
 
+            //Cache original positions [Obsolete]
             originalPosition = player.CurrentObject.transform.position;
             originalRotation = player.CurrentObject.transform.rotation;
         }
@@ -22,31 +23,45 @@ public class PlayerExamineState : PlayerBaseState
         if (examinedObj != null)
         {
             Debug.Log("Moving examined object...");
+            //Moves the object into view
             examinedObj.Examine(player.examinePos.transform.position);
         }
+        //Turns on UI and makes the cursor visible
         player.ToggleExamineUI("show");
         CursorCalibration(player);
-
+   
 
     }
     public override void UpdateState(PlayerStateManager player)
     {
+        //Rotates the object based on mouse position
         ExamineObject(player);
 
-
+        //If pressing the interact button again the item will be put back where it was
         if (player.input.interact)
         {
             if (examinedObj != null)
             {
-                CursorReturn(player);
                 examinedObj.UnExamine(originalPosition, originalRotation);
             }
 
-            player.ToggleExamineUI("hide");
-            player.ChangeState(player.moveState);
+            //Play sound here
+
+            ExitState(player);
         }
         
-        
+        //If pressing the grab button the item will be added to inventory
+        if(player.input.grab)
+        {
+            //Add item to inventory 
+            InventoryManager.instance.AddItem(examinedObj);
+            InventoryManager.instance.GetInventoryItems();
+            examinedObj.ToggleExaminable(false,Vector3.zero);
+
+            //Play sound here
+
+            ExitState(player);
+        }
     }
 
     public override void FixedUpdateState(PlayerStateManager player)
@@ -82,7 +97,7 @@ public class PlayerExamineState : PlayerBaseState
         }
     }
 
-
+    //Makes the cursor visible and not locked to center.
     void CursorCalibration(PlayerStateManager player)
     {
         player.lastMousePos = Input.mousePosition;
@@ -90,10 +105,19 @@ public class PlayerExamineState : PlayerBaseState
         Cursor.visible = true;
     }
 
+    //Locks cursor to center and hides it. 
     void CursorReturn(PlayerStateManager player)
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    //Toggle the Examine UI when going back to move state. 
+    void ExitState(PlayerStateManager player)
+    {
+        player.ToggleExamineUI("hide");
+        CursorReturn(player);
+        player.ChangeState(player.moveState);
     }
     
 }

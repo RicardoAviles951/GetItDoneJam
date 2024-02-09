@@ -52,16 +52,22 @@ public class CameraDetector : MonoBehaviour
     {
         if (detected)
         {
-            IExaminable examinable = hit.collider.GetComponent<IExaminable>();
-            IDialogue dialogue = hit.collider.GetComponent<IDialogue>();
-
-            if (examinable != null)
+            IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+            switch (interactable)
             {
-                triggerPrompt?.Invoke();
-            }
-            if (dialogue != null)
-            {
-                triggerPrompt?.Invoke();
+                case IExaminable ex:
+                    if (ex.isGrabbable)
+                    {
+                        triggerPrompt?.Invoke();
+                    }
+                    break;
+                case IDialogue:
+                    triggerPrompt?.Invoke();
+                    break;
+                case IPlacer:
+                    triggerPrompt?.Invoke();
+                    break;
+                default: break;
             }
         }
         else

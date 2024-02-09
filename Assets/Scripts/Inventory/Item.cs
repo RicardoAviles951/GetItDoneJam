@@ -15,7 +15,7 @@ public class Item : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.R))
             {
                 isCollected = true;
-                InventoryManager.instance.AddItem(this);
+               // InventoryManager.instance.AddItem(this);
                 gameObject.SetActive(false);
             }
         }
@@ -26,7 +26,7 @@ public class Item : MonoBehaviour
         transform.position = dropPosition;
         gameObject.SetActive(true);
         isCollected = false;
-        InventoryManager.instance.RemoveItem(this);
+        //InventoryManager.instance.RemoveItem(this);
     }
 
 }
