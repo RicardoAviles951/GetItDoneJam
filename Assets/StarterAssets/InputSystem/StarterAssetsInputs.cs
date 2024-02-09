@@ -16,6 +16,7 @@ namespace StarterAssets
 		public bool change;
 		public bool restart;
 		public bool interact;
+		public bool grab;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -63,6 +64,11 @@ namespace StarterAssets
 		{
 			InteractInput(value.isPressed);
 		}
+
+		public void OnGrab(InputValue value)
+		{
+			GrabInput(value.isPressed);
+		}
 #endif
 
 
@@ -100,6 +106,10 @@ namespace StarterAssets
 		public void InteractInput(bool newInteractState)
 		{
 			interact = newInteractState;
+		}
+		public void GrabInput(bool newGrabState)
+		{
+			grab = newGrabState;
 		}
 		
 		private void OnApplicationFocus(bool hasFocus)

@@ -13,39 +13,15 @@ public class PlayerMoveState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager player)
     {
+        //Movement logic
         _FirstPersonController controller = player.movementController;
         controller.JumpAndGravity();
         controller.GroundedCheck();
         controller.Move();
 
-        CameraDetector detector = player.detector;
-
-        if (detector.detected)
-        {
-            IExaminable examinable = detector.hit.collider.GetComponent<IExaminable>();
-            IDialogue dialogue = detector.hit.collider.GetComponent<IDialogue>();
-            if (examinable != null)
-            {
-                if (player.input.interact)
-                {
-                    player.TogglePlayerHUD("hide");
-                    player.CurrentObject = detector.hit.collider.gameObject;
-                    player.ChangeState(player.examineState);
-                }
-                
-            }
-            else if(dialogue != null)
-            {
-                if(player.input.interact)
-                {
-                    player.TogglePlayerHUD("hide");
-                    player.ChangeState(player.dialogueState);
-                }
-            }
-        }
+        CheckInteractables(player);     
 
         player.abilityManager.ActivateAbility();
-        
     }
 
     public override void FixedUpdateState(PlayerStateManager player)
@@ -66,5 +42,51 @@ public class PlayerMoveState : PlayerBaseState
     public override void LateUpdateState(PlayerStateManager player)
     {
         player.movementController.CameraRotation();
+    }
+
+    //Checks specifically what kind of interactable we are dealing with
+    void CheckInteractables(PlayerStateManager player)
+    {
+        CameraDetector detector = player.detector;
+
+        if (detector.detected)
+        {
+            //Base interface for IExaminable, IDialogue, IPlacer....
+            IInteractable interactable = detector.hit.collider.GetComponent<IInteractable>();
+
+            if (player.input.interact)
+            {
+                switch (interactable)
+                {
+                    case IExaminable ex:
+
+                        if (ex.isGrabbable)
+                        {
+                            player.TogglePlayerHUD("hide");
+                            player.CurrentObject = detector.hit.collider.gameObject;
+                            player.ChangeState(player.examineState);
+                        }
+                        
+                        break;
+
+                    case IDialogue:
+                        
+                        player.TogglePlayerHUD("hide");
+                        player.ChangeState(player.dialogueState);
+                        break;
+
+                    case IPlacer pl:
+
+                        IExaminable item = InventoryManager.instance.DropNextItem();
+                        if (item != null)
+                        {  
+                            pl.PlaceItem(item);
+                        }
+                        break;
+
+                    default: Debug.Log("No interactable detected"); break;
+                }
+            }
+        }
     }
 }

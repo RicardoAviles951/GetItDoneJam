@@ -8,6 +8,7 @@ using UnityEngine.Events;
 
 public class PlayerStateManager : MonoBehaviour
 {
+    //Static Events to trigger UI events
     public static UnityAction ShowExamineUI;
     public static UnityAction HideExamineUI;
 
@@ -24,11 +25,13 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerMoveState moveState         = new PlayerMoveState();
     public PlayerExamineState examineState   = new PlayerExamineState();
     public PlayerDialogueState dialogueState = new PlayerDialogueState();
+    public PlayerDeathState deathState       = new PlayerDeathState();
 
     [HideInInspector] public _FirstPersonController movementController;
     [HideInInspector] public StarterAssetsInputs input;
     [HideInInspector] public AbilityManager abilityManager;
     [HideInInspector] public CameraDetector detector;
+    [HideInInspector] public PlayerHealth health;
 
 
 
@@ -44,15 +47,21 @@ public class PlayerStateManager : MonoBehaviour
     public Dictionary<Transform, Quaternion> originalRot = new Dictionary<Transform, Quaternion>();
     private void OnEnable()
     {
-        
+        PlayerHealth.OnDeath += Die;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealth.OnDeath -= Die;
     }
     private void Start()
     {
         //Get components
-        abilityManager = GetComponent<AbilityManager>();
+        abilityManager     = GetComponent<AbilityManager>();
         movementController = GetComponent<_FirstPersonController>();
-        detector = GetComponent<CameraDetector>();
-        input = GetComponent<StarterAssetsInputs>();
+        detector           = GetComponent<CameraDetector>();
+        input              = GetComponent<StarterAssetsInputs>();
+        health             = GetComponent<PlayerHealth>();
 
         //Set state
         currentState = moveState;
@@ -130,6 +139,16 @@ public class PlayerStateManager : MonoBehaviour
         {
             input.interact = false;
         }
+
+        if(input.grab)
+        {
+            input.grab = false;
+        }
+    }
+
+    void Die()
+    {
+        ChangeState(deathState);
     }
 
     

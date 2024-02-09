@@ -6,7 +6,7 @@ public class CountItems : MonoBehaviour
 {
     public Transform origin;
     public float searchRadius = 10f;
-
+    
     private void Update()
     {
         // Obtener todos los colliders en el radio de búsqueda
