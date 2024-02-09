@@ -97,6 +97,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Hologram_Blast" ID="{C4FA2E14-83DA-4906-92C0-2F5AFFDB7CB3}">
+							<ChildrenList>
+								<Action Name="" ID="{D514086C-7C9B-41F1-B3B2-DC8ECAD81A92}" ShortID="663019711">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hologram_Blast" ID="{967F3405-9908-4809-A526-6B3ADE5494E5}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Hologram_Impact" ID="{4007E426-11CC-4AE4-88DF-1900232C21FB}">
+							<ChildrenList>
+								<Action Name="" ID="{F0C08404-02B3-4837-8297-6A6CBE94384F}" ShortID="148592714">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hologram_Impact" ID="{1F0621E2-B3A9-4517-A247-C1F85C575E5F}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{BF287F94-422E-44C1-B815-8CDA6283417D}" ShortID="839195472">
@@ -133,6 +155,54 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Puzzle_Music" ID="{E2E4BF74-A1D6-4FF4-B1DD-F5E88A00F2CE}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{BBEEDA5B-02A8-4B26-8886-4302FDBE0664}" ShortID="190234219">
+					<ChildrenList>
+						<Event Name="Correct" ID="{2D9E00EA-E6DB-4527-BC51-33DE3B7CF921}">
+							<ChildrenList>
+								<Action Name="" ID="{2E7B0253-3BA7-4A4A-85EB-38E9B4BF43AB}" ShortID="526897220">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Correct" ID="{F4340F7C-6793-4CD6-98D4-8B0D28080B9C}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Error" ID="{15457EF3-0FFC-4092-B48C-5B36AC2C64C2}">
+							<ChildrenList>
+								<Action Name="" ID="{D06A74C9-C22D-45E5-A59A-F981E6CE58CA}" ShortID="896216119">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Error" ID="{7C19D5D7-6062-4B8C-A874-D6AC8C97FD8D}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause" ID="{6B2B4387-D817-4D68-BE0F-9242F64A175B}">
+							<ChildrenList>
+								<Action Name="" ID="{7D2B5621-C9C8-41CA-A405-CC925BF8B5D4}" ShortID="903295148">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Pause" ID="{2A56A3E2-77F3-465A-8DDD-9F93B9E6294E}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Health" ID="{D27D3B78-F3B4-4BB3-BACE-C8186AF714DA}">
+							<ChildrenList>
+								<Action Name="" ID="{7619AD6E-77C4-4095-8A4F-3DB2C5A3DAE5}" ShortID="820181671">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Health" ID="{A73A2BD1-3333-4594-9610-8B7E49E97FCB}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

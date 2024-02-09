@@ -14,14 +14,20 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AIRVENT_START = 4112548455U;
+        static const AkUniqueID CORRECT = 4126251273U;
         static const AkUniqueID DOOR_OPEN_CLOSE = 1873899129U;
         static const AkUniqueID ELECTRIC_ATTACK = 1242796459U;
+        static const AkUniqueID ERROR = 1880695829U;
         static const AkUniqueID FIRE_ATTACK = 1422166728U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID HEALTH = 3677180323U;
+        static const AkUniqueID HOLOGRAM_BLAST = 1472083991U;
+        static const AkUniqueID HOLOGRAM_IMPACT = 1733942329U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MAP_AMBIENCE = 1898179168U;
         static const AkUniqueID MENU_MUSIC = 4055567060U;
+        static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID POISON_GAS = 4209290139U;
         static const AkUniqueID PUZZLE_MUSIC = 2221424041U;
     } // namespace EVENTS
