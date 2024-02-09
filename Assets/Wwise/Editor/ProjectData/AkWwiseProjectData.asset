@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 277315082291cd4cbb02e81197f4e1ab
     GuidInternal: 
-    m_lastTime: -8584950169244433701
+    m_lastTime: -8584941727628866292
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7433b8e6e7181348a6fe56eb5501fe66
     GuidInternal: 
-    m_lastTime: -8584950169244573324
+    m_lastTime: -8584941727634932802
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584942412279472720
+    m_lastTime: -8584941727628876295
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584942412297689364
+    m_lastTime: -8584941727642572794
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -281,6 +281,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Menu_Music
+      guid: 0a1bfaab1c0e0c4fa1e582134944f8e7
+      id: 4055567060
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      - ElementName: Menu_Music
+        ObjectType: 3
+        guid: 0a1bfaab1c0e0c4fa1e582134944f8e7
+      Path: Events\Default Work Unit\Music\Menu_Music
+      maxAttenuation: 0
+      maxDuration: 73.846146
+      minDuration: 73.846146
+    - name: Music
+      guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Poison_Gas
       guid: 585886077b3b504eb2f518f7abd2c2bc
       id: 4209290139
@@ -318,6 +355,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Puzzle_Music
+      guid: f7b6c35e7b05a847a4dbfe19b2eb031a
+      id: 2221424041
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      - ElementName: Puzzle_Music
+        ObjectType: 3
+        guid: f7b6c35e7b05a847a4dbfe19b2eb031a
+      Path: Events\Default Work Unit\Music\Puzzle_Music
+      maxAttenuation: 0
+      maxDuration: 50.526314
+      minDuration: 50.526314
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -330,7 +387,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 531635c31a24e4418bc5f398cc1c64e8
     GuidInternal: 
-    m_lastTime: -8584950169244702988
+    m_lastTime: -8584941727642572794
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -344,7 +401,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0a933c593427f3499de37131beb18770
     GuidInternal: 
-    m_lastTime: -8584950169244463539
+    m_lastTime: -8584941727628866292
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -358,7 +415,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584942412279452773
+    m_lastTime: -8584941727628866292
     List:
     - name: Ground
       guid: bf629f9a6d185b42946b2341cd59e9f5
@@ -538,7 +595,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 27d465f206536d40bed3902056328c88
     GuidInternal: 
-    m_lastTime: -8584950169244443674
+    m_lastTime: -8584941727628866292
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

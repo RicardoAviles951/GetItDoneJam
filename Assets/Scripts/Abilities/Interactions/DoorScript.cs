@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    public bool isOpen = false;
+    public bool isOpen, isUnlocked = false;
     private Animator anim;
 
     private void Start()
@@ -13,15 +13,35 @@ public class DoorScript : MonoBehaviour
     }
     public void ToggleDoor()
     {
-        if (isOpen)
+        anim.SetBool("Open", isOpen);
+    }
+
+    public void UnlockDoor(bool _unlcoked)
+    {
+        isUnlocked = _unlcoked;
+    }
+
+    private void OnTriggerStay(Collider trig)
+    {
+        if (!isUnlocked)
+            return;
+
+        if (trig.tag == "Player")
         {
-            anim.SetBool("Open", false); 
-            isOpen = false;
-        }
-        else
-        {
-            anim.SetBool("Open", true);
             isOpen = true;
+            ToggleDoor();
+        }
+    }
+
+    private void OnTriggerExit(Collider trig)
+    {
+        if (!isUnlocked)
+            return;
+
+        if (trig.tag == "Player")
+        {
+            isOpen = false;
+            ToggleDoor();
         }
     }
 }

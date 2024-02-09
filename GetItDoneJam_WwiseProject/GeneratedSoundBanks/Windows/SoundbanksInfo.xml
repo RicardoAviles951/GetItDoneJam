@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2CBCE403-8BFA-B5F7-2E49-9E5C0D074A3E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2A232AED-BE1A-6F56-35D3-C747CF795E2C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -59,9 +59,29 @@
 					<ShortName>Attack_Fire_02.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_02_818F3B66.wem</CachePath>
 				</File>
+				<File Id="30365554" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Blast_02.wav</ShortName>
+					<CachePath>SFX/Hologram_Blast_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="56883088" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Menu_Music.wav</ShortName>
+					<CachePath>SFX/Menu_Music_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="60988815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle_Music.wav</ShortName>
+					<CachePath>SFX/Puzzle_Music_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="62944129" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Concrete_03.wav</ShortName>
 					<CachePath>SFX/Footsteps_Concrete_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="82065718" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Blast_03.wav</ShortName>
+					<CachePath>SFX/Hologram_Blast_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="87709223" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Impact_02.wav</ShortName>
+					<CachePath>SFX/Hologram_Impact_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="91147129" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Metal_02.wav</ShortName>
@@ -75,9 +95,17 @@
 					<ShortName>Land_Concrete_05.wav</ShortName>
 					<CachePath>SFX/Land_Concrete_05_818F3B66.wem</CachePath>
 				</File>
+				<File Id="112136922" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Blast_01.wav</ShortName>
+					<CachePath>SFX/Hologram_Blast_01_818F3B66.wem</CachePath>
+				</File>
 				<File Id="116435935" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Concrete_01.wav</ShortName>
 					<CachePath>SFX/Jump_Concrete_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="134271376" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Impact_01.wav</ShortName>
+					<CachePath>SFX/Hologram_Impact_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="156845914" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AirVent.wav</ShortName>
@@ -95,9 +123,21 @@
 					<ShortName>Footsteps_Metal_03.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="196343000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Impact_03.wav</ShortName>
+					<CachePath>SFX/Hologram_Impact_03_818F3B66.wem</CachePath>
+				</File>
 				<File Id="207731260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_03.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="257441858" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Health.wav</ShortName>
+					<CachePath>SFX/UI_Health_818F3B66.wem</CachePath>
+				</File>
+				<File Id="306773748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Error.wav</ShortName>
+					<CachePath>SFX/UI_Error_818F3B66.wem</CachePath>
 				</File>
 				<File Id="331492498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Concrete_03.wav</ShortName>
@@ -127,6 +167,10 @@
 					<ShortName>Footsteps_Hardwood_03.wav</ShortName>
 					<CachePath>SFX/Footsteps_Hardwood_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="380455061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Impact_04.wav</ShortName>
+					<CachePath>SFX/Hologram_Impact_04_818F3B66.wem</CachePath>
+				</File>
 				<File Id="404483168" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Metal_02.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_02_818F3B66.wem</CachePath>
@@ -135,9 +179,17 @@
 					<ShortName>Jump_Metal_01.wav</ShortName>
 					<CachePath>SFX/Jump_Metal_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="455035958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Pause.wav</ShortName>
+					<CachePath>SFX/UI_Pause_818F3B66.wem</CachePath>
+				</File>
 				<File Id="458181123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Concrete_05.wav</ShortName>
 					<CachePath>SFX/Jump_Concrete_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="464498113" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Blast_05.wav</ShortName>
+					<CachePath>SFX/Hologram_Blast_05_818F3B66.wem</CachePath>
 				</File>
 				<File Id="517427919" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_03.wav</ShortName>
@@ -207,6 +259,10 @@
 					<ShortName>Footsteps_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Footsteps_Concrete_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="746772358" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Impact_05.wav</ShortName>
+					<CachePath>SFX/Hologram_Impact_05_818F3B66.wem</CachePath>
+				</File>
 				<File Id="757609955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Metal_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_01_818F3B66.wem</CachePath>
@@ -222,6 +278,10 @@
 				<File Id="814903740" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Hardwood_05.wav</ShortName>
 					<CachePath>SFX/Footsteps_Hardwood_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="822432517" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Correct.wav</ShortName>
+					<CachePath>SFX/UI_Correct_818F3B66.wem</CachePath>
 				</File>
 				<File Id="849647510" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ElectricDoor.wav</ShortName>
@@ -255,6 +315,10 @@
 					<ShortName>Attack_Electric_01.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1001565522" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hologram_Blast_04.wav</ShortName>
+					<CachePath>SFX/Hologram_Blast_04_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1036869714" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Metal_04.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_04_818F3B66.wem</CachePath>
@@ -278,6 +342,11 @@
 						<MediaRef Id="156845914"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4126251273" Name="Correct" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="822432517"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1873899129" Name="Door_Open_Close" DurationType="OneShot" DurationMin="3" DurationMax="3">
 					<MediaRefs>
 						<MediaRef Id="849647510"/>
@@ -290,6 +359,11 @@
 						<MediaRef Id="792168768"/>
 						<MediaRef Id="997805212"/>
 						<MediaRef Id="1049261634"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1880695829" Name="Error" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="306773748"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1422166728" Name="Fire_Attack" DurationType="OneShot" DurationMin="1" DurationMax="1">
@@ -337,6 +411,29 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="3677180323" Name="Health" DurationType="OneShot" DurationMin="21" DurationMax="21">
+					<MediaRefs>
+						<MediaRef Id="257441858"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1472083991" Name="Hologram_Blast" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="30365554"/>
+						<MediaRef Id="82065718"/>
+						<MediaRef Id="112136922"/>
+						<MediaRef Id="464498113"/>
+						<MediaRef Id="1001565522"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1733942329" Name="Hologram_Impact" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="87709223"/>
+						<MediaRef Id="134271376"/>
+						<MediaRef Id="196343000"/>
+						<MediaRef Id="380455061"/>
+						<MediaRef Id="746772358"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.5" DurationMax="1">
 					<SwitchContainers>
@@ -395,9 +492,24 @@
 						<MediaRef Id="172971718"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4055567060" Name="Menu_Music" DurationType="OneShot" DurationMin="73.846146" DurationMax="73.846146">
+					<MediaRefs>
+						<MediaRef Id="56883088"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3092587493" Name="Pause" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="455035958"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4209290139" Name="Poison_Gas" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
 						<MediaRef Id="644338545"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2221424041" Name="Puzzle_Music" DurationType="OneShot" DurationMin="50.526314" DurationMax="50.526314">
+					<MediaRefs>
+						<MediaRef Id="60988815"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -424,5 +536,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E53B6C4D-8DFF-A568-D95B-82B53F088A98}</FileHash>
+	<FileHash>{6F8089CD-5CB3-5ACF-5FA0-EB165F37E77F}</FileHash>
 </SoundBanksInfo>
