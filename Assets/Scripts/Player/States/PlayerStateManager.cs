@@ -8,6 +8,7 @@ using UnityEngine.Events;
 
 public class PlayerStateManager : MonoBehaviour
 {
+    //Static Events to trigger UI events
     public static UnityAction ShowExamineUI;
     public static UnityAction HideExamineUI;
 
@@ -56,11 +57,11 @@ public class PlayerStateManager : MonoBehaviour
     private void Start()
     {
         //Get components
-        abilityManager = GetComponent<AbilityManager>();
+        abilityManager     = GetComponent<AbilityManager>();
         movementController = GetComponent<_FirstPersonController>();
-        detector = GetComponent<CameraDetector>();
-        input = GetComponent<StarterAssetsInputs>();
-        health = GetComponent<PlayerHealth>();
+        detector           = GetComponent<CameraDetector>();
+        input              = GetComponent<StarterAssetsInputs>();
+        health             = GetComponent<PlayerHealth>();
 
         //Set state
         currentState = moveState;
@@ -137,6 +138,11 @@ public class PlayerStateManager : MonoBehaviour
         if(input.interact)
         {
             input.interact = false;
+        }
+
+        if(input.grab)
+        {
+            input.grab = false;
         }
     }
 
