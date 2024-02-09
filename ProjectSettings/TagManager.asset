@@ -9,6 +9,8 @@ TagManager:
   - Proyectile
   - Surface_Wood
   - Surface_Metal
+  - FxTemporaire
+  - Table
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Obstacle
   - Camera
   - Burnable
-  - 
+  - PlayerHands
   - 
   - 
   - 
