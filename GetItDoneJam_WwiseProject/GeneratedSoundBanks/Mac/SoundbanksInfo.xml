@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2A232AED-BE1A-6F56-35D3-C747CF795E2C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4BC8A5C5-B5A9-3B17-46D3-75FBAEA8BED8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -81,11 +81,15 @@
 				</File>
 				<File Id="87709223" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hologram_Impact_02.wav</ShortName>
-					<CachePath>SFX/Hologram_Impact_02_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hologram_Impact_02_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="91147129" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Metal_02.wav</ShortName>
 					<CachePath>SFX/Jump_Metal_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="101159521" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Item_PickUp.wav</ShortName>
+					<CachePath>SFX/Item_PickUp_818F3B66.wem</CachePath>
 				</File>
 				<File Id="105432845" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Hardwood_04.wav</ShortName>
@@ -105,7 +109,11 @@
 				</File>
 				<File Id="134271376" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hologram_Impact_01.wav</ShortName>
-					<CachePath>SFX/Hologram_Impact_01_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hologram_Impact_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="150510296" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Button_Push.wav</ShortName>
+					<CachePath>SFX/Button_Push_818F3B66.wem</CachePath>
 				</File>
 				<File Id="156845914" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AirVent.wav</ShortName>
@@ -125,7 +133,7 @@
 				</File>
 				<File Id="196343000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hologram_Impact_03.wav</ShortName>
-					<CachePath>SFX/Hologram_Impact_03_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hologram_Impact_03_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="207731260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_03.wav</ShortName>
@@ -138,6 +146,10 @@
 				<File Id="306773748" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Error.wav</ShortName>
 					<CachePath>SFX/UI_Error_818F3B66.wem</CachePath>
+				</File>
+				<File Id="313871865" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Item_PutDown.wav</ShortName>
+					<CachePath>SFX/Item_PutDown_818F3B66.wem</CachePath>
 				</File>
 				<File Id="331492498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Concrete_03.wav</ShortName>
@@ -166,10 +178,6 @@
 				<File Id="373506113" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Hardwood_03.wav</ShortName>
 					<CachePath>SFX/Footsteps_Hardwood_03_818F3B66.wem</CachePath>
-				</File>
-				<File Id="380455061" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Hologram_Impact_04.wav</ShortName>
-					<CachePath>SFX/Hologram_Impact_04_818F3B66.wem</CachePath>
 				</File>
 				<File Id="404483168" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Metal_02.wav</ShortName>
@@ -259,10 +267,6 @@
 					<ShortName>Footsteps_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Footsteps_Concrete_04_818F3B66.wem</CachePath>
 				</File>
-				<File Id="746772358" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Hologram_Impact_05.wav</ShortName>
-					<CachePath>SFX/Hologram_Impact_05_818F3B66.wem</CachePath>
-				</File>
 				<File Id="757609955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Metal_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_01_818F3B66.wem</CachePath>
@@ -340,6 +344,11 @@
 				<Event Id="4112548455" Name="AirVent_Start" DurationType="OneShot" DurationMin="31.5" DurationMax="31.5">
 					<MediaRefs>
 						<MediaRef Id="156845914"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1965951612" Name="Button_Push" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="150510296"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4126251273" Name="Correct" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
@@ -426,13 +435,21 @@
 						<MediaRef Id="1001565522"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1733942329" Name="Hologram_Impact" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1733942329" Name="Hologram_Impact" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="87709223"/>
 						<MediaRef Id="134271376"/>
 						<MediaRef Id="196343000"/>
-						<MediaRef Id="380455061"/>
-						<MediaRef Id="746772358"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="566396871" Name="Item_Pickup" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="101159521"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="662770354" Name="Item_PutDown" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="313871865"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.5" DurationMax="1">
@@ -536,5 +553,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{860BD0A3-40CB-FDB3-2277-C1E855C075B7}</FileHash>
+	<FileHash>{B734C68A-FB1F-B93A-1462-466077DD25E9}</FileHash>
 </SoundBanksInfo>

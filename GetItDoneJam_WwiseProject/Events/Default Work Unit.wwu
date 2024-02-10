@@ -119,6 +119,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Item_PutDown" ID="{85383C05-A200-4447-A732-467A95E0A0EE}">
+							<ChildrenList>
+								<Action Name="" ID="{233E2A3E-3E57-46C4-B845-38D7F2F4F4E6}" ShortID="6632811">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Item_PutDown" ID="{7D1CAF89-C92A-419A-B540-5EE9A3175FEC}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Item_Pickup" ID="{93269B08-7D53-4770-A3EF-2780462A3520}">
+							<ChildrenList>
+								<Action Name="" ID="{E5CFD266-4123-46CF-B3F0-CAC7CE01AE77}" ShortID="945434304">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Item_PickUp" ID="{1A3758F5-B97C-462D-9828-DF8B64CF1920}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Button_Push" ID="{C8EE9BC4-825C-46E0-B598-553E3E051CCB}">
+							<ChildrenList>
+								<Action Name="" ID="{9A910685-8D75-43FE-9456-F07C0BC3415A}" ShortID="139511427">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_Push" ID="{DD36879E-AC0E-4806-9EE4-B2ADA1870775}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{BF287F94-422E-44C1-B815-8CDA6283417D}" ShortID="839195472">

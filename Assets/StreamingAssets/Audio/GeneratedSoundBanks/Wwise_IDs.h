@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AIRVENT_START = 4112548455U;
+        static const AkUniqueID BUTTON_PUSH = 1965951612U;
         static const AkUniqueID CORRECT = 4126251273U;
         static const AkUniqueID DOOR_OPEN_CLOSE = 1873899129U;
         static const AkUniqueID ELECTRIC_ATTACK = 1242796459U;
@@ -23,6 +24,8 @@ namespace AK
         static const AkUniqueID HEALTH = 3677180323U;
         static const AkUniqueID HOLOGRAM_BLAST = 1472083991U;
         static const AkUniqueID HOLOGRAM_IMPACT = 1733942329U;
+        static const AkUniqueID ITEM_PICKUP = 566396871U;
+        static const AkUniqueID ITEM_PUTDOWN = 662770354U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MAP_AMBIENCE = 1898179168U;
