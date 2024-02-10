@@ -5,20 +5,33 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{CFBA58F6-7538-4E5E-A5B6-ECA3F9086527}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Error" ID="{15457EF3-0FFC-4092-B48C-5B36AC2C64C2}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fire_Attack" ID="{D035C2F9-AD29-42AB-8FD4-F8887CC96643}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Environment" ID="{0F611150-4F34-4428-A3FA-7D6790DC868C}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Item_PutDown" ID="{85383C05-A200-4447-A732-467A95E0A0EE}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambience" ID="{BF287F94-422E-44C1-B815-8CDA6283417D}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Correct" ID="{2D9E00EA-E6DB-4527-BC51-33DE3B7CF921}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Button_Push" ID="{C8EE9BC4-825C-46E0-B598-553E3E051CCB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Electric_Attack" ID="{BD1BB3EF-CDD4-4729-8C27-56EBFCA6F218}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{BA505293-F76C-472A-8B9E-C64EA1B2FD97}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Map_Ambience" ID="{C960F4CC-ED18-4769-822F-54E40D2C3923}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Item_Pickup" ID="{93269B08-7D53-4770-A3EF-2780462A3520}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Puzzle_Music" ID="{5EC3B6F7-057B-47A8-A4DB-FE19B2EB031A}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Door_Open_Close" ID="{15AEE34A-5B27-47C0-9E6D-FACF84980A22}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{0CB4F120-5A47-48D4-9FBA-41C0228B2672}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hologram_Blast" ID="{C4FA2E14-83DA-4906-92C0-2F5AFFDB7CB3}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{EBE0D61D-3824-492B-A99F-0041C9E6F7EC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AirVent_Start" ID="{0997A857-EE31-4ABD-AE4E-315D213A5DC8}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hologram_Impact" ID="{4007E426-11CC-4AE4-88DF-1900232C21FB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI" ID="{BBEEDA5B-02A8-4B26-8886-4302FDBE0664}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Powerups" ID="{EAB721FD-08B8-4B88-8C29-857F93B96AC8}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Health" ID="{D27D3B78-F3B4-4BB3-BACE-C8186AF714DA}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{60EFE13F-FA14-4C22-9CE7-DA28DD4E89F4}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause" ID="{6B2B4387-D817-4D68-BE0F-9242F64A175B}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Poison_Gas" ID="{07865858-3B7B-4E50-B2F5-18F7ABD2C2BC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Menu_Music" ID="{ABFA1B0A-0E1C-4F0C-A1E5-82134944F8E7}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
