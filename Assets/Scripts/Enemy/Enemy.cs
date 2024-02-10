@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
     public float radius = 15f;
+    public float fixRadiusIndicator = 1.5f;
+    public float rangeIndicatorHeight;
     public float rotationSpeed;
     public float moveSpeed;
     public float stopDistance;
@@ -46,7 +48,7 @@ public class Enemy : MonoBehaviour
 
     private bool isLockOnTarget;
 
-
+    public GameObject rangeIndicator;
 
     private void Start()
     {
@@ -56,7 +58,7 @@ public class Enemy : MonoBehaviour
         cooldown = timeBetweenAttacks;
         angleStart = angle;
         playerObject = GameObject.FindGameObjectWithTag(playerTag);
-        //placeToGo = Random.Range(0, EnemyPath.instance.enemyPath.Count);
+        rangeIndicator.transform.localScale = new Vector3(radius* fixRadiusIndicator, rangeIndicatorHeight, radius * fixRadiusIndicator);
     }
     private void Update()
     {
@@ -195,13 +197,16 @@ public class Enemy : MonoBehaviour
         EndFX.Play();
         rotationAlas.speed = attackSpeed;
 
-        Ray ray = new Ray(firePoint.position, firePoint.forward);
+        Vector3 directionToPlayer = (playerObject.transform.position - firePoint.position).normalized;
+
+        Ray ray = new Ray(firePoint.position, directionToPlayer);
+
         bool cast = Physics.Raycast(ray, out RaycastHit hit, radius);
-        Vector3 hitPosition = cast ? hit.point : firePoint.position + firePoint.forward * radius;
+
+        Vector3 hitPosition = cast ? hit.point : firePoint.position + directionToPlayer * radius;
 
         beam.SetPosition(0, firePoint.position);
-        beam.SetPosition(1, hitPosition - offset);
-
+        beam.SetPosition(1, hitPosition);
         EndFX.transform.position = hitPosition - offset;
     }
     private void DeactivateLaser()
