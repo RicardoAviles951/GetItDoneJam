@@ -8,78 +8,123 @@ public class PlayerHealth : MonoBehaviour
 {
     //Added by Ricardo
     //Create events that other classes can subscribe to
-    public static event Action<float> OnHealthChange;
+    public static event Action<HealthBarInfo> OnHealthChange;
+    //Custom class to hold information about health UI
+    private HealthBarInfo healthBarInfo;
+    //Sends message when player is out of health
     public static event Action OnDeath;
+
+    public ParticleSystem buffParticles;
+    public ParticleSystem debuffParticles;
 
     public float regen;
     public float totalHealth;
     public float currentHealth;
     private bool isHurt;
+    public float regenDelay = 2;
 
     //Added by Ricardo
     private float healthRatio;
+    void OnEnable()
+    {
+        DialogueManager.PlayerStatusApplied += HealthStatus;
+    }
 
+    private void OnDisable()
+    {
+        DialogueManager.PlayerStatusApplied -= HealthStatus;
+    }
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = totalHealth;
+        healthBarInfo = new HealthBarInfo(totalHealth, currentHealth);
         //Set health bar at start
-        OnHealthChange?.Invoke(GetHealthRatio());
+        OnHealthChange?.Invoke(healthBarInfo);
     }
     private void Update()
     {
         if (isHurt)
         {
             currentHealth += regen * Time.deltaTime;
+            GetHealthRatio();
             
             //Change the health
-            OnHealthChange?.Invoke(GetHealthRatio());
+            OnHealthChange?.Invoke(healthBarInfo);
         }
 
         if (currentHealth > totalHealth)
         {
             isHurt = false;
             currentHealth = totalHealth;
-
+            GetHealthRatio();
             //Change the health
-            OnHealthChange?.Invoke(GetHealthRatio());
+            OnHealthChange?.Invoke(healthBarInfo);
         }
     }
 
     public void TakeDamage(float damage)
     {
-        if(currentHealth > 0)
+        if(currentHealth > damage)
         {
             currentHealth -= damage;
-            OnHealthChange?.Invoke(GetHealthRatio());
-            isHurt = true;
+            StartCoroutine(RegenDelay());
+            GetHealthRatio();
+            OnHealthChange?.Invoke(healthBarInfo);
+            
         }
-        else if(currentHealth <= 0) 
+        else if(currentHealth <= damage) 
         {
+            Debug.Log("Player health gone");
             //Stops regen
             isHurt = false;
             //Sets health exactly to 0
             currentHealth = 0;
+            GetHealthRatio();
+            OnHealthChange?.Invoke(healthBarInfo);
             //Notify anything waiting for player death.
             OnDeath?.Invoke();
         }
     }
 
-    float GetHealthRatio()
+    void GetHealthRatio()
     {
-        //Get ratio of health to max health (returns decimal)
-        float ratio = (currentHealth / totalHealth);
-        healthRatio = ratio;
+        healthBarInfo.currentHealth = currentHealth;
+        healthBarInfo.maxHealth     = totalHealth;
+        healthBarInfo.healthRatio   = healthRatio;
 
-        //Check that player health didn't go below 0
-        if(healthRatio < 0)
+    }
+
+    void HealthStatus(Outcome status)
+    {
+        switch (status)
         {
-            return 0f;
-        }
+            case Outcome.healthDown:
+                currentHealth -= 20f;
+                totalHealth = 80;
+                GetHealthRatio();
+                OnHealthChange?.Invoke(healthBarInfo);
+                debuffParticles.Play();
+                Debug.Log("Health dropped by 20");
+                break;
 
-        //prepare the value to be turned into a percent for UI.
-        float percentHealth = healthRatio * 100;
-        return percentHealth;
+            case Outcome.healthUp:
+                totalHealth = 120;
+                currentHealth += 20f;
+                GetHealthRatio();
+                OnHealthChange?.Invoke(healthBarInfo);
+                buffParticles.Play();
+                Debug.Log("Health increased by 20");
+                break;
+
+            default: Debug.Log("No health related status affects applied"); break;
+        }
+    }
+
+    IEnumerator RegenDelay()
+    {
+        yield return new WaitForSeconds(regenDelay);
+        isHurt = true;
     }
 
 }

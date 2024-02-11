@@ -1,0 +1,16 @@
+.buttonStyle {
+    background-image: url('project://database/Assets/Art/2D/UI/start%20button.png?fileID=2800000&guid=a0f3c9b6653a867459c14413af92fc91&type=3#start button');
+    background-color: rgba(188, 188, 188, 0);
+    font-size: 64px;
+    -unity-font-definition: initial;
+    -unity-font: url('project://database/Assets/Art/2D/Fonts/Azonix-1VB0.otf?fileID=12800000&guid=9f2877a8364e561489029f716e461a2e&type=3#Azonix-1VB0');
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30%;
+}
+
+.buttonStyle:hover {
+    scale: 1.1 1.1;
+    transition-timing-function: ease-out-elastic;
+    transition-duration: 0.5s;
+}

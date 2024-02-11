@@ -8,6 +8,7 @@ public class BurnDestruct : MonoBehaviour, IBurnable
     public bool isBurning = false;
     private float timer;
     public float burnTime = 3.0f;
+    public bool canDestruct = true;
     [field: SerializeField] public bool useParticleCollisions { get; set; } = false;
 
 
@@ -42,7 +43,8 @@ public class BurnDestruct : MonoBehaviour, IBurnable
     // Update is called once per frame
     void Update()
     {
-        if (isBurning)
+        //If object is burning, then increment the destruction timer
+        if (isBurning && canDestruct)
         {
             
             if(timer > burnTime)
