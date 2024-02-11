@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4BC8A5C5-B5A9-3B17-46D3-75FBAEA8BED8}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5A7F15F7-9C5A-EEE4-0254-2F2978B54068}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -58,6 +58,10 @@
 				<File Id="20874511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_02.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="21278020" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle2_ExitConsoleEarly.wav</ShortName>
+					<CachePath>SFX/Puzzle2_ExitConsoleEarly_818F3B66.wem</CachePath>
 				</File>
 				<File Id="30365554" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hologram_Blast_02.wav</ShortName>
@@ -86,6 +90,10 @@
 				<File Id="91147129" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Metal_02.wav</ShortName>
 					<CachePath>SFX/Jump_Metal_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="95967432" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Elevator_Ride.wav</ShortName>
+					<CachePath>SFX/Elevator_Ride_818F3B66.wem</CachePath>
 				</File>
 				<File Id="101159521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_PickUp.wav</ShortName>
@@ -135,9 +143,21 @@
 					<ShortName>Hologram_Impact_03.wav</ShortName>
 					<CachePath>SFX/Hologram_Impact_03_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="204789465" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle2_Intro_SaveYourself.wav</ShortName>
+					<CachePath>SFX/Puzzle2_Intro_SaveYourself_818F3B66.wem</CachePath>
+				</File>
 				<File Id="207731260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_03.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="218326331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HeatUsage_Hint.wav</ShortName>
+					<CachePath>SFX/HeatUsage_Hint_818F3B66.wem</CachePath>
+				</File>
+				<File Id="226602159" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle1_Intro3_Evaluation.wav</ShortName>
+					<CachePath>SFX/Puzzle1_Intro3_Evaluation_818F3B66.wem</CachePath>
 				</File>
 				<File Id="257441858" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Health.wav</ShortName>
@@ -151,6 +171,10 @@
 					<ShortName>Item_PutDown.wav</ShortName>
 					<CachePath>SFX/Item_PutDown_818F3B66.wem</CachePath>
 				</File>
+				<File Id="323226548" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Death.wav</ShortName>
+					<CachePath>SFX/Player_Death_818F3B66.wem</CachePath>
+				</File>
 				<File Id="331492498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Concrete_03.wav</ShortName>
 					<CachePath>SFX/Land_Concrete_03_818F3B66.wem</CachePath>
@@ -158,6 +182,10 @@
 				<File Id="345942114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Hardwood_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Hardwood_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="348443874" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle1_Intro2_Vitals.wav</ShortName>
+					<CachePath>SFX/Puzzle1_Intro2_Vitals_818F3B66.wem</CachePath>
 				</File>
 				<File Id="351607167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Concrete_03.wav</ShortName>
@@ -167,9 +195,17 @@
 					<ShortName>Footsteps_Concrete_06.wav</ShortName>
 					<CachePath>SFX/Footsteps_Concrete_06_818F3B66.wem</CachePath>
 				</File>
+				<File Id="355804683" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_NormalToPanting_MG.wav</ShortName>
+					<CachePath>SFX/Breathing_NormalToPanting_MG_818F3B66.wem</CachePath>
+				</File>
 				<File Id="357183462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Concrete_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Concrete_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="360833626" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PrePuzzle2_Hall.wav</ShortName>
+					<CachePath>SFX/PrePuzzle2_Hall_818F3B66.wem</CachePath>
 				</File>
 				<File Id="368088468" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Metal_02.wav</ShortName>
@@ -199,6 +235,10 @@
 					<ShortName>Hologram_Blast_05.wav</ShortName>
 					<CachePath>SFX/Hologram_Blast_05_818F3B66.wem</CachePath>
 				</File>
+				<File Id="489096240" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle1_AprroachTheConsole.wav</ShortName>
+					<CachePath>SFX/Puzzle1_AprroachTheConsole_818F3B66.wem</CachePath>
+				</File>
 				<File Id="517427919" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_03.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_03_818F3B66.wem</CachePath>
@@ -211,6 +251,10 @@
 					<ShortName>Footsteps_Metal_06.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_06_818F3B66.wem</CachePath>
 				</File>
+				<File Id="580056859" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Normal_MG.wav</ShortName>
+					<CachePath>SFX/Breathing_Normal_MG_818F3B66.wem</CachePath>
+				</File>
 				<File Id="598339404" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Concrete_06.wav</ShortName>
 					<CachePath>SFX/Jump_Concrete_06_818F3B66.wem</CachePath>
@@ -218,6 +262,14 @@
 				<File Id="604795312" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Metal_01.wav</ShortName>
 					<CachePath>SFX/Land_Metal_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="605981572" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle2_Complete.wav</ShortName>
+					<CachePath>SFX/Puzzle2_Complete_818F3B66.wem</CachePath>
+				</File>
+				<File Id="607322478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle3_Start.wav</ShortName>
+					<CachePath>SFX/Puzzle3_Start_818F3B66.wem</CachePath>
 				</File>
 				<File Id="607396053" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Metal_04.wav</ShortName>
@@ -235,6 +287,10 @@
 					<ShortName>Land_Concrete_01.wav</ShortName>
 					<CachePath>SFX/Land_Concrete_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="633306612" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PostPuzzle2_Gas_Run.wav</ShortName>
+					<CachePath>SFX/PostPuzzle2_Gas_Run_818F3B66.wem</CachePath>
+				</File>
 				<File Id="644338545" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PoisonGas.wav</ShortName>
 					<CachePath>SFX/PoisonGas_818F3B66.wem</CachePath>
@@ -242,6 +298,14 @@
 				<File Id="650964719" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Hardwood_02.wav</ShortName>
 					<CachePath>SFX/Footsteps_Hardwood_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="654352983" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing_Distressed_MG.wav</ShortName>
+					<CachePath>SFX/Breathing_Distressed_MG_818F3B66.wem</CachePath>
+				</File>
+				<File Id="659600447" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle1_Ability_OpenDoor.wav</ShortName>
+					<CachePath>SFX/Puzzle1_Ability_OpenDoor_818F3B66.wem</CachePath>
 				</File>
 				<File Id="660334491" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_05.wav</ShortName>
@@ -287,6 +351,10 @@
 					<ShortName>UI_Correct.wav</ShortName>
 					<CachePath>SFX/UI_Correct_818F3B66.wem</CachePath>
 				</File>
+				<File Id="845699138" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerStuck_AbilitiesReminder_Puzzle3.wav</ShortName>
+					<CachePath>SFX/PlayerStuck_AbilitiesReminder_Puzzle3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="849647510" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ElectricDoor.wav</ShortName>
 					<CachePath>SFX/ElectricDoor_818F3B66.wem</CachePath>
@@ -299,6 +367,10 @@
 					<ShortName>Land_Metal_05.wav</ShortName>
 					<CachePath>SFX/Land_Metal_05_818F3B66.wem</CachePath>
 				</File>
+				<File Id="894205414" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PostPuzzle2_HallEntry_Fight.wav</ShortName>
+					<CachePath>SFX/PostPuzzle2_HallEntry_Fight_818F3B66.wem</CachePath>
+				</File>
 				<File Id="897209008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_05.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_05_818F3B66.wem</CachePath>
@@ -307,6 +379,10 @@
 					<ShortName>Land_Concrete_02.wav</ShortName>
 					<CachePath>SFX/Land_Concrete_02_818F3B66.wem</CachePath>
 				</File>
+				<File Id="945716226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Game_Complete.wav</ShortName>
+					<CachePath>SFX/Game_Complete_818F3B66.wem</CachePath>
+				</File>
 				<File Id="950110775" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Fire_01.wav</ShortName>
 					<CachePath>SFX/Attack_Fire_01_818F3B66.wem</CachePath>
@@ -314,6 +390,10 @@
 				<File Id="972945321" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Concrete_06.wav</ShortName>
 					<CachePath>SFX/Land_Concrete_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="976690569" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DoesntHave_Inventory_Item.wav</ShortName>
+					<CachePath>SFX/DoesntHave_Inventory_Item_818F3B66.wem</CachePath>
 				</File>
 				<File Id="997805212" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_01.wav</ShortName>
@@ -346,6 +426,21 @@
 						<MediaRef Id="156845914"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3273229053" Name="Breathing_Distressed_MG" DurationType="OneShot" DurationMin="5.5" DurationMax="5.5">
+					<MediaRefs>
+						<MediaRef Id="654352983"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2722581652" Name="Breathing_Normal_MG" DurationType="OneShot" DurationMin="6.5" DurationMax="6.5">
+					<MediaRefs>
+						<MediaRef Id="580056859"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3814470798" Name="Breathing_NormalToPanting_MG" DurationType="OneShot" DurationMin="11.5" DurationMax="11.5">
+					<MediaRefs>
+						<MediaRef Id="355804683"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1965951612" Name="Button_Push" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<MediaRefs>
 						<MediaRef Id="150510296"/>
@@ -354,6 +449,11 @@
 				<Event Id="4126251273" Name="Correct" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
 						<MediaRef Id="822432517"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="351850055" Name="DoesntHave_Inventory_Item" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<MediaRefs>
+						<MediaRef Id="976690569"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1873899129" Name="Door_Open_Close" DurationType="OneShot" DurationMin="3" DurationMax="3">
@@ -368,6 +468,11 @@
 						<MediaRef Id="792168768"/>
 						<MediaRef Id="997805212"/>
 						<MediaRef Id="1049261634"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1183628468" Name="Elevator_Ride" DurationType="OneShot" DurationMin="11.5" DurationMax="11.5">
+					<MediaRefs>
+						<MediaRef Id="95967432"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1880695829" Name="Error" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
@@ -421,9 +526,19 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1343734759" Name="Game_Complete" DurationType="OneShot" DurationMin="6" DurationMax="6">
+					<MediaRefs>
+						<MediaRef Id="945716226"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3677180323" Name="Health" DurationType="OneShot" DurationMin="21" DurationMax="21">
 					<MediaRefs>
 						<MediaRef Id="257441858"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2561963336" Name="HeatUsage_Hint" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<MediaRefs>
+						<MediaRef Id="218326331"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1472083991" Name="Hologram_Blast" DurationType="OneShot" DurationMin="2" DurationMax="2">
@@ -513,15 +628,83 @@
 					<MediaRefs>
 						<MediaRef Id="56883088"/>
 					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="2221424041" Name="Puzzle_Music"/>
+					</ActionPostEvent>
 				</Event>
 				<Event Id="3092587493" Name="Pause" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
 						<MediaRef Id="455035958"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3083087645" Name="Player_Death" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<MediaRefs>
+						<MediaRef Id="323226548"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3198648693" Name="PlayerStuck_AbilitiesReminder_Puzzle3" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="845699138"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4209290139" Name="Poison_Gas" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
 						<MediaRef Id="644338545"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="7392803" Name="PostPuzzle2_Gas_Run" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="633306612"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2706924062" Name="PostPuzzle2_HallEntry_Fight" DurationType="OneShot" DurationMin="5.9" DurationMax="5.9">
+					<MediaRefs>
+						<MediaRef Id="894205414"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2501841164" Name="PrePuzzle2_Hall" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="360833626"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="668566028" Name="Puzzle1_Ability_OpenDoor" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="659600447"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2577639323" Name="Puzzle1_AprroachTheConsole" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="489096240"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="205048165" Name="Puzzle1_Intro2_Vitals" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<MediaRefs>
+						<MediaRef Id="348443874"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="22004205" Name="Puzzle1_Intro3_Evaluation" DurationType="OneShot" DurationMin="8" DurationMax="8">
+					<MediaRefs>
+						<MediaRef Id="226602159"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="389644749" Name="Puzzle2_Complete" DurationType="OneShot" DurationMin="5.5" DurationMax="5.5">
+					<MediaRefs>
+						<MediaRef Id="605981572"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2156734264" Name="Puzzle2_ExitConsoleEarly" DurationType="OneShot" DurationMin="6" DurationMax="6">
+					<MediaRefs>
+						<MediaRef Id="21278020"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382053509" Name="Puzzle2_Intro_SaveYourself" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<MediaRefs>
+						<MediaRef Id="204789465"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="543234601" Name="Puzzle3_Start" DurationType="OneShot" DurationMin="7" DurationMax="7">
+					<MediaRefs>
+						<MediaRef Id="607322478"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2221424041" Name="Puzzle_Music" DurationType="OneShot" DurationMin="50.526314" DurationMax="50.526314">
@@ -553,5 +736,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B734C68A-FB1F-B93A-1462-466077DD25E9}</FileHash>
+	<FileHash>{376D6C74-07A0-5992-99EE-CDA10F89FFD4}</FileHash>
 </SoundBanksInfo>

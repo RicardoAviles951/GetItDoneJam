@@ -1,8 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
+	7392803	PostPuzzle2_Gas_Run			\Default Work Unit\Dialogue\Puzzle2\PostPuzzle2_Gas_Run	
+	22004205	Puzzle1_Intro3_Evaluation			\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro3_Evaluation	
+	205048165	Puzzle1_Intro2_Vitals			\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro2_Vitals	
+	351850055	DoesntHave_Inventory_Item			\Default Work Unit\Dialogue\Barks\DoesntHave_Inventory_Item	
+	389644749	Puzzle2_Complete			\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete	
+	543234601	Puzzle3_Start			\Default Work Unit\Dialogue\Puzzle3\Puzzle3_Start	
 	566396871	Item_Pickup			\Default Work Unit\Environment\Item_Pickup	
 	662770354	Item_PutDown			\Default Work Unit\Environment\Item_PutDown	
+	668566028	Puzzle1_Ability_OpenDoor			\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Ability_OpenDoor	
 	674522502	Land			\Default Work Unit\Land	
+	1183628468	Elevator_Ride			\Default Work Unit\Ambience\Elevator_Ride	
 	1242796459	Electric_Attack			\Default Work Unit\Powerups\Electric_Attack	
+	1343734759	Game_Complete			\Default Work Unit\Dialogue\Puzzle3\Game_Complete	
 	1422166728	Fire_Attack			\Default Work Unit\Powerups\Fire_Attack	
 	1472083991	Hologram_Blast			\Default Work Unit\Environment\Hologram_Blast	
 	1733942329	Hologram_Impact			\Default Work Unit\Environment\Hologram_Impact	
@@ -10,10 +19,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	1880695829	Error			\Default Work Unit\UI\Error	
 	1898179168	Map_Ambience			\Default Work Unit\Ambience\Map_Ambience	
 	1965951612	Button_Push			\Default Work Unit\Environment\Button_Push	
+	2156734264	Puzzle2_ExitConsoleEarly			\Default Work Unit\Dialogue\Barks\Puzzle2_ExitConsoleEarly	
 	2221424041	Puzzle_Music			\Default Work Unit\Music\Puzzle_Music	
+	2382053509	Puzzle2_Intro_SaveYourself			\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Intro_SaveYourself	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	2501841164	PrePuzzle2_Hall			\Default Work Unit\Dialogue\Puzzle2\PrePuzzle2_Hall	
+	2561963336	HeatUsage_Hint			\Default Work Unit\Dialogue\Barks\HeatUsage_Hint	
+	2577639323	Puzzle1_AprroachTheConsole			\Default Work Unit\Dialogue\Puzzle1\Puzzle1_AprroachTheConsole	
+	2706924062	PostPuzzle2_HallEntry_Fight			\Default Work Unit\Dialogue\Puzzle2\PostPuzzle2_HallEntry_Fight	
+	2722581652	Breathing_Normal_MG			\Default Work Unit\Dialogue\Barks\Breathing_Normal_MG	
+	3083087645	Player_Death			\Default Work Unit\Dialogue\Barks\Player_Death	
 	3092587493	Pause			\Default Work Unit\UI\Pause	
+	3198648693	PlayerStuck_AbilitiesReminder_Puzzle3			\Default Work Unit\Dialogue\Barks\PlayerStuck_AbilitiesReminder_Puzzle3	
+	3273229053	Breathing_Distressed_MG			\Default Work Unit\Dialogue\Barks\Breathing_Distressed_MG	
 	3677180323	Health			\Default Work Unit\UI\Health	
+	3814470798	Breathing_NormalToPanting_MG			\Default Work Unit\Dialogue\Barks\Breathing_NormalToPanting_MG	
 	3833651337	Jump			\Default Work Unit\Jump	
 	4055567060	Menu_Music			\Default Work Unit\Music\Menu_Music	
 	4112548455	AirVent_Start			\Default Work Unit\Environment\AirVent_Start	
@@ -38,6 +58,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4635829	Jump_Metal_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Metal_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Metal\Jump_Metal_03		48096
 	17317871	Jump_Concrete_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Concrete_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Concrete\Jump_Concrete_02		96096
 	20874511	Attack_Fire_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_02		96096
+	21278020	Puzzle2_ExitConsoleEarly	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle2_ExitConsoleEarly_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\Puzzle2_ExitConsoleEarly		576096
 	30365554	Hologram_Blast_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Blast_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Blast\Hologram_Blast_02		192096
 	56883088	Menu_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Menu_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Menu_Music\Menu_Music		14178556
 	60988815	Puzzle_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Puzzle_Music\Puzzle_Music		9701148
@@ -45,6 +66,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	82065718	Hologram_Blast_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Blast_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Blast\Hologram_Blast_03		192096
 	87709223	Hologram_Impact_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Impact_02_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Impact\Hologram_Impact_02		1008096
 	91147129	Jump_Metal_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Metal_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Metal\Jump_Metal_02		48096
+	95967432	Elevator_Ride	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Elevator_Ride_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Elevator_Ride		2208096
 	101159521	Item_PickUp	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Item_PickUp_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Item_PickUp		96096
 	105432845	Footsteps_Hardwood_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Hardwood_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Hardwood\Footsteps_Hardwood_04		48096
 	110062261	Land_Concrete_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Concrete_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Concrete\Land_Concrete_05		96096
@@ -57,15 +79,22 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	172971718	RoomToneLarge_SI_3012_14	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\RoomToneLarge_SI.3012.14_37FA0D17.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\RoomToneLarge_SI_3012_14		45969768
 	181447207	Footsteps_Metal_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Metal_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal\Footsteps_Metal_03		48096
 	196343000	Hologram_Impact_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Impact_03_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Impact\Hologram_Impact_03		1728096
+	204789465	Puzzle2_Intro_SaveYourself	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle2_Intro_SaveYourself_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Intro_SaveYourself		480096
 	207731260	Attack_Fire_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_03		96096
+	218326331	HeatUsage_Hint	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\HeatUsage_Hint_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\HeatUsage_Hint		240096
+	226602159	Puzzle1_Intro3_Evaluation	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle1_Intro3_Evaluation_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro3_Evaluation		768096
 	257441858	UI_Health	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\UI_Health_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Health		2016096
 	306773748	UI_Error	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\UI_Error_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Error		48096
 	313871865	Item_PutDown	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Item_PutDown_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Item_PutDown		96096
+	323226548	Player_Death	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Player_Death_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\Player_Death		240096
 	331492498	Land_Concrete_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Concrete\Land_Concrete_03		144096
 	345942114	Footsteps_Hardwood_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Hardwood_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Hardwood\Footsteps_Hardwood_01		48096
+	348443874	Puzzle1_Intro2_Vitals	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle1_Intro2_Vitals_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro2_Vitals		480096
 	351607167	Jump_Concrete_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Concrete\Jump_Concrete_03		96096
 	351766098	Footsteps_Concrete_06	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Concrete_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_Concrete_06		48096
+	355804683	Breathing_NormalToPanting_MG	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Breathing_NormalToPanting_MG_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\Breathing_NormalToPanting_MG		1104096
 	357183462	Footsteps_Concrete_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Concrete_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_Concrete_01		48096
+	360833626	PrePuzzle2_Hall	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\PrePuzzle2_Hall_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle2\PrePuzzle2_Hall		384096
 	368088468	Land_Metal_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Metal_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Metal\Land_Metal_02		96096
 	373506113	Footsteps_Hardwood_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Hardwood_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Hardwood\Footsteps_Hardwood_03		48096
 	404483168	Footsteps_Metal_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Metal_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal\Footsteps_Metal_02		48096
@@ -73,17 +102,24 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	455035958	UI_Pause	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\UI_Pause_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Pause		48096
 	458181123	Jump_Concrete_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Concrete_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Concrete\Jump_Concrete_05		96096
 	464498113	Hologram_Blast_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Blast_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Blast\Hologram_Blast_05		192096
+	489096240	Puzzle1_AprroachTheConsole	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle1_AprroachTheConsole_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle1\Puzzle1_AprroachTheConsole		192096
 	517427919	Attack_Electric_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_03		96096
 	547916028	Jump_Metal_06	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Metal_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Metal\Jump_Metal_06		48096
 	550176406	Footsteps_Metal_06	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Metal_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal\Footsteps_Metal_06		48096
+	580056859	Breathing_Normal_MG	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Breathing_Normal_MG_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\Breathing_Normal_MG		624096
 	598339404	Jump_Concrete_06	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Concrete_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Concrete\Jump_Concrete_06		96096
 	604795312	Land_Metal_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Metal_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Metal\Land_Metal_01		96096
+	605981572	Puzzle2_Complete	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle2_Complete_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete		528096
+	607322478	Puzzle3_Start	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle3_Start_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle3\Puzzle3_Start		672096
 	607396053	Land_Metal_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Metal_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Metal\Land_Metal_04		96096
 	607829222	Land_Concrete_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Concrete_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Concrete\Land_Concrete_04		96096
 	615797749	Attack_Fire_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_04		96096
 	626498112	Land_Concrete_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Concrete_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Concrete\Land_Concrete_01		96096
+	633306612	PostPuzzle2_Gas_Run	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\PostPuzzle2_Gas_Run_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle2\PostPuzzle2_Gas_Run		384096
 	644338545	PoisonGas	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\PoisonGas_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\PoisonGas		240096
 	650964719	Footsteps_Hardwood_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Hardwood_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Hardwood\Footsteps_Hardwood_02		48096
+	654352983	Breathing_Distressed_MG	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Breathing_Distressed_MG_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\Breathing_Distressed_MG		528096
+	659600447	Puzzle1_Ability_OpenDoor	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle1_Ability_OpenDoor_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Ability_OpenDoor		384096
 	660334491	Attack_Electric_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_05		96096
 	667531920	Jump_Concrete_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Concrete_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Concrete\Jump_Concrete_04		96096
 	686832934	Footsteps_Concrete_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Concrete_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_Concrete_05		48096
@@ -95,13 +131,17 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	792168768	Attack_Electric_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_04		96096
 	814903740	Footsteps_Hardwood_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Hardwood_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Hardwood\Footsteps_Hardwood_05		48096
 	822432517	UI_Correct	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\UI_Correct_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Correct		48096
+	845699138	PlayerStuck_AbilitiesReminder_Puzzle3	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\PlayerStuck_AbilitiesReminder_Puzzle3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\PlayerStuck_AbilitiesReminder_Puzzle3		384096
 	849647510	ElectricDoor	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\ElectricDoor_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\ElectricDoor		288096
 	851218037	Land_Metal_06	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Metal_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Metal\Land_Metal_06		96096
 	887167557	Land_Metal_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Metal_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Metal\Land_Metal_05		96096
+	894205414	PostPuzzle2_HallEntry_Fight	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\PostPuzzle2_HallEntry_Fight_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle2\PostPuzzle2_HallEntry_Fight		566496
 	897209008	Attack_Fire_05	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_05		96096
 	905457450	Land_Concrete_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Concrete_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Concrete\Land_Concrete_02		96096
+	945716226	Game_Complete	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Game_Complete_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Puzzle3\Game_Complete		576096
 	950110775	Attack_Fire_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_01		96096
 	972945321	Land_Concrete_06	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Land_Concrete_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Land\Concrete\Land_Concrete_06		96096
+	976690569	DoesntHave_Inventory_Item	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\DoesntHave_Inventory_Item_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\DoesntHave_Inventory_Item		240096
 	997805212	Attack_Electric_01	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Electric_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Electric\Attack_Electric_01		96096
 	1001565522	Hologram_Blast_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Blast_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Blast\Hologram_Blast_04		192096
 	1036869714	Footsteps_Metal_04	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Metal_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Metal\Footsteps_Metal_04		48096
