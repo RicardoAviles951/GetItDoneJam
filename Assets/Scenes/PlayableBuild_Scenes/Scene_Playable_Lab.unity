@@ -6763,7 +6763,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 0
+  m_TargetDisplay: 1
 --- !u!224 &1558545921
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7211,7 +7211,7 @@ PrefabInstance:
     - target: {fileID: 8062076041176164995, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8062076041176164995, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
         type: 3}
@@ -13993,11 +13993,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area_03_Blue
       objectReference: {fileID: 0}
-    - target: {fileID: 2395221799776439270, guid: d0da03b6b64713742aeb904c7351e47f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
 --- !u!1001 &5210776303752948668
@@ -14081,11 +14076,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area_02_Turquiose
       objectReference: {fileID: 0}
-    - target: {fileID: 8819084986766629281, guid: fe99380a60b7aae4e8f02341a2f083c5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8819084986766629310, guid: fe99380a60b7aae4e8f02341a2f083c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -14163,7 +14153,7 @@ PrefabInstance:
     - target: {fileID: 8946174617204664354, guid: f4e5e0136b5235a46babb213242bb018,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.85
+      value: 24.97
       objectReference: {fileID: 0}
     - target: {fileID: 8946174617204664354, guid: f4e5e0136b5235a46babb213242bb018,
         type: 3}
@@ -14209,11 +14199,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area_04_Red
-      objectReference: {fileID: 0}
-    - target: {fileID: 8946174617204664381, guid: f4e5e0136b5235a46babb213242bb018,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4e5e0136b5235a46babb213242bb018, type: 3}
