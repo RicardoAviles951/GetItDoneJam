@@ -1038,8 +1038,8 @@ MonoBehaviour:
         guid: aaba493484a9f945ab67c13bf8b53aeb
       Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete
       maxAttenuation: 0
-      maxDuration: 5.5
-      minDuration: 5.5
+      maxDuration: 1.6552731
+      minDuration: 1.6552731
     - name: Puzzle2_ExitConsoleEarly
       guid: 02a44a8cbb69984f818d67e25f36e181
       id: 2156734264

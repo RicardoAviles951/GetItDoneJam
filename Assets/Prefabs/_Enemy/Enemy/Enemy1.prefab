@@ -10273,7 +10273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 8
   fixRadiusIndicator: 2
-  rangeIndicatorHeight: 1.5
+  rangeIndicatorHeight: 3
   rotationSpeed: 200
   moveSpeed: 2.5
   stopDistance: 5
