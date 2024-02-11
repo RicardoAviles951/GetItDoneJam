@@ -1,24 +1,33 @@
-//When Player first enters game
+#GAMESTART
 
+->GameStart
+->DONE
+
+===GameStart===
+
+//When Player first enters game
 Proctor: Volunteer X732. Citizen classification: Blue X
 
 Proctor: Huh, not top tier, but strong vitals
 
 Proctor: X732, proceed to cognitive evaluation. We've upgraded your prosthetic. A show of trust.
+->Electricity
+->DONE
+===Electricity===
+#ActivateElectricity
 
 
 //Player uses electricity ability
 Proctor: (Exhale) It works. Try the door. 
 
-
+#Puzzle1DoorOpen
 //Player opens door and goes through
-Proctor: Aprroach the console
+Proctor: Approach the console
 
 
-//Player has collected all of the inventory items
-Proctor: Sacrifce the past, achieve the future
-// end of line trigger highlight or arrow marker on bin for inventory items
 
+#Puzzle1Complete
+//puzzle 1 complete
+Proctor: Proceed
 
-//Player has dropped items into bin and pressed button to start fire.
-Proctor: The flames purify.
+->END
