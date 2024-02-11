@@ -2169,6 +2169,13 @@
 						<Folder Name="Puzzle2" ID="{FE8EA216-F1E0-449B-B061-29D68225CE38}" ShortID="411734679">
 							<ChildrenList>
 								<Sound Name="PostPuzzle2_Gas_Run" ID="{20F40B38-9900-4371-8AD3-AF080D1045AE}" ShortID="196833038">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
