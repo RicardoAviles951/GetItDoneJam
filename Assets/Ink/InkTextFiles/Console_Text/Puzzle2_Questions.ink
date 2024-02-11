@@ -110,6 +110,8 @@ The citizen color ranking adequately measures an individual's worth in a society
 ===WRAPUP===
 Thank you Volunteer 732. Your results will be calculated, and you will be rewarded based on your efforts. 
 
+#ActivateFire
+
 When you exit the examination, you will discover your prosthetic has been upgraded. A thanks for your participation.
 
 #CLEAR
