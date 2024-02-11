@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{84BD47CC-2570-7EB0-C87F-445E1AE5DC66}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{88232645-AF1F-E348-3DAE-60D19C66D7E5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -265,7 +265,7 @@
 				</File>
 				<File Id="605981572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Puzzle2_Complete.wav</ShortName>
-					<CachePath>SFX/Puzzle2_Complete_F5177A4B.wem</CachePath>
+					<CachePath>SFX/Puzzle2_Complete_287B0ED1.wem</CachePath>
 				</File>
 				<File Id="607322478" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Puzzle3_Start.wav</ShortName>
@@ -286,10 +286,6 @@
 				<File Id="626498112" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Concrete_01.wav</ShortName>
 					<CachePath>SFX/Land_Concrete_01_818F3B66.wem</CachePath>
-				</File>
-				<File Id="633306612" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PostPuzzle2_Gas_Run.wav</ShortName>
-					<CachePath>SFX/PostPuzzle2_Gas_Run_818F3B66.wem</CachePath>
 				</File>
 				<File Id="644338545" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PoisonGas.wav</ShortName>
@@ -456,7 +452,7 @@
 						<MediaRef Id="976690569"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1873899129" Name="Door_Open_Close" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1873899129" Name="Door_Open_Close" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<MediaRefs>
 						<MediaRef Id="849647510"/>
 					</MediaRefs>
@@ -652,11 +648,7 @@
 						<MediaRef Id="644338545"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="7392803" Name="PostPuzzle2_Gas_Run" DurationType="OneShot" DurationMin="4" DurationMax="4">
-					<MediaRefs>
-						<MediaRef Id="633306612"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="7392803" Name="PostPuzzle2_Gas_Run" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2706924062" Name="PostPuzzle2_HallEntry_Fight" DurationType="OneShot" DurationMin="5.9" DurationMax="5.9">
 					<MediaRefs>
 						<MediaRef Id="894205414"/>
@@ -736,5 +728,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B95AE5FE-23BF-C05D-0F2E-87264C0006A0}</FileHash>
+	<FileHash>{FE361FE1-E6E4-C709-B2EC-9E50B0D8321E}</FileHash>
 </SoundBanksInfo>
