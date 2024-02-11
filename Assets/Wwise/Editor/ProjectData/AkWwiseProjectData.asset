@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 277315082291cd4cbb02e81197f4e1ab
     GuidInternal: 
-    m_lastTime: -8584955380167137687
+    m_lastTime: -8584950172836570941
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7433b8e6e7181348a6fe56eb5501fe66
     GuidInternal: 
-    m_lastTime: -8584955380167227688
+    m_lastTime: -8584950172836650934
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584942708908517212
+    m_lastTime: -8584940686297305400
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584940998297656136
+    m_lastTime: -8584940686306857569
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -133,6 +133,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Button_Push
+      guid: c49beec85c82e046b598553e3e051ccb
+      id: 1965951612
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Button_Push
+        ObjectType: 3
+        guid: c49beec85c82e046b598553e3e051ccb
+      Path: Events\Default Work Unit\Environment\Button_Push
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
     - name: Correct
       guid: ea009e2ddbe62745bc5133de3b7cf921
       id: 4126251273
@@ -325,8 +345,48 @@ MonoBehaviour:
         guid: 26e40740cc11e44a88df1900232c21fb
       Path: Events\Default Work Unit\Environment\Hologram_Impact
       maxAttenuation: 0
-      maxDuration: 2
-      minDuration: 2
+      maxDuration: -1
+      minDuration: -1
+    - name: Item_Pickup
+      guid: 089b2693537d7047a3ef2780462a3520
+      id: 566396871
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Item_Pickup
+        ObjectType: 3
+        guid: 089b2693537d7047a3ef2780462a3520
+      Path: Events\Default Work Unit\Environment\Item_Pickup
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Item_PutDown
+      guid: 053c388500a24744a732467a95e0a0ee
+      id: 662770354
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Item_PutDown
+        ObjectType: 3
+        guid: 053c388500a24744a732467a95e0a0ee
+      Path: Events\Default Work Unit\Environment\Item_PutDown
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
     - name: Jump
       guid: 1dd6e0eb24382b49a99f0041c9e6f7ec
       id: 3833651337
@@ -524,7 +584,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 531635c31a24e4418bc5f398cc1c64e8
     GuidInternal: 
-    m_lastTime: -8584955380167327496
+    m_lastTime: -8584950172836730958
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -538,7 +598,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0a933c593427f3499de37131beb18770
     GuidInternal: 
-    m_lastTime: -8584955380167147672
+    m_lastTime: -8584950172836600810
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -552,7 +612,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584947937478581884
+    m_lastTime: -8584948419240240169
     List:
     - name: Ground
       guid: bf629f9a6d185b42946b2341cd59e9f5
@@ -732,11 +792,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 27d465f206536d40bed3902056328c88
     GuidInternal: 
-    m_lastTime: -8584955380167137687
+    m_lastTime: -8584950172836580940
     List: []
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 0200000003000000040000000600000008000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
