@@ -32,6 +32,8 @@ public class PlayerStateManager : MonoBehaviour
     [HideInInspector] public AbilityManager abilityManager;
     [HideInInspector] public CameraDetector detector;
     [HideInInspector] public PlayerHealth health;
+    public ParticleSystem buffParticles;
+    public ParticleSystem debuffParticles;
 
 
 
@@ -41,18 +43,26 @@ public class PlayerStateManager : MonoBehaviour
     public bool isExamining = false;
     public Transform examinedObject;
     public GameObject examinePos;
+    public AK.Wwise.Event itemPickupSound;
+    public AK.Wwise.Event itemGrabSound;
     [HideInInspector] public Vector3 lastMousePos;
 
     public Dictionary<Transform, Vector3> originalPos    = new Dictionary<Transform, Vector3>();
     public Dictionary<Transform, Quaternion> originalRot = new Dictionary<Transform, Quaternion>();
+
+    [HideInInspector] public IDialogue currentConsole;
     private void OnEnable()
     {
         PlayerHealth.OnDeath += Die;
+        DialogueManager.DialogueFinished += BackToMove;
+        DialogueManager.PlayerStatusApplied += ApplyStatus;
     }
 
     private void OnDisable()
     {
         PlayerHealth.OnDeath -= Die;
+        DialogueManager.DialogueFinished += BackToMove;
+        DialogueManager.PlayerStatusApplied -= ApplyStatus;
     }
     private void Start()
     {
@@ -146,10 +156,29 @@ public class PlayerStateManager : MonoBehaviour
         }
     }
 
-    void Die()
+    void Die() => ChangeState(deathState);
+    void BackToMove() => ChangeState(moveState);
+    void ApplyStatus(Outcome status)
     {
-        ChangeState(deathState);
-    }
+        switch (status)
+        {
+            case Outcome.speedDown:
+                movementController.MoveSpeed   -= 2f;
+                movementController.SprintSpeed -= 2f;
+                Debug.Log("Speed reduced");
+                debuffParticles.Play();
+                break;
 
+            case Outcome.speedUp:
+                movementController.MoveSpeed   += 2f;
+                movementController.SprintSpeed += -2f;
+                Debug.Log("Speed increased");
+                buffParticles.Play();
+                break;
+
+            default: Debug.Log("No speed effects applied."); break;
+
+        }
+    }
     
 }

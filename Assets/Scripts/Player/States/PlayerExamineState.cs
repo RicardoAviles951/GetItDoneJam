@@ -29,7 +29,7 @@ public class PlayerExamineState : PlayerBaseState
         //Turns on UI and makes the cursor visible
         player.ToggleExamineUI("show");
         CursorCalibration(player);
-   
+        player.itemPickupSound.Post(player.gameObject);
 
     }
     public override void UpdateState(PlayerStateManager player)
@@ -46,6 +46,7 @@ public class PlayerExamineState : PlayerBaseState
             }
 
             //Play sound here
+            player.itemPickupSound.Post(player.gameObject);
 
             ExitState(player);
         }
@@ -59,6 +60,7 @@ public class PlayerExamineState : PlayerBaseState
             examinedObj.ToggleExaminable(false,Vector3.zero);
 
             //Play sound here
+            player.itemGrabSound.Post(player.gameObject);
 
             ExitState(player);
         }

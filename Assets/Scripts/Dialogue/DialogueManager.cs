@@ -4,26 +4,41 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Ink.Runtime;
 using Ink.UnityIntegration;
+using System;
 
-
+public enum Outcome
+{
+    healthDown,
+    speedDown,
+    speedUp,
+    healthUp,
+    nothing
+}
 public class DialogueManager : MonoBehaviour
 {
+    public static event Action DialogueFinished;
+    public static event Action<Outcome> PlayerStatusApplied;
+
     private VisualElement choicesContainer;
     public Label text;
     public Story currentStory;
-    public TextAsset InkJSONAsset;
 
     private VisualElement EntireScreen;
     public VisualTreeAsset item;
     private Button button;
     private List<Button> buttonList = new List<Button>();
+    
+
+    public Outcome currentOutcome; 
+    //Sounds
+    public AK.Wwise.Event clickSound;
   
 
     private void Awake()
     {
-        var root  = GetComponent<UIDocument>().rootVisualElement;
-        EntireScreen = root.Q<VisualElement>("EntireScreen");
-        text      = root.Q<Label>("Text_Paragraph");
+        var root         = GetComponent<UIDocument>().rootVisualElement;
+        EntireScreen     = root.Q<VisualElement>("EntireScreen");
+        text             = root.Q<Label>("Text_Paragraph");
         choicesContainer = root.Q<VisualElement>("Choices");
     }
     private void OnEnable()
@@ -31,7 +46,8 @@ public class DialogueManager : MonoBehaviour
         PlayerStateManager.ShowDialogue += ShowDisplay;
         PlayerStateManager.HideDialogue += HideDisplay;
 
-        
+        ConsoleController.SendInkFile += LoadText;
+
 
     }
 
@@ -40,17 +56,17 @@ public class DialogueManager : MonoBehaviour
         PlayerStateManager.ShowDialogue -= ShowDisplay;
         PlayerStateManager.HideDialogue -= HideDisplay;
 
-        
+        ConsoleController.SendInkFile -= LoadText;
+
+
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
         EntireScreen.style.display = DisplayStyle.None;
-        // Create a new Story object using the compiled (JSON) Ink story text
-        currentStory = new Story(InkJSONAsset.text);
-        GenerateDialogue();
-        
+        currentOutcome = Outcome.nothing;
     }
 
         
@@ -72,11 +88,32 @@ public class DialogueManager : MonoBehaviour
             // Create a blank line of dialogue
             string line = "";
 
-            // For each tag in currentTag, set its values to the new variable 'tag'
+            //For each tag in currentTag, set its values to the new variable 'tag'
             foreach (string tag in currentTags)
             {
-                // Concatenate the tag and a colon
-                line += tag + ": ";
+                switch(tag)
+                {
+                    case "outcome1":
+                        Debug.Log("Effect: General health decrease.");
+                        currentOutcome = Outcome.healthDown;
+                        break;
+                    case "outcome2": 
+                        Debug.Log("Effect: General movement decrease.");
+                        currentOutcome = Outcome.speedDown;
+                        break;
+                    case "outcome3": 
+                        Debug.Log("Effect: General movement increase.");
+                        currentOutcome = Outcome.speedUp;
+                        break;
+                    case "outcome4": 
+                        Debug.Log("Effect: General health increase.");
+                        currentOutcome = Outcome.healthUp;
+                        break;
+                    default: 
+                        Debug.Log("No important tags detected");
+                        
+                        break;
+                }
             }
 
             // Concatenate the current text chunk
@@ -84,7 +121,7 @@ public class DialogueManager : MonoBehaviour
             line += currentTextChunk;
 
             // Concatenate the content of 'line' to the existing text
-            text.text += line;
+            text.text += "\n"+ line;
 
             
             //Displaying choices------------------------------------------------------------------------
@@ -105,6 +142,8 @@ public class DialogueManager : MonoBehaviour
                 //Create clicked behavior using anonymous function
                 button.clicked += () =>
                 {
+                    //Play sound
+                    clickSound.Post(gameObject);
                     Debug.Log("Clicked the button");
                     //Get the index of the choice
                     currentStory.ChooseChoiceIndex(choice.index);
@@ -126,10 +165,25 @@ public class DialogueManager : MonoBehaviour
             {
                 //Set the width/height to 100% using the percentage value
                 Child.style.width  = Length.Percent(100);
-                Child.style.height = Length.Percent(25);
+                Child.style.height = Length.Percent(80);
             }
 
         }
+
+        if(currentStory.currentChoices.Count == 0)
+        {
+            HideDisplay();
+            if (currentOutcome != Outcome.nothing)
+            {
+                Debug.Log("Relaying status effect...");
+                PlayerStatusApplied?.Invoke(currentOutcome);
+            }
+            DialogueFinished?.Invoke();
+            Debug.Log("Story over");
+
+            
+        }
+        
         
     }
 
@@ -162,6 +216,13 @@ public class DialogueManager : MonoBehaviour
     void HideDisplay()
     {
         EntireScreen.style.display = DisplayStyle.None;
+    }
+
+    void LoadText(TextAsset text)
+    {
+        ShowDisplay();
+        currentStory = new Story(text.text);
+        GenerateDialogue();
     }
 }
 

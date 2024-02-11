@@ -9,6 +9,7 @@ public class PlayerMoveState : PlayerBaseState
     {
         Debug.Log("Current state: Move State");
         player.TogglePlayerHUD("show");
+        CursorReturn(player);
     }
 
     public override void UpdateState(PlayerStateManager player)
@@ -44,6 +45,12 @@ public class PlayerMoveState : PlayerBaseState
         player.movementController.CameraRotation();
     }
 
+    void CursorReturn(PlayerStateManager player)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     //Checks specifically what kind of interactable we are dealing with
     void CheckInteractables(PlayerStateManager player)
     {
@@ -69,10 +76,16 @@ public class PlayerMoveState : PlayerBaseState
                         
                         break;
 
-                    case IDialogue:
+                    case IDialogue d:
+                        player.currentConsole = d;
+                        d.LoadDialogue();
+                        if (d.isRepeatable)
+                        {
+                            player.TogglePlayerHUD("hide");
+                            player.ChangeState(player.dialogueState);
+                        }
                         
-                        player.TogglePlayerHUD("hide");
-                        player.ChangeState(player.dialogueState);
+
                         break;
 
                     case IPlacer pl:

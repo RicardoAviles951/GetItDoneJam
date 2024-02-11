@@ -14,14 +14,21 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AIRVENT_START = 4112548455U;
+        static const AkUniqueID BREATHING_DISTRESSED_MG = 3273229053U;
+        static const AkUniqueID BREATHING_NORMAL_MG = 2722581652U;
+        static const AkUniqueID BREATHING_NORMALTOPANTING_MG = 3814470798U;
         static const AkUniqueID BUTTON_PUSH = 1965951612U;
         static const AkUniqueID CORRECT = 4126251273U;
+        static const AkUniqueID DOESNTHAVE_INVENTORY_ITEM = 351850055U;
         static const AkUniqueID DOOR_OPEN_CLOSE = 1873899129U;
         static const AkUniqueID ELECTRIC_ATTACK = 1242796459U;
+        static const AkUniqueID ELEVATOR_RIDE = 1183628468U;
         static const AkUniqueID ERROR = 1880695829U;
         static const AkUniqueID FIRE_ATTACK = 1422166728U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID GAME_COMPLETE = 1343734759U;
         static const AkUniqueID HEALTH = 3677180323U;
+        static const AkUniqueID HEATUSAGE_HINT = 2561963336U;
         static const AkUniqueID HOLOGRAM_BLAST = 1472083991U;
         static const AkUniqueID HOLOGRAM_IMPACT = 1733942329U;
         static const AkUniqueID ITEM_PICKUP = 566396871U;
@@ -31,7 +38,20 @@ namespace AK
         static const AkUniqueID MAP_AMBIENCE = 1898179168U;
         static const AkUniqueID MENU_MUSIC = 4055567060U;
         static const AkUniqueID PAUSE = 3092587493U;
+        static const AkUniqueID PLAYER_DEATH = 3083087645U;
+        static const AkUniqueID PLAYERSTUCK_ABILITIESREMINDER_PUZZLE3 = 3198648693U;
         static const AkUniqueID POISON_GAS = 4209290139U;
+        static const AkUniqueID POSTPUZZLE2_GAS_RUN = 7392803U;
+        static const AkUniqueID POSTPUZZLE2_HALLENTRY_FIGHT = 2706924062U;
+        static const AkUniqueID PREPUZZLE2_HALL = 2501841164U;
+        static const AkUniqueID PUZZLE1_ABILITY_OPENDOOR = 668566028U;
+        static const AkUniqueID PUZZLE1_APRROACHTHECONSOLE = 2577639323U;
+        static const AkUniqueID PUZZLE1_INTRO2_VITALS = 205048165U;
+        static const AkUniqueID PUZZLE1_INTRO3_EVALUATION = 22004205U;
+        static const AkUniqueID PUZZLE2_COMPLETE = 389644749U;
+        static const AkUniqueID PUZZLE2_EXITCONSOLEEARLY = 2156734264U;
+        static const AkUniqueID PUZZLE2_INTRO_SAVEYOURSELF = 2382053509U;
+        static const AkUniqueID PUZZLE3_START = 543234601U;
         static const AkUniqueID PUZZLE_MUSIC = 2221424041U;
     } // namespace EVENTS
 

@@ -167,6 +167,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Elevator_Ride" ID="{281076C0-B45E-40B1-9BEC-4E5B092B1D56}">
+							<ChildrenList>
+								<Action Name="" ID="{32C0FC78-B645-439D-B266-964A46B3BBE1}" ShortID="54894181">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Elevator_Ride" ID="{F3D7F93B-239E-4845-8583-3A82641C9C2C}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{60EFE13F-FA14-4C22-9CE7-DA28DD4E89F4}" ShortID="995035368">
@@ -177,6 +188,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Menu_Music" ID="{CEB24349-C5A7-4EB9-ABD1-77EA0F8315ED}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FE192572-C9E7-44CA-A3F7-78863DB05D7A}" ShortID="285060540">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Puzzle_Music" ID="{5EC3B6F7-057B-47A8-A4DB-FE19B2EB031A}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -241,6 +262,236 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Dialogue" ID="{0EF03E7D-6DCB-47C1-A6E4-14B5EE3E352B}" ShortID="542566731">
+					<ChildrenList>
+						<Folder Name="Ambient_Dialogue" ID="{E5795411-C4EB-4690-9270-FA8DE9A9837C}" ShortID="524499650"/>
+						<Folder Name="Barks" ID="{D8446C12-8D4B-405C-9D79-DFB922B1AB0E}" ShortID="159648936">
+							<ChildrenList>
+								<Event Name="Breathing_Distressed_MG" ID="{F9B5E61A-D391-49FF-9BE8-B4DDE82117A0}">
+									<ChildrenList>
+										<Action Name="" ID="{E95BC21E-B59A-457A-8E8B-97075C97D1D1}" ShortID="317013300">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Breathing_Distressed_MG" ID="{7FA4E4A4-4E68-4ED5-930D-D717A0CB2089}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Breathing_Normal_MG" ID="{2AA2A11E-2823-46F3-92DE-77F4608358D4}">
+									<ChildrenList>
+										<Action Name="" ID="{1CA8A81D-8076-4446-9719-73E8E879A10D}" ShortID="63503043">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Breathing_Normal_MG" ID="{24D57FA0-21DD-4921-A68F-AF23684A2325}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Breathing_NormalToPanting_MG" ID="{AB2F1502-4CD1-45F8-88DC-635658143141}">
+									<ChildrenList>
+										<Action Name="" ID="{08100309-9ADA-4E9B-ACBF-D45533DDE174}" ShortID="424484582">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Breathing_NormalToPanting_MG" ID="{F62296D8-3EDE-48A0-AE13-06E70371BE7A}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="DoesntHave_Inventory_Item" ID="{04FBF841-D521-4C2B-8A6F-05BD2C7923FB}">
+									<ChildrenList>
+										<Action Name="" ID="{EBA42050-7F31-4FE6-AF7A-67CDD3A3C9C9}" ShortID="810767098">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DoesntHave_Inventory_Item" ID="{45A004CF-EF74-4147-B757-83936E807722}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="HeatUsage_Hint" ID="{CCC36E34-43ED-4917-973E-92C6CEAABC59}">
+									<ChildrenList>
+										<Action Name="" ID="{CBEE2E0E-CEEA-4054-9C82-5A3EF0FE8F82}" ShortID="409084226">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HeatUsage_Hint" ID="{03662F86-B9BE-41E6-ADBE-B7D1AEB0BC62}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Player_Death" ID="{8CA16DB5-BED0-4207-9B5C-4A555CE6663A}">
+									<ChildrenList>
+										<Action Name="" ID="{ACE1BCE3-221F-478A-B717-C383CF5E279A}" ShortID="211666771">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Death" ID="{7383857D-8F7C-4412-8E56-F078B8C2773A}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PlayerStuck_AbilitiesReminder_Puzzle3" ID="{C31145CA-289E-4D97-8465-8EDE3FC00AB1}">
+									<ChildrenList>
+										<Action Name="" ID="{B09D64E3-7AFA-4C55-B0BF-61B8686CC0E5}" ShortID="32257539">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PlayerStuck_AbilitiesReminder_Puzzle3" ID="{45BD5FDA-39A1-45EC-9755-6F20AD92B686}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle2_ExitConsoleEarly" ID="{8C4AA402-69BB-4F98-818D-67E25F36E181}">
+									<ChildrenList>
+										<Action Name="" ID="{63529C83-3D4F-4DF1-9BF1-3DD235C6FB0B}" ShortID="711917085">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle2_ExitConsoleEarly" ID="{DB7637F8-E684-45A4-92C8-6814C12EFBCA}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Puzzle1" ID="{D3EE24D7-CF8C-4F46-B93C-B0FA28340649}" ShortID="439674344">
+							<ChildrenList>
+								<Event Name="Puzzle1_Ability_OpenDoor" ID="{98796992-68DD-4365-A889-DDB468B12967}">
+									<ChildrenList>
+										<Action Name="" ID="{A2A455CA-9F30-45AD-B505-8F294F17E192}" ShortID="813739364">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle1_Ability_OpenDoor" ID="{AAE9939A-A632-438A-ABCA-97B6C2BED7C0}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle1_AprroachTheConsole" ID="{CF1A41E6-78A6-45D2-A915-A292556341FA}">
+									<ChildrenList>
+										<Action Name="" ID="{387B6395-D89C-452D-A484-F48FFFCCC2CE}" ShortID="445027464">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle1_AprroachTheConsole" ID="{678AEFB7-4CFB-4A52-9A7F-F7F73A454547}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle1_Intro2_Vitals" ID="{B1F6C167-6C5A-4FBE-8F70-E1A91DDEEE71}">
+									<ChildrenList>
+										<Action Name="" ID="{2861272D-3AE7-4F04-9992-1432AB7936AD}" ShortID="691214535">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle1_Intro2_Vitals" ID="{95F65E09-2B6A-4EC8-B852-6B9DB2E729A1}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle1_Intro3_Evaluation" ID="{01E67255-27C2-4E77-9ECF-430FBA79E527}">
+									<ChildrenList>
+										<Action Name="" ID="{5F138FB3-A319-40F8-8106-5E1BC5164932}" ShortID="637635138">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle1_Intro3_Evaluation" ID="{C680FC1A-2141-4177-906B-4BA2FC6CC87D}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Puzzle2" ID="{D2913E8B-12FB-4815-B810-E09BDD83EF95}" ShortID="1028883152">
+							<ChildrenList>
+								<Event Name="PostPuzzle2_Gas_Run" ID="{B5B6CDF5-AD7A-4076-A2C9-E6A2E9BEA9E1}">
+									<ChildrenList>
+										<Action Name="" ID="{C39155FF-E18C-409E-A3CC-93630165D83F}" ShortID="111191972">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PostPuzzle2_Gas_Run" ID="{20F40B38-9900-4371-8AD3-AF080D1045AE}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PostPuzzle2_HallEntry_Fight" ID="{99B29F01-62BD-4D06-A429-6A4AE4B2ED5F}">
+									<ChildrenList>
+										<Action Name="" ID="{E38AC7A6-4D26-4B2E-BABF-8BE40EE59BFF}" ShortID="176404985">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PostPuzzle2_HallEntry_Fight" ID="{DFA54D54-935C-438A-8547-96DE2FDFB321}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PrePuzzle2_Hall" ID="{41F0E1BA-4D20-4404-81C5-9FF29136D293}">
+									<ChildrenList>
+										<Action Name="" ID="{930B3A17-133F-4788-AA8E-C37586F99AED}" ShortID="984323115">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PrePuzzle2_Hall" ID="{3CB98313-FCE3-499E-8623-36B582998637}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle2_Complete" ID="{3449BAAA-A984-45F9-AB67-C13BF8B53AEB}">
+									<ChildrenList>
+										<Action Name="" ID="{03770CDD-4F44-4F44-AF49-8F4BC90BCE6B}" ShortID="1015860861">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle2_Complete" ID="{FC8D9B96-D767-44B5-B7AF-CA0BA686E938}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle2_Intro_SaveYourself" ID="{FF57ECF1-95DF-4393-991B-4A0DD68BFBE9}">
+									<ChildrenList>
+										<Action Name="" ID="{5D68E38D-AAD4-4116-AF23-B96B1CAC0CDA}" ShortID="608307452">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle2_Intro_SaveYourself" ID="{AD707B1F-A523-44A8-B568-56B503221FA7}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Puzzle3" ID="{A4F121DA-DAA7-4364-8D3B-9A1392E0BB2B}" ShortID="440323975">
+							<ChildrenList>
+								<Event Name="Game_Complete" ID="{8323EE10-4717-4348-B8FB-DF3F02CBB7E1}">
+									<ChildrenList>
+										<Action Name="" ID="{4C1B219A-7ACF-4551-8014-0B764F6CD241}" ShortID="869031491">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Game_Complete" ID="{C36C4FBA-F565-44D2-96F3-E98790FC4666}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle3_Start" ID="{1232C0A8-D177-4414-8B5B-7AF31AB27364}">
+									<ChildrenList>
+										<Action Name="" ID="{54D56993-FD0A-4AD7-9674-37E0D09320CA}" ShortID="479645078">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle3_Start" ID="{683B9EF0-8FAF-4A98-B62F-5F87788C5828}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
