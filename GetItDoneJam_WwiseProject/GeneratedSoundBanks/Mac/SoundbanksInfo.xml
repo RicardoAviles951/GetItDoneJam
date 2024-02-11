@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5A7F15F7-9C5A-EEE4-0254-2F2978B54068}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{84BD47CC-2570-7EB0-C87F-445E1AE5DC66}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -265,7 +265,7 @@
 				</File>
 				<File Id="605981572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Puzzle2_Complete.wav</ShortName>
-					<CachePath>SFX/Puzzle2_Complete_818F3B66.wem</CachePath>
+					<CachePath>SFX/Puzzle2_Complete_F5177A4B.wem</CachePath>
 				</File>
 				<File Id="607322478" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Puzzle3_Start.wav</ShortName>
@@ -687,7 +687,7 @@
 						<MediaRef Id="226602159"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="389644749" Name="Puzzle2_Complete" DurationType="OneShot" DurationMin="5.5" DurationMax="5.5">
+				<Event Id="389644749" Name="Puzzle2_Complete" DurationType="OneShot" DurationMin="1.6552731" DurationMax="1.6552731">
 					<MediaRefs>
 						<MediaRef Id="605981572"/>
 					</MediaRefs>
@@ -736,5 +736,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{376D6C74-07A0-5992-99EE-CDA10F89FFD4}</FileHash>
+	<FileHash>{51415555-F646-81B8-8764-CC58F28F71DB}</FileHash>
 </SoundBanksInfo>

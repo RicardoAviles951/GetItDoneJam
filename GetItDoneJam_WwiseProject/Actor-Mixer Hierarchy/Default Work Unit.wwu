@@ -2245,6 +2245,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Puzzle2_Complete" ID="{8F49BBC7-6229-49F7-95F5-99726DC648F9}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.84472696957065"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Puzzle2_Complete.wav</AudioFile>
 											<MediaIDList>
