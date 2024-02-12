@@ -1763,6 +1763,11 @@
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.906965648973621"/>
 										<Property Name="TrimEnd" Type="Real64" Value="240.332324117553"/>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-6.1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>RoomToneLarge_SI.3012.14.wav</AudioFile>
