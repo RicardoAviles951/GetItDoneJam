@@ -7905,11 +7905,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -7918,7 +7918,7 @@ PrefabInstance:
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 63325318}
+      objectReference: {fileID: 5210776303875717273}
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -7933,7 +7933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TriggerVO
+      value: UnlockDoor
       objectReference: {fileID: 0}
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -7941,7 +7941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TriggerVoiceLine, Assembly-CSharp
+      value: DoorScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1940294490, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
