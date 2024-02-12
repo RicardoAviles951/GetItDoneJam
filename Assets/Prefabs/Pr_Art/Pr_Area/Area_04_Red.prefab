@@ -82768,6 +82768,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prf_Env_Arch_Door_00_Window (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2182924045070397499, guid: 8210a63fb7d45db4389c5424f147d9a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2407970239461530479, guid: 8210a63fb7d45db4389c5424f147d9a1,
         type: 3}
       propertyPath: m_RootOrder
