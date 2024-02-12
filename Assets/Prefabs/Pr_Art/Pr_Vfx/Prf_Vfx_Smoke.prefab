@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3479597419030999453}
   m_Layer: 0
-  m_Name: Prf_Vfx_Smoke_TODO
+  m_Name: Prf_Vfx_Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
