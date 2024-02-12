@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c10a6c75a16908841be84f7c7f03bf95, type: 3}
-  m_Name: AbilityUnlocks
+  m_Script: {fileID: 11500000, guid: 9bcfbe5c02243b64683d907548fa32f8, type: 3}
+  m_Name: D4AD6A36-2AC4-4A7B-82E1-8684B60FADA3
   m_EditorClassIdentifier: 
-  unlockedAbilities:
-  - Electricity
+  objectName: NotYet_MG
+  id: 2547478225
+  guid: D4AD6A36-2AC4-4A7B-82E1-8684B60FADA3

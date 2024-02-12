@@ -18,6 +18,11 @@ public class PlayerStateManager : MonoBehaviour
     public static UnityAction ShowDialogue;
     public static UnityAction HideDialogue;
 
+    public static UnityAction ShowOpeningUI;
+    public static UnityAction HideOpeningUI;
+
+
+
 
 
     PlayerBaseState currentState;
@@ -26,14 +31,17 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerExamineState examineState   = new PlayerExamineState();
     public PlayerDialogueState dialogueState = new PlayerDialogueState();
     public PlayerDeathState deathState       = new PlayerDeathState();
+    public PlayerIdleState idleState         = new PlayerIdleState();
 
     [HideInInspector] public _FirstPersonController movementController;
     [HideInInspector] public StarterAssetsInputs input;
     [HideInInspector] public AbilityManager abilityManager;
     [HideInInspector] public CameraDetector detector;
     [HideInInspector] public PlayerHealth health;
+    [HideInInspector] public TriggerVoiceLine triggerVoiceLine;
     public ParticleSystem buffParticles;
     public ParticleSystem debuffParticles;
+    
 
 
 
@@ -41,11 +49,12 @@ public class PlayerStateManager : MonoBehaviour
     [Header("Examine State")]
     public GameObject CurrentObject;
     public bool isExamining = false;
-    public Transform examinedObject;
+    [HideInInspector ]public Transform examinedObject;
     public GameObject examinePos;
     public AK.Wwise.Event itemPickupSound;
     public AK.Wwise.Event itemGrabSound;
     [HideInInspector] public Vector3 lastMousePos;
+    
 
     public Dictionary<Transform, Vector3> originalPos    = new Dictionary<Transform, Vector3>();
     public Dictionary<Transform, Quaternion> originalRot = new Dictionary<Transform, Quaternion>();
@@ -72,6 +81,7 @@ public class PlayerStateManager : MonoBehaviour
         detector           = GetComponent<CameraDetector>();
         input              = GetComponent<StarterAssetsInputs>();
         health             = GetComponent<PlayerHealth>();
+        triggerVoiceLine   = GetComponent<TriggerVoiceLine>();
 
         //Set state
         currentState = moveState;
@@ -137,6 +147,15 @@ public class PlayerStateManager : MonoBehaviour
 
     }
 
+    public void ToggleOpeningUI(string toggleOpeningUI)
+    {
+        switch(toggleOpeningUI)
+        {
+            case "show": ShowOpeningUI?.Invoke(); break;
+            case "hide": HideOpeningUI?.Invoke(); break;
+        }
+    }
+
     void InputResets()
     {
         //The input system as configured does not reset the isPressed value when the input is released. So we have to do it manually.
@@ -157,7 +176,7 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     void Die() => ChangeState(deathState);
-    void BackToMove() => ChangeState(moveState);
+    public void BackToMove() => ChangeState(moveState);
     void ApplyStatus(Outcome status)
     {
         switch (status)
@@ -171,7 +190,7 @@ public class PlayerStateManager : MonoBehaviour
 
             case Outcome.speedUp:
                 movementController.MoveSpeed   += 2f;
-                movementController.SprintSpeed += -2f;
+                movementController.SprintSpeed += 2f;
                 Debug.Log("Speed increased");
                 buffParticles.Play();
                 break;

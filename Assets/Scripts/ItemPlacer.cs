@@ -3,10 +3,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ItemPlacer : MonoBehaviour, IPlacer
 {
     public event Action AllItemsPlaced;
+    public UnityEvent AllItemsIn;
     public List<Transform> transformList = new List<Transform>();
     public int itemCount = 0;
     public int maxItemCount;
@@ -35,6 +37,7 @@ public class ItemPlacer : MonoBehaviour, IPlacer
         if(itemCount == maxItemCount)
         {
             allItemsPlacedSound.Post(gameObject);
+            AllItemsIn.Invoke();
             AllItemsPlaced?.Invoke();
             Debug.Log("All items placed");
         }
