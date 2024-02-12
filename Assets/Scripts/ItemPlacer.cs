@@ -12,6 +12,7 @@ public class ItemPlacer : MonoBehaviour, IPlacer
     public int maxItemCount;
     public AK.Wwise.Event itemPlaceSound;
     public AK.Wwise.Event allItemsPlacedSound;
+    public AK.Wwise.Event VO_NOItem;
 
     public void PlaceItem(IExaminable i)
     {
@@ -37,6 +38,7 @@ public class ItemPlacer : MonoBehaviour, IPlacer
             AllItemsPlaced?.Invoke();
             Debug.Log("All items placed");
         }
+        
         
     }
 
@@ -64,5 +66,10 @@ public class ItemPlacer : MonoBehaviour, IPlacer
                 .SetEase(Ease.Linear);
         }
         
+    }
+
+    public void PlaySound()
+    {
+        VO_NOItem.Post(gameObject);
     }
 }

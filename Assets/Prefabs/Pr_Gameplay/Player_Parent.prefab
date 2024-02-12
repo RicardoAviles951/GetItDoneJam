@@ -5449,7 +5449,7 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -5459,22 +5459,22 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.41333336
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071079
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.70710576
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -5853,12 +5853,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40124821d9f79ae4c83da987b9c1c56e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buffParticles: {fileID: 0}
-  debuffParticles: {fileID: 0}
+  buffParticles: {fileID: 5309263190927993237}
+  debuffParticles: {fileID: 6343454554495831869}
   regen: 3
   totalHealth: 100
   currentHealth: 100
-  regenDelay: 2
+  regenDelay: 5
+  damageSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bd57223dae4b574ebe256de0a38d283,
+      type: 2}
+  regenSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ed4348d4c760f3c41a0fd131399b76a9,
+      type: 2}
 --- !u!114 &3827656771259871500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5983,6 +5993,14 @@ MonoBehaviour:
   totalHealth: 100
   currentHealth: 100
   regenDelay: 2
+  damageSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  regenSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &4043369587304044369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,

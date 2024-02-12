@@ -423,10 +423,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformList: []
   itemCount: 0
+  maxItemCount: 5
   itemPlaceSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1b725a32041e6544c9cd6ba428eca079,
+      type: 2}
+  allItemsPlacedSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9c966b52634b7224c873c52a268e5373,
+      type: 2}
+  VO_NOItem:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c108f407f27a8bf44994232afa1c147c,
       type: 2}
 --- !u!114 &7734577939876558222
 MonoBehaviour:
@@ -440,7 +451,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba352c8866517bb4dbbce44ee69dd1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  burnReady: 0
   burnParticles: {fileID: 8537490324777264204}
+  notReadyToBurn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bd57223dae4b574ebe256de0a38d283,
+      type: 2}
 --- !u!4 &2847127245143650747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 149602682696591897, guid: 9c6ab4cb255dd9746ba4511a16a271ed,
