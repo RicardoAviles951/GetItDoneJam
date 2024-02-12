@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{23124492-B693-58D1-4F44-32501B690EBD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1FE0E040-24A8-FB8E-588B-61E12C0CBD9F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -636,13 +636,10 @@
 						<MediaRef Id="172971718"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4055567060" Name="Menu_Music" DurationType="OneShot" DurationMin="73.846146" DurationMax="73.846146">
+				<Event Id="4055567060" Name="Menu_Music" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="56883088"/>
 					</MediaRefs>
-					<ActionPostEvent>
-						<ActionPostEventEntry Id="2221424041" Name="Puzzle_Music"/>
-					</ActionPostEvent>
 				</Event>
 				<Event Id="2547478225" Name="NotYet_MG" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
@@ -734,7 +731,7 @@
 						<MediaRef Id="607322478"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2221424041" Name="Puzzle_Music" DurationType="OneShot" DurationMin="50.526314" DurationMax="50.526314">
+				<Event Id="2221424041" Name="Puzzle_Music" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="60988815"/>
 					</MediaRefs>
@@ -763,5 +760,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EFEE3882-C8C2-2955-023C-C1F8E1AB90DB}</FileHash>
+	<FileHash>{3E250478-FC6C-614A-E1BE-3954D7243ED8}</FileHash>
 </SoundBanksInfo>

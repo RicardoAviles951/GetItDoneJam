@@ -184,20 +184,10 @@
 					<ChildrenList>
 						<Event Name="Menu_Music" ID="{ABFA1B0A-0E1C-4F0C-A1E5-82134944F8E7}">
 							<ChildrenList>
-								<Action Name="" ID="{1363B63E-55C3-4369-9A24-01871501A5B0}" ShortID="775241486">
+								<Action Name="" ID="{DD9192E6-EA3E-4359-ACD1-3049F671BE17}" ShortID="640380657">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Menu_Music" ID="{CEB24349-C5A7-4EB9-ABD1-77EA0F8315ED}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{FE192572-C9E7-44CA-A3F7-78863DB05D7A}" ShortID="285060540">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Puzzle_Music" ID="{5EC3B6F7-057B-47A8-A4DB-FE19B2EB031A}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}"/>
+											<ObjectRef Name="Menu_Music_Loop" ID="{2C8CC451-C6BA-4E59-B558-948D047E238D}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -205,10 +195,10 @@
 						</Event>
 						<Event Name="Puzzle_Music" ID="{5EC3B6F7-057B-47A8-A4DB-FE19B2EB031A}">
 							<ChildrenList>
-								<Action Name="" ID="{0E7FB564-DCCD-41F7-B3F0-4F1DF05D07E7}" ShortID="282486821">
+								<Action Name="" ID="{50DF7D46-893F-4F66-9DD0-5643236FDBB1}" ShortID="156773960">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Puzzle_Music" ID="{E2E4BF74-A1D6-4FF4-B1DD-F5E88A00F2CE}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
+											<ObjectRef Name="Puzzle_Music_Loop" ID="{9B30C7F2-18F6-43D4-BDB9-376467F54267}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
