@@ -70,7 +70,6 @@ public class ConsoleController : MonoBehaviour, IDialogue
     void Awake() => name = gameObject.name;
     void EndingEvent()
     {
-        Debug.Log("Door opened?");
         EndingDialogueEvent.Invoke();
     }
 }
