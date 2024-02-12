@@ -1,0 +1,28 @@
+newmtl pmat0
+Kd 0.321569 0.25098 0.082353
+Ns 1
+map_Kd bark10.png
+newmtl pmat1
+Kd 0.321569 0.25098 0.082353
+Ns 1
+map_Kd bark10.png
+newmtl pmat2
+Kd 0.321569 0.25098 0.082353
+Ns 1
+map_Kd bark10.png
+newmtl pmat3
+Kd 0.388235 0.584314 0.34902
+Ns 1
+map_Kd leaf12.png
+newmtl pmat4
+Kd 0.807843 0.501961 0.635294
+Ns 1
+map_Kd leaf02.png
+newmtl pmat5
+Kd 0.321569 0.25098 0.082353
+Ns 1
+map_Kd bark10.png
+newmtl pmat6
+Kd 0.364706 0.517647 0.333333
+Ns 1
+map_Kd leaf11.png
