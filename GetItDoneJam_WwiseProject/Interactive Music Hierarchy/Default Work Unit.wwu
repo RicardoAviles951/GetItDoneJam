@@ -134,7 +134,11 @@
 						</Reference>
 						<Reference Name="PlaylistRoot">
 							<Custom>
-								<MusicPlaylistItem Name="" ID="{B67CA2ED-9787-4C2E-AA19-B2E22E469878}" ShortID="526300739"/>
+								<MusicPlaylistItem Name="" ID="{B67CA2ED-9787-4C2E-AA19-B2E22E469878}" ShortID="526300739">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+								</MusicPlaylistItem>
 							</Custom>
 						</Reference>
 						<Reference Name="TransitionRoot">
