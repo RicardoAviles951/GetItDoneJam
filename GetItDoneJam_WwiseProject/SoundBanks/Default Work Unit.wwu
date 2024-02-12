@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{CFBA58F6-7538-4E5E-A5B6-ECA3F9086527}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Puzzle2_Complete_Altered" ID="{C960F860-A4E2-4058-BA80-C8D83626AD67}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Barks" ID="{D8446C12-8D4B-405C-9D79-DFB922B1AB0E}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostPuzzle2_Gas_Run" ID="{B5B6CDF5-AD7A-4076-A2C9-E6A2E9BEA9E1}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Error" ID="{15457EF3-0FFC-4092-B48C-5B36AC2C64C2}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
@@ -24,7 +25,7 @@
 						<ObjectRef Name="Correct" ID="{2D9E00EA-E6DB-4527-BC51-33DE3B7CF921}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Puzzle1_AprroachTheConsole" ID="{CF1A41E6-78A6-45D2-A915-A292556341FA}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Breathing_NormalToPanting_MG" ID="{AB2F1502-4CD1-45F8-88DC-635658143141}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Puzzle2_Complete" ID="{3449BAAA-A984-45F9-AB67-C13BF8B53AEB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Puzzle2_Complete_Proceed" ID="{3449BAAA-A984-45F9-AB67-C13BF8B53AEB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient_Dialogue" ID="{E5795411-C4EB-4690-9270-FA8DE9A9837C}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Button_Push" ID="{C8EE9BC4-825C-46E0-B598-553E3E051CCB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Breathing_Normal_MG" ID="{2AA2A11E-2823-46F3-92DE-77F4608358D4}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>

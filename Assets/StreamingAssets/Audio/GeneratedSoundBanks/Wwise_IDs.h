@@ -50,7 +50,8 @@ namespace AK
         static const AkUniqueID PUZZLE1_INTRO1_NAME = 3713640624U;
         static const AkUniqueID PUZZLE1_INTRO2_VITALS = 205048165U;
         static const AkUniqueID PUZZLE1_INTRO3_EVALUATION = 22004205U;
-        static const AkUniqueID PUZZLE2_COMPLETE = 389644749U;
+        static const AkUniqueID PUZZLE2_COMPLETE_ALTERED = 1131469291U;
+        static const AkUniqueID PUZZLE2_COMPLETE_PROCEED = 1510210954U;
         static const AkUniqueID PUZZLE2_ELEVATOR2_PREPARED_MG = 1569488631U;
         static const AkUniqueID PUZZLE2_EXITCONSOLEEARLY = 2156734264U;
         static const AkUniqueID PUZZLE2_INTRO_SAVEYOURSELF = 2382053509U;

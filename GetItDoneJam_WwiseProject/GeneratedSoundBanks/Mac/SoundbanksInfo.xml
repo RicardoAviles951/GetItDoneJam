@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B3C4A3AE-CA40-D978-3357-551E6817DD51}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D39AFF28-6AC3-3930-0811-A4A7F46696F5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -346,6 +346,10 @@
 				<File Id="792168768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_04.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="797660621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Puzzle2_Complete.wav</ShortName>
+					<CachePath>SFX/Puzzle2_Complete_BF74E5D5.wem</CachePath>
 				</File>
 				<File Id="807232232" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Puzzle1_Intro1_Name.wav</ShortName>
@@ -706,7 +710,12 @@
 						<MediaRef Id="226602159"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="389644749" Name="Puzzle2_Complete" DurationType="OneShot" DurationMin="1.6552731" DurationMax="1.6552731">
+				<Event Id="1131469291" Name="Puzzle2_Complete_Altered" DurationType="OneShot" DurationMin="3.8538976" DurationMax="3.8538976">
+					<MediaRefs>
+						<MediaRef Id="797660621"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1510210954" Name="Puzzle2_Complete_Proceed" DurationType="OneShot" DurationMin="1.6552731" DurationMax="1.6552731">
 					<MediaRefs>
 						<MediaRef Id="605981572"/>
 					</MediaRefs>
@@ -760,5 +769,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9D23FE92-C8A8-BDFC-2F57-D11BC8217E63}</FileHash>
+	<FileHash>{14795E33-22B4-4847-0F77-8CD2C04BDC37}</FileHash>
 </SoundBanksInfo>

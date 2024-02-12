@@ -454,12 +454,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Puzzle2_Complete" ID="{3449BAAA-A984-45F9-AB67-C13BF8B53AEB}">
+								<Event Name="Puzzle2_Complete_Proceed" ID="{3449BAAA-A984-45F9-AB67-C13BF8B53AEB}">
 									<ChildrenList>
 										<Action Name="" ID="{03770CDD-4F44-4F44-AF49-8F4BC90BCE6B}" ShortID="1015860861">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Puzzle2_Complete" ID="{FC8D9B96-D767-44B5-B7AF-CA0BA686E938}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+													<ObjectRef Name="Puzzle2_Complete_Proceed" ID="{FC8D9B96-D767-44B5-B7AF-CA0BA686E938}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -482,6 +482,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Puzzle2_Elevator2_Prepared_MG" ID="{B2760E85-5312-4A21-A087-6CB9EBA74FB5}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle2_Complete_Altered" ID="{C960F860-A4E2-4058-BA80-C8D83626AD67}">
+									<ChildrenList>
+										<Action Name="" ID="{6D370148-2C68-46E9-9586-0EBB2B37C80D}" ShortID="869509080">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle2_Complete_Altered" ID="{7A6F8141-7EAA-462E-B925-C9E81C0F8083}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
