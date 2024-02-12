@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 277315082291cd4cbb02e81197f4e1ab
     GuidInternal: 
-    m_lastTime: -8584955380167137687
+    m_lastTime: -8584956378226904110
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7433b8e6e7181348a6fe56eb5501fe66
     GuidInternal: 
-    m_lastTime: -8584955380167227688
+    m_lastTime: -8584956378226963942
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584939843849516830
+    m_lastTime: -8584938457758312844
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584939843868522147
+    m_lastTime: -8584938457772742669
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -340,8 +340,8 @@ MonoBehaviour:
         guid: 4ae3ae15275bc0479e6dfacf84980a22
       Path: Events\Default Work Unit\Environment\Door_Open_Close
       maxAttenuation: 0
-      maxDuration: 3
-      minDuration: 3
+      maxDuration: 1
+      minDuration: 1
     - name: Electric_Attack
       guid: efb31bbdd4cd29478c2756ebfca6f218
       id: 1242796459
@@ -674,8 +674,8 @@ MonoBehaviour:
         guid: 0a1bfaab1c0e0c4fa1e582134944f8e7
       Path: Events\Default Work Unit\Music\Menu_Music
       maxAttenuation: 0
-      maxDuration: 73.846146
-      minDuration: 73.846146
+      maxDuration: 0
+      minDuration: 0
     - name: Music
       guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
       id: 3991942870
@@ -693,6 +693,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: NotYet_MG
+      guid: 366aadd4c42a7b4a82e18684b60fada3
+      id: 2547478225
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: NotYet_MG
+        ObjectType: 3
+        guid: 366aadd4c42a7b4a82e18684b60fada3
+      Path: Events\Default Work Unit\Dialogue\Barks\NotYet_MG
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.5
     - name: Pause
       guid: 87432b6b17d8684dbe0f9242f64a175b
       id: 3092587493
@@ -883,8 +906,8 @@ MonoBehaviour:
         guid: f7b6c35e7b05a847a4dbfe19b2eb031a
       Path: Events\Default Work Unit\Music\Puzzle_Music
       maxAttenuation: 0
-      maxDuration: 50.526314
-      minDuration: 50.526314
+      maxDuration: 0
+      minDuration: 0
     - name: Puzzle1
       guid: d724eed38ccf464fb93cb0fa28340649
       id: 4237507622
@@ -951,6 +974,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2
       minDuration: 2
+    - name: Puzzle1_Intro1_Name
+      guid: f6beb88795b8df4cb1b0f4a006a17ba2
+      id: 3713640624
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle1
+        ObjectType: 4
+        guid: d724eed38ccf464fb93cb0fa28340649
+      - ElementName: Puzzle1_Intro1_Name
+        ObjectType: 3
+        guid: f6beb88795b8df4cb1b0f4a006a17ba2
+      Path: Events\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro1_Name
+      maxAttenuation: 0
+      maxDuration: 6.5
+      minDuration: 6.5
     - name: Puzzle1_Intro2_Vitals
       guid: 67c1f6b15a6cbe4f8f70e1a91ddeee71
       id: 205048165
@@ -1017,9 +1063,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Puzzle2_Complete
-      guid: aaba493484a9f945ab67c13bf8b53aeb
-      id: 389644749
+    - name: Puzzle2_Complete_Altered
+      guid: 60f860c9e2a45840ba80c8d83626ad67
+      id: 1131469291
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1033,13 +1079,59 @@ MonoBehaviour:
       - ElementName: Puzzle2
         ObjectType: 4
         guid: 8b3e91d2fb121548b810e09bdd83ef95
-      - ElementName: Puzzle2_Complete
+      - ElementName: Puzzle2_Complete_Altered
+        ObjectType: 3
+        guid: 60f860c9e2a45840ba80c8d83626ad67
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete_Altered
+      maxAttenuation: 0
+      maxDuration: 3.8538976
+      minDuration: 3.8538976
+    - name: Puzzle2_Complete_Proceed
+      guid: aaba493484a9f945ab67c13bf8b53aeb
+      id: 1510210954
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: Puzzle2_Complete_Proceed
         ObjectType: 3
         guid: aaba493484a9f945ab67c13bf8b53aeb
-      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete_Proceed
       maxAttenuation: 0
-      maxDuration: 5.5
-      minDuration: 5.5
+      maxDuration: 1.6552731
+      minDuration: 1.6552731
+    - name: Puzzle2_Elevator2_Prepared_MG
+      guid: 943bcca236cc5249b0bce82a67f548eb
+      id: 1569488631
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: Puzzle2_Elevator2_Prepared_MG
+        ObjectType: 3
+        guid: 943bcca236cc5249b0bce82a67f548eb
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Elevator2_Prepared_MG
+      maxAttenuation: 0
+      maxDuration: 3.5
+      minDuration: 3.5
     - name: Puzzle2_ExitConsoleEarly
       guid: 02a44a8cbb69984f818d67e25f36e181
       id: 2156734264
@@ -1158,7 +1250,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 531635c31a24e4418bc5f398cc1c64e8
     GuidInternal: 
-    m_lastTime: -8584955380167327496
+    m_lastTime: -8584956378227013785
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -1172,7 +1264,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0a933c593427f3499de37131beb18770
     GuidInternal: 
-    m_lastTime: -8584955380167147672
+    m_lastTime: -8584956378226924048
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -1186,7 +1278,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584948512374366003
+    m_lastTime: -8584947937478581884
     List:
     - name: Ground
       guid: bf629f9a6d185b42946b2341cd59e9f5
@@ -1366,7 +1458,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 27d465f206536d40bed3902056328c88
     GuidInternal: 
-    m_lastTime: -8584955380167137687
+    m_lastTime: -8584956378226914074
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

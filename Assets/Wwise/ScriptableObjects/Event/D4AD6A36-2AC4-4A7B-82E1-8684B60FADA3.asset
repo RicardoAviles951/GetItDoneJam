@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bcfbe5c02243b64683d907548fa32f8, type: 3}
+  m_Name: D4AD6A36-2AC4-4A7B-82E1-8684B60FADA3
+  m_EditorClassIdentifier: 
+  objectName: NotYet_MG
+  id: 2547478225
+  guid: D4AD6A36-2AC4-4A7B-82E1-8684B60FADA3

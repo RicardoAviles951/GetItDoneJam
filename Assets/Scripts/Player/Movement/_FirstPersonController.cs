@@ -59,6 +59,15 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+        [Space]
+        [Header("Character Animations")]
+        [Tooltip("The animtion controller for the player arms")]
+        public Animator ac_PlayerArms;
+        [Tooltip("The animtion controller for the player full body")]
+        public Animator ac_PlayerBase;
+        // animations
+        private bool isMoving, armIsUp;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -200,18 +209,37 @@ namespace StarterAssets
 			// normalise input direction
 			Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
 
-			// note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
-			// if there is a move input rotate player when the player is moving
-			if (_input.move != Vector2.zero)
-			{
-				// move
-				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
-				HandleFootstepSounds();
-			}
+            // note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
+            // if there is a move input rotate player when the player is moving
+            if (_input.move != Vector2.zero)
+            {
+                // move
+                inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+                HandleFootstepSounds();
+                // if animations
+                isMoving = true;
+                armIsUp = true;
+            }
+            else
+                isMoving = false;
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+            // check animations we might have plugged in
+            CheckAnimations();
 		}
+
+        public void CheckAnimations()
+        {
+            if (ac_PlayerBase)
+                ac_PlayerBase.SetBool("isMoving", isMoving);
+            if(ac_PlayerArms)
+            {
+                ac_PlayerBase.SetBool("isMoving", isMoving);
+                ac_PlayerBase.SetBool("armIsUp", armIsUp);
+            }
+        }
 
 		public void JumpAndGravity()
 		{

@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IPlacer : IInteractable
 {
     void PlaceItem(IExaminable item);
+    void PlaySound();
 }

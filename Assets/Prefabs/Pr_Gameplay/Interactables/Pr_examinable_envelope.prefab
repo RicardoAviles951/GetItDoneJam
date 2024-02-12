@@ -97,7 +97,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.77, y: 2.55, z: 0.69}
+  m_Size: {x: 1.77, y: 2.55, z: 0.31}
   m_Center: {x: -0.04, y: 0.3, z: 0}
 --- !u!114 &7604504081598564060
 MonoBehaviour:
@@ -189,6 +189,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7e7b7cfb829a6f34d9bdbcd34e1e484f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5aabd4702ba1cc84da9c0ee70e9f72ca, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e7b7cfb829a6f34d9bdbcd34e1e484f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: c595a5c044b5b4949b37864fbfcb51e3, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e7b7cfb829a6f34d9bdbcd34e1e484f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: c67f993b62f1a0647be513c2c76e0d36, type: 2}
     - target: {fileID: 919132149155446097, guid: 7e7b7cfb829a6f34d9bdbcd34e1e484f,
         type: 3}
       propertyPath: m_Name
