@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584938982143081039
+    m_lastTime: -8584938457758312844
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584938982166095564
+    m_lastTime: -8584938457772742669
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -1063,9 +1063,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Puzzle2_Complete
-      guid: aaba493484a9f945ab67c13bf8b53aeb
-      id: 389644749
+    - name: Puzzle2_Complete_Altered
+      guid: 60f860c9e2a45840ba80c8d83626ad67
+      id: 1131469291
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1079,10 +1079,33 @@ MonoBehaviour:
       - ElementName: Puzzle2
         ObjectType: 4
         guid: 8b3e91d2fb121548b810e09bdd83ef95
-      - ElementName: Puzzle2_Complete
+      - ElementName: Puzzle2_Complete_Altered
+        ObjectType: 3
+        guid: 60f860c9e2a45840ba80c8d83626ad67
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete_Altered
+      maxAttenuation: 0
+      maxDuration: 3.8538976
+      minDuration: 3.8538976
+    - name: Puzzle2_Complete_Proceed
+      guid: aaba493484a9f945ab67c13bf8b53aeb
+      id: 1510210954
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: Puzzle2_Complete_Proceed
         ObjectType: 3
         guid: aaba493484a9f945ab67c13bf8b53aeb
-      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete_Proceed
       maxAttenuation: 0
       maxDuration: 1.6552731
       minDuration: 1.6552731
