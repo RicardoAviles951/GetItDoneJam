@@ -5910,37 +5910,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1703741684}
     m_Modifications:
-    - target: {fileID: 158601102, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
-      propertyPath: blendDistance
-      value: 0.2
+    - target: {fileID: 228205310, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.642
       objectReference: {fileID: 0}
-    - target: {fileID: 158601102, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
-      propertyPath: sharedProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: 6ad5a1b77561ddd47bf20e812958e6c3,
-        type: 2}
-    - target: {fileID: 323076486, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
-      propertyPath: m_SpotAngle
-      value: 30.682487
-      objectReference: {fileID: 0}
-    - target: {fileID: 323076486, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 22.484566
-      objectReference: {fileID: 0}
-    - target: {fileID: 878716254, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
-      propertyPath: sharedProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: 6ad5a1b77561ddd47bf20e812958e6c3,
-        type: 2}
-    - target: {fileID: 1217290475, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
-      propertyPath: blendDistance
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217290475, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
-      propertyPath: sharedProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: 6ad5a1b77561ddd47bf20e812958e6c3,
-        type: 2}
     - target: {fileID: 2395221799776439269, guid: d0da03b6b64713742aeb904c7351e47f,
         type: 3}
       propertyPath: m_RootOrder
