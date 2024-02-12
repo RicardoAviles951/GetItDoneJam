@@ -78,13 +78,15 @@ public class PlayerMoveState : PlayerBaseState
 
                     case IDialogue d:
                         player.currentConsole = d;
-                        d.LoadDialogue();
-                        if (d.isRepeatable)
+                        if (d.HasDialogue())
                         {
-                            player.TogglePlayerHUD("hide");
-                            player.ChangeState(player.dialogueState);
+                            if (d.CheckForRepeatable())
+                            {
+                                d.LoadDialogue();
+                                player.TogglePlayerHUD("hide");
+                                player.ChangeState(player.dialogueState);
+                            }
                         }
-                        
 
                         break;
 
@@ -94,6 +96,10 @@ public class PlayerMoveState : PlayerBaseState
                         if (item != null)
                         {  
                             pl.PlaceItem(item);
+                        }
+                        else
+                        {
+                            pl.PlaySound();
                         }
                         break;
 

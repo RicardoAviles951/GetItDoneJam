@@ -69,6 +69,7 @@ public class ElectricityAbility : AbilityBase
             IElectrifiable electrifiable = ability.detector.hit.collider.gameObject.GetComponent<IElectrifiable>();
             if (electrifiable != null && electrifiable.useParticleCollisions == false)
             {
+                Debug.Log("Electrifiable detected");
                 electrifiedObject = electrifiable;
                 return true;
             }

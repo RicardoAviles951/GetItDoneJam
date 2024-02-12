@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AbilityManager : MonoBehaviour
 {
@@ -41,14 +40,6 @@ public class AbilityManager : MonoBehaviour
     public void ActivateAbility()
     {
         currentAbility.UpdateAbility(this);
-        
-        
-
-        if (input.restart)
-        {
-            input.restart = false;
-            RestartScene();
-        }
 
     }
 
@@ -58,14 +49,7 @@ public class AbilityManager : MonoBehaviour
         ability.Activate(this);
     }
 
-    public void RestartScene()
-    {
-        // Get the current active scene name
-        string currentSceneName = SceneManager.GetActiveScene().name;
-
-        // Load the current scene again to restart it
-        SceneManager.LoadScene(currentSceneName);
-    }
+    
 
     public void GetAbilityText(string text)
     {
