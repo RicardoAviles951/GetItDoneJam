@@ -2072,6 +2072,28 @@
 										<ActiveSource Name="Puzzle2_ExitConsoleEarly" ID="{6F09CC29-9D74-4C7B-B1D0-F04BEF675BB9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="NotYet_MG" ID="{0B304C0F-8204-4109-99F7-C17230C03900}" ShortID="1019972046">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="NotYet_MG" ID="{1D180C8A-DF4F-487A-ADD9-334BCA2959A0}">
+											<Language>SFX</Language>
+											<AudioFile>NotYet_MG.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1004019758"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="NotYet_MG" ID="{1D180C8A-DF4F-487A-ADD9-334BCA2959A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Puzzle1" ID="{49A893C3-3B02-4A5C-9213-82C36292D8C9}" ShortID="652290001">
@@ -2164,18 +2186,33 @@
 										<ActiveSource Name="Puzzle1_Intro3_Evaluation" ID="{3A3136DA-1C8A-41A9-A5B1-F9819A5FB084}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Puzzle1_Intro1_Name" ID="{6C7F654B-4F90-4233-980F-CAAAB0E72A91}" ShortID="413192765">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Puzzle1_Intro1_Name" ID="{817F682D-9E22-44F1-8D80-EEAA3C5AA801}">
+											<Language>SFX</Language>
+											<AudioFile>Puzzle1_Intro1_Name.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="807232232"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Puzzle1_Intro1_Name" ID="{817F682D-9E22-44F1-8D80-EEAA3C5AA801}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Puzzle2" ID="{FE8EA216-F1E0-449B-B061-29D68225CE38}" ShortID="411734679">
 							<ChildrenList>
 								<Sound Name="PostPuzzle2_Gas_Run" ID="{20F40B38-9900-4371-8AD3-AF080D1045AE}" ShortID="196833038">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
@@ -2287,6 +2324,28 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Puzzle2_Intro_SaveYourself" ID="{66373BD8-3343-4209-B7AB-FB06D4AEBB8C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Puzzle2_Elevator2_Prepared_MG" ID="{B2760E85-5312-4A21-A087-6CB9EBA74FB5}" ShortID="782125867">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Puzzle2_Elevator2_Prepared_MG" ID="{7BAFF98B-B788-4476-9F79-718C8989A499}">
+											<Language>SFX</Language>
+											<AudioFile>Puzzle2_Elevator2_Prepared_MG.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="692772672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Puzzle2_Elevator2_Prepared_MG" ID="{7BAFF98B-B788-4476-9F79-718C8989A499}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

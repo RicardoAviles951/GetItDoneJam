@@ -357,6 +357,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="NotYet_MG" ID="{D4AD6A36-2AC4-4A7B-82E1-8684B60FADA3}">
+									<ChildrenList>
+										<Action Name="" ID="{B7679FA4-532A-4F3B-B54E-79DA1F106D7C}" ShortID="100159178">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="NotYet_MG" ID="{0B304C0F-8204-4109-99F7-C17230C03900}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Puzzle1" ID="{D3EE24D7-CF8C-4F46-B93C-B0FA28340649}" ShortID="439674344">
@@ -400,6 +411,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Puzzle1_Intro3_Evaluation" ID="{C680FC1A-2141-4177-906B-4BA2FC6CC87D}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle1_Intro1_Name" ID="{87B8BEF6-B895-4CDF-B1B0-F4A006A17BA2}">
+									<ChildrenList>
+										<Action Name="" ID="{E604B1BF-7563-46E8-88C1-EF3105333C60}" ShortID="660685288">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle1_Intro1_Name" ID="{6C7F654B-4F90-4233-980F-CAAAB0E72A91}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -459,6 +481,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Puzzle2_Intro_SaveYourself" ID="{AD707B1F-A523-44A8-B568-56B503221FA7}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Puzzle2_Elevator2_Prepared_MG" ID="{A2CC3B94-CC36-4952-B0BC-E82A67F548EB}">
+									<ChildrenList>
+										<Action Name="" ID="{AEE63DF6-D449-43FB-A1B5-3C5E318E8B94}" ShortID="108210586">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle2_Elevator2_Prepared_MG" ID="{B2760E85-5312-4A21-A087-6CB9EBA74FB5}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
