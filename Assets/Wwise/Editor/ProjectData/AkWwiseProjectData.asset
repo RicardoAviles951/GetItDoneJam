@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 277315082291cd4cbb02e81197f4e1ab
     GuidInternal: 
-    m_lastTime: -8584957260671033135
+    m_lastTime: -8584950169244433701
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7433b8e6e7181348a6fe56eb5501fe66
     GuidInternal: 
-    m_lastTime: -8584957260672051620
+    m_lastTime: -8584950169244573324
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584947794785627598
+    m_lastTime: -8584938456001483214
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,8 +94,351 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584948685891599917
+    m_lastTime: -8584938456029170518
     List:
+    - name: AirVent_Start
+      guid: 57a8970931eebd4aae4e315d213a5dc8
+      id: 4112548455
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: AirVent_Start
+        ObjectType: 3
+        guid: 57a8970931eebd4aae4e315d213a5dc8
+      Path: Events\Default Work Unit\Environment\AirVent_Start
+      maxAttenuation: 0
+      maxDuration: 31.5
+      minDuration: 31.5
+    - name: Ambience
+      guid: 947f28bf2e42c144b8158cda6283417d
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 947f28bf2e42c144b8158cda6283417d
+      Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ambient_Dialogue
+      guid: 115479e5ebc490469270fa8de9a9837c
+      id: 1915014528
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Ambient_Dialogue
+        ObjectType: 4
+        guid: 115479e5ebc490469270fa8de9a9837c
+      Path: Events\Default Work Unit\Dialogue\Ambient_Dialogue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Barks
+      guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      id: 2769710370
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      Path: Events\Default Work Unit\Dialogue\Barks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Breathing_Distressed_MG
+      guid: 1ae6b5f991d3ff499be8b4dde82117a0
+      id: 3273229053
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: Breathing_Distressed_MG
+        ObjectType: 3
+        guid: 1ae6b5f991d3ff499be8b4dde82117a0
+      Path: Events\Default Work Unit\Dialogue\Barks\Breathing_Distressed_MG
+      maxAttenuation: 0
+      maxDuration: 5.5
+      minDuration: 5.5
+    - name: Breathing_Normal_MG
+      guid: 1ea1a22a2328f34692de77f4608358d4
+      id: 2722581652
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: Breathing_Normal_MG
+        ObjectType: 3
+        guid: 1ea1a22a2328f34692de77f4608358d4
+      Path: Events\Default Work Unit\Dialogue\Barks\Breathing_Normal_MG
+      maxAttenuation: 0
+      maxDuration: 6.5
+      minDuration: 6.5
+    - name: Breathing_NormalToPanting_MG
+      guid: 02152fabd14cf84588dc635658143141
+      id: 3814470798
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: Breathing_NormalToPanting_MG
+        ObjectType: 3
+        guid: 02152fabd14cf84588dc635658143141
+      Path: Events\Default Work Unit\Dialogue\Barks\Breathing_NormalToPanting_MG
+      maxAttenuation: 0
+      maxDuration: 11.5
+      minDuration: 11.5
+    - name: Button_Push
+      guid: c49beec85c82e046b598553e3e051ccb
+      id: 1965951612
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Button_Push
+        ObjectType: 3
+        guid: c49beec85c82e046b598553e3e051ccb
+      Path: Events\Default Work Unit\Environment\Button_Push
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Correct
+      guid: ea009e2ddbe62745bc5133de3b7cf921
+      id: 4126251273
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Correct
+        ObjectType: 3
+        guid: ea009e2ddbe62745bc5133de3b7cf921
+      Path: Events\Default Work Unit\UI\Correct
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Dialogue
+      guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      id: 3930136735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      Path: Events\Default Work Unit\Dialogue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DoesntHave_Inventory_Item
+      guid: 41f8fb0421d52b4c8a6f05bd2c7923fb
+      id: 351850055
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: DoesntHave_Inventory_Item
+        ObjectType: 3
+        guid: 41f8fb0421d52b4c8a6f05bd2c7923fb
+      Path: Events\Default Work Unit\Dialogue\Barks\DoesntHave_Inventory_Item
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.5
+    - name: Door_Open_Close
+      guid: 4ae3ae15275bc0479e6dfacf84980a22
+      id: 1873899129
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Door_Open_Close
+        ObjectType: 3
+        guid: 4ae3ae15275bc0479e6dfacf84980a22
+      Path: Events\Default Work Unit\Environment\Door_Open_Close
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Electric_Attack
+      guid: efb31bbdd4cd29478c2756ebfca6f218
+      id: 1242796459
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Powerups
+        ObjectType: 4
+        guid: fd21b7eab808884b8c29857f93b96ac8
+      - ElementName: Electric_Attack
+        ObjectType: 3
+        guid: efb31bbdd4cd29478c2756ebfca6f218
+      Path: Events\Default Work Unit\Powerups\Electric_Attack
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Elevator_Ride
+      guid: c07610285eb4b1409bec4e5b092b1d56
+      id: 1183628468
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 947f28bf2e42c144b8158cda6283417d
+      - ElementName: Elevator_Ride
+        ObjectType: 3
+        guid: c07610285eb4b1409bec4e5b092b1d56
+      Path: Events\Default Work Unit\Ambience\Elevator_Ride
+      maxAttenuation: 0
+      maxDuration: 11.5
+      minDuration: 11.5
+    - name: Environment
+      guid: 5011610f344f2844a3fa7d6790dc868c
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      Path: Events\Default Work Unit\Environment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Error
+      guid: f37e4515fc0f9240b48c5b36ac2c64c2
+      id: 1880695829
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Error
+        ObjectType: 3
+        guid: f37e4515fc0f9240b48c5b36ac2c64c2
+      Path: Events\Default Work Unit\UI\Error
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Fire_Attack
+      guid: f9c235d029adab428fd4f8887cc96643
+      id: 1422166728
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Powerups
+        ObjectType: 4
+        guid: fd21b7eab808884b8c29857f93b96ac8
+      - ElementName: Fire_Attack
+        ObjectType: 3
+        guid: f9c235d029adab428fd4f8887cc96643
+      Path: Events\Default Work Unit\Powerups\Fire_Attack
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
     - name: Footsteps
       guid: 20f1b40c475ad4489fba41c0228b2672
       id: 2385628198
@@ -111,8 +454,154 @@ MonoBehaviour:
         guid: 20f1b40c475ad4489fba41c0228b2672
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Game_Complete
+      guid: 10ee238317474843b8fbdf3f02cbb7e1
+      id: 1343734759
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle3
+        ObjectType: 4
+        guid: da21f1a4a7da64438d3b9a1392e0bb2b
+      - ElementName: Game_Complete
+        ObjectType: 3
+        guid: 10ee238317474843b8fbdf3f02cbb7e1
+      Path: Events\Default Work Unit\Dialogue\Puzzle3\Game_Complete
+      maxAttenuation: 0
+      maxDuration: 6
+      minDuration: 6
+    - name: Health
+      guid: 783b7dd2b4f3b34bbacec8186af714da
+      id: 3677180323
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Health
+        ObjectType: 3
+        guid: 783b7dd2b4f3b34bbacec8186af714da
+      Path: Events\Default Work Unit\UI\Health
+      maxAttenuation: 0
+      maxDuration: 21
+      minDuration: 21
+    - name: HeatUsage_Hint
+      guid: 346ec3cced431749973e92c6ceaabc59
+      id: 2561963336
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: HeatUsage_Hint
+        ObjectType: 3
+        guid: 346ec3cced431749973e92c6ceaabc59
+      Path: Events\Default Work Unit\Dialogue\Barks\HeatUsage_Hint
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.5
+    - name: Hologram_Blast
+      guid: 142efac4da83064992c02f5affdb7cb3
+      id: 1472083991
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Hologram_Blast
+        ObjectType: 3
+        guid: 142efac4da83064992c02f5affdb7cb3
+      Path: Events\Default Work Unit\Environment\Hologram_Blast
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
+    - name: Hologram_Impact
+      guid: 26e40740cc11e44a88df1900232c21fb
+      id: 1733942329
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Hologram_Impact
+        ObjectType: 3
+        guid: 26e40740cc11e44a88df1900232c21fb
+      Path: Events\Default Work Unit\Environment\Hologram_Impact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Item_Pickup
+      guid: 089b2693537d7047a3ef2780462a3520
+      id: 566396871
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Item_Pickup
+        ObjectType: 3
+        guid: 089b2693537d7047a3ef2780462a3520
+      Path: Events\Default Work Unit\Environment\Item_Pickup
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Item_PutDown
+      guid: 053c388500a24744a732467a95e0a0ee
+      id: 662770354
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Item_PutDown
+        ObjectType: 3
+        guid: 053c388500a24744a732467a95e0a0ee
+      Path: Events\Default Work Unit\Environment\Item_PutDown
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
     - name: Jump
       guid: 1dd6e0eb24382b49a99f0041c9e6f7ec
       id: 3833651337
@@ -128,8 +617,8 @@ MonoBehaviour:
         guid: 1dd6e0eb24382b49a99f0041c9e6f7ec
       Path: Events\Default Work Unit\Jump
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1
+      minDuration: 0.5
     - name: Land
       guid: 935250ba6cf72a478b9ec64ea1b2fd97
       id: 674522502
@@ -145,8 +634,610 @@ MonoBehaviour:
         guid: 935250ba6cf72a478b9ec64ea1b2fd97
       Path: Events\Default Work Unit\Land
       maxAttenuation: 0
+      maxDuration: 1.5
+      minDuration: 1
+    - name: Map_Ambience
+      guid: ccf460c918ed6947822f54e40d2c3923
+      id: 1898179168
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 947f28bf2e42c144b8158cda6283417d
+      - ElementName: Map_Ambience
+        ObjectType: 3
+        guid: ccf460c918ed6947822f54e40d2c3923
+      Path: Events\Default Work Unit\Ambience\Map_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Menu_Music
+      guid: 0a1bfaab1c0e0c4fa1e582134944f8e7
+      id: 4055567060
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      - ElementName: Menu_Music
+        ObjectType: 3
+        guid: 0a1bfaab1c0e0c4fa1e582134944f8e7
+      Path: Events\Default Work Unit\Music\Menu_Music
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Music
+      guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: NotYet_MG
+      guid: 366aadd4c42a7b4a82e18684b60fada3
+      id: 2547478225
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: NotYet_MG
+        ObjectType: 3
+        guid: 366aadd4c42a7b4a82e18684b60fada3
+      Path: Events\Default Work Unit\Dialogue\Barks\NotYet_MG
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.5
+    - name: Pause
+      guid: 87432b6b17d8684dbe0f9242f64a175b
+      id: 3092587493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Pause
+        ObjectType: 3
+        guid: 87432b6b17d8684dbe0f9242f64a175b
+      Path: Events\Default Work Unit\UI\Pause
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Player_Death
+      guid: b56da18cd0be07429b5c4a555ce6663a
+      id: 3083087645
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: Player_Death
+        ObjectType: 3
+        guid: b56da18cd0be07429b5c4a555ce6663a
+      Path: Events\Default Work Unit\Dialogue\Barks\Player_Death
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.5
+    - name: PlayerStuck_AbilitiesReminder_Puzzle3
+      guid: ca4511c39e28974d84658ede3fc00ab1
+      id: 3198648693
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: PlayerStuck_AbilitiesReminder_Puzzle3
+        ObjectType: 3
+        guid: ca4511c39e28974d84658ede3fc00ab1
+      Path: Events\Default Work Unit\Dialogue\Barks\PlayerStuck_AbilitiesReminder_Puzzle3
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Poison_Gas
+      guid: 585886077b3b504eb2f518f7abd2c2bc
+      id: 4209290139
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 5011610f344f2844a3fa7d6790dc868c
+      - ElementName: Poison_Gas
+        ObjectType: 3
+        guid: 585886077b3b504eb2f518f7abd2c2bc
+      Path: Events\Default Work Unit\Environment\Poison_Gas
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.5
+    - name: PostPuzzle2_Gas_Run
+      guid: f5cdb6b57aad7640a2c9e6a2e9bea9e1
+      id: 7392803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: PostPuzzle2_Gas_Run
+        ObjectType: 3
+        guid: f5cdb6b57aad7640a2c9e6a2e9bea9e1
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\PostPuzzle2_Gas_Run
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: PostPuzzle2_HallEntry_Fight
+      guid: 019fb299bd62064da4296a4ae4b2ed5f
+      id: 2706924062
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: PostPuzzle2_HallEntry_Fight
+        ObjectType: 3
+        guid: 019fb299bd62064da4296a4ae4b2ed5f
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\PostPuzzle2_HallEntry_Fight
+      maxAttenuation: 0
+      maxDuration: 5.9
+      minDuration: 5.9
+    - name: Powerups
+      guid: fd21b7eab808884b8c29857f93b96ac8
+      id: 2600048462
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Powerups
+        ObjectType: 4
+        guid: fd21b7eab808884b8c29857f93b96ac8
+      Path: Events\Default Work Unit\Powerups
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PrePuzzle2_Hall
+      guid: bae1f041204d044481c59ff29136d293
+      id: 2501841164
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: PrePuzzle2_Hall
+        ObjectType: 3
+        guid: bae1f041204d044481c59ff29136d293
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\PrePuzzle2_Hall
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Puzzle_Music
+      guid: f7b6c35e7b05a847a4dbfe19b2eb031a
+      id: 2221424041
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
+      - ElementName: Puzzle_Music
+        ObjectType: 3
+        guid: f7b6c35e7b05a847a4dbfe19b2eb031a
+      Path: Events\Default Work Unit\Music\Puzzle_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Puzzle1
+      guid: d724eed38ccf464fb93cb0fa28340649
+      id: 4237507622
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle1
+        ObjectType: 4
+        guid: d724eed38ccf464fb93cb0fa28340649
+      Path: Events\Default Work Unit\Dialogue\Puzzle1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Puzzle1_Ability_OpenDoor
+      guid: 92697998dd686543a889ddb468b12967
+      id: 668566028
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle1
+        ObjectType: 4
+        guid: d724eed38ccf464fb93cb0fa28340649
+      - ElementName: Puzzle1_Ability_OpenDoor
+        ObjectType: 3
+        guid: 92697998dd686543a889ddb468b12967
+      Path: Events\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Ability_OpenDoor
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Puzzle1_AprroachTheConsole
+      guid: e6411acfa678d245a915a292556341fa
+      id: 2577639323
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle1
+        ObjectType: 4
+        guid: d724eed38ccf464fb93cb0fa28340649
+      - ElementName: Puzzle1_AprroachTheConsole
+        ObjectType: 3
+        guid: e6411acfa678d245a915a292556341fa
+      Path: Events\Default Work Unit\Dialogue\Puzzle1\Puzzle1_AprroachTheConsole
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
+    - name: Puzzle1_Intro1_Name
+      guid: f6beb88795b8df4cb1b0f4a006a17ba2
+      id: 3713640624
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle1
+        ObjectType: 4
+        guid: d724eed38ccf464fb93cb0fa28340649
+      - ElementName: Puzzle1_Intro1_Name
+        ObjectType: 3
+        guid: f6beb88795b8df4cb1b0f4a006a17ba2
+      Path: Events\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro1_Name
+      maxAttenuation: 0
+      maxDuration: 6.5
+      minDuration: 6.5
+    - name: Puzzle1_Intro2_Vitals
+      guid: 67c1f6b15a6cbe4f8f70e1a91ddeee71
+      id: 205048165
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle1
+        ObjectType: 4
+        guid: d724eed38ccf464fb93cb0fa28340649
+      - ElementName: Puzzle1_Intro2_Vitals
+        ObjectType: 3
+        guid: 67c1f6b15a6cbe4f8f70e1a91ddeee71
+      Path: Events\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro2_Vitals
+      maxAttenuation: 0
+      maxDuration: 5
+      minDuration: 5
+    - name: Puzzle1_Intro3_Evaluation
+      guid: 5572e601c227774e9ecf430fba79e527
+      id: 22004205
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle1
+        ObjectType: 4
+        guid: d724eed38ccf464fb93cb0fa28340649
+      - ElementName: Puzzle1_Intro3_Evaluation
+        ObjectType: 3
+        guid: 5572e601c227774e9ecf430fba79e527
+      Path: Events\Default Work Unit\Dialogue\Puzzle1\Puzzle1_Intro3_Evaluation
+      maxAttenuation: 0
+      maxDuration: 8
+      minDuration: 8
+    - name: Puzzle2
+      guid: 8b3e91d2fb121548b810e09bdd83ef95
+      id: 4237507621
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      Path: Events\Default Work Unit\Dialogue\Puzzle2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Puzzle2_Complete_Altered
+      guid: 60f860c9e2a45840ba80c8d83626ad67
+      id: 1131469291
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: Puzzle2_Complete_Altered
+        ObjectType: 3
+        guid: 60f860c9e2a45840ba80c8d83626ad67
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete_Altered
+      maxAttenuation: 0
+      maxDuration: 3.8538976
+      minDuration: 3.8538976
+    - name: Puzzle2_Complete_Proceed
+      guid: aaba493484a9f945ab67c13bf8b53aeb
+      id: 1510210954
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: Puzzle2_Complete_Proceed
+        ObjectType: 3
+        guid: aaba493484a9f945ab67c13bf8b53aeb
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Complete_Proceed
+      maxAttenuation: 0
+      maxDuration: 1.6552731
+      minDuration: 1.6552731
+    - name: Puzzle2_Elevator2_Prepared_MG
+      guid: 943bcca236cc5249b0bce82a67f548eb
+      id: 1569488631
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: Puzzle2_Elevator2_Prepared_MG
+        ObjectType: 3
+        guid: 943bcca236cc5249b0bce82a67f548eb
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Elevator2_Prepared_MG
+      maxAttenuation: 0
+      maxDuration: 3.5
+      minDuration: 3.5
+    - name: Puzzle2_ExitConsoleEarly
+      guid: 02a44a8cbb69984f818d67e25f36e181
+      id: 2156734264
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Barks
+        ObjectType: 4
+        guid: 126c44d84b8d5c409d79dfb922b1ab0e
+      - ElementName: Puzzle2_ExitConsoleEarly
+        ObjectType: 3
+        guid: 02a44a8cbb69984f818d67e25f36e181
+      Path: Events\Default Work Unit\Dialogue\Barks\Puzzle2_ExitConsoleEarly
+      maxAttenuation: 0
+      maxDuration: 6
+      minDuration: 6
+    - name: Puzzle2_Intro_SaveYourself
+      guid: f1ec57ffdf959343991b4a0dd68bfbe9
+      id: 2382053509
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle2
+        ObjectType: 4
+        guid: 8b3e91d2fb121548b810e09bdd83ef95
+      - ElementName: Puzzle2_Intro_SaveYourself
+        ObjectType: 3
+        guid: f1ec57ffdf959343991b4a0dd68bfbe9
+      Path: Events\Default Work Unit\Dialogue\Puzzle2\Puzzle2_Intro_SaveYourself
+      maxAttenuation: 0
+      maxDuration: 5
+      minDuration: 5
+    - name: Puzzle3
+      guid: da21f1a4a7da64438d3b9a1392e0bb2b
+      id: 4237507620
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle3
+        ObjectType: 4
+        guid: da21f1a4a7da64438d3b9a1392e0bb2b
+      Path: Events\Default Work Unit\Dialogue\Puzzle3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Puzzle3_Start
+      guid: a8c0321277d114448b5b7af31ab27364
+      id: 543234601
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
+      - ElementName: Puzzle3
+        ObjectType: 4
+        guid: da21f1a4a7da64438d3b9a1392e0bb2b
+      - ElementName: Puzzle3_Start
+        ObjectType: 3
+        guid: a8c0321277d114448b5b7af31ab27364
+      Path: Events\Default Work Unit\Dialogue\Puzzle3\Puzzle3_Start
+      maxAttenuation: 0
+      maxDuration: 7
+      minDuration: 7
+    - name: UI
+      guid: 5bdaeebba802264b88864302fdbe0664
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -159,7 +1250,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 531635c31a24e4418bc5f398cc1c64e8
     GuidInternal: 
-    m_lastTime: -8584957260671429275
+    m_lastTime: -8584950169244702988
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -173,7 +1264,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0a933c593427f3499de37131beb18770
     GuidInternal: 
-    m_lastTime: -8584957260671791153
+    m_lastTime: -8584950169244463539
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -187,7 +1278,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584948687707899519
+    m_lastTime: -8584942412279452773
     List:
     - name: Ground
       guid: bf629f9a6d185b42946b2341cd59e9f5
@@ -367,10 +1458,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 27d465f206536d40bed3902056328c88
     GuidInternal: 
-    m_lastTime: -8584957260670993133
+    m_lastTime: -8584950169244443674
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000d0000000e0000000f0000001000000011000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

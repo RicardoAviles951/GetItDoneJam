@@ -1,11 +1,14 @@
 using StarterAssets;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AbilityManager : MonoBehaviour
 {
+
+    public static event Action<string> SendAbilityUI;
+
     AbilityBase currentAbility;
 
     //Create instances of each ability 
@@ -15,10 +18,10 @@ public class AbilityManager : MonoBehaviour
 
     public SO_AbilityData abilityData;
 
-    public static string DebugAbility = "";
+    
     //Reference to input system
     [HideInInspector] public StarterAssetsInputs input;
-    public CameraDetector detector;
+    [HideInInspector] public CameraDetector detector;
     public ParticleSystem particles;
 
     // Start is called before the first frame update
@@ -29,25 +32,14 @@ public class AbilityManager : MonoBehaviour
     void Start()
     {
         currentAbility.Activate(this);
-        input = GetComponent<StarterAssetsInputs>();
+        detector = GetComponent<CameraDetector>();
+        input    = GetComponent<StarterAssetsInputs>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void ActivateAbility()
     {
         currentAbility.UpdateAbility(this);
-        //DebugAbility = currentAbility.ToString();
-
-        
-        if (input.change)
-        {
-            input.change = false;
-        }
-
-        if (input.restart)
-        {
-            RestartScene();
-        }
 
     }
 
@@ -57,12 +49,10 @@ public class AbilityManager : MonoBehaviour
         ability.Activate(this);
     }
 
-    public void RestartScene()
-    {
-        // Get the current active scene name
-        string currentSceneName = SceneManager.GetActiveScene().name;
+    
 
-        // Load the current scene again to restart it
-        SceneManager.LoadScene(currentSceneName);
+    public void GetAbilityText(string text)
+    {
+        SendAbilityUI?.Invoke(text);
     }
 }

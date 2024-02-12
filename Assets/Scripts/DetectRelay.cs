@@ -26,9 +26,6 @@ public class DetectRelay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Set Text of object hit
-        //Update method good for testing, better to use an event/delegate 
-        infoText.text = CameraDetector.DebugName;
-        abilityText.text = AbilityManager.DebugAbility;
+       
     }
 }

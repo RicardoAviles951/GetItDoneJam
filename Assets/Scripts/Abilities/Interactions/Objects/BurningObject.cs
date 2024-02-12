@@ -7,7 +7,7 @@ using UnityEngine;
 public class BurningObject : MonoBehaviour, IBurnable
 {
     public ParticleSystem burnParticle;
-    private bool isBurning = false;
+    public bool isBurning = false;
     [field: SerializeField] public bool useParticleCollisions { get; set; } = false;
 
     //Trigger what happens when the object becomes burned

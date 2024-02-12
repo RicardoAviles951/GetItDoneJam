@@ -14,6 +14,7 @@ public class ElectricityAbility : AbilityBase
 
     public override void Activate(AbilityManager ability)
     {
+        ability.GetAbilityText(Name);
         Debug.Log("Current Ability: Electricity");
     }
 
@@ -68,6 +69,7 @@ public class ElectricityAbility : AbilityBase
             IElectrifiable electrifiable = ability.detector.hit.collider.gameObject.GetComponent<IElectrifiable>();
             if (electrifiable != null && electrifiable.useParticleCollisions == false)
             {
+                Debug.Log("Electrifiable detected");
                 electrifiedObject = electrifiable;
                 return true;
             }

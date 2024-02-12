@@ -1,0 +1,18 @@
+.Normal {
+    font-size: 64px;
+    color: rgba(255, 255, 255, 255);
+    -unity-font-style: bold;
+    white-space: normal;
+    transition-property: opacity;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.InvisibleText {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}

@@ -29,6 +29,7 @@ public class ShockingObject : MonoBehaviour, IElectrifiable
             //Trigger a custom event
             triggerEvent.Invoke();
             isElectrified = true;
+            StartCoroutine(CoolDown());
 
         }
         
@@ -41,6 +42,13 @@ public class ShockingObject : MonoBehaviour, IElectrifiable
         {
             Electrify();
         }
+    }
+
+    IEnumerator CoolDown()
+    {
+        Debug.Log("Cooling down...");
+        yield return new WaitForSeconds(2);
+        isElectrified = false;
     }
 
 

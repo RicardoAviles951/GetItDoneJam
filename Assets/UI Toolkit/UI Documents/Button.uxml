@@ -1,3 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="align-items: auto; flex-shrink: 1; width: auto; height: 50px; -unity-font-style: bold;" />
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/button_dialogue.uss?fileID=7433441132597879392&amp;guid=0175b53d59c690b42b83f1c8f93a514a&amp;type=3#button_dialogue" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="button_dialogue" style="color: rgb(0, 0, 0); font-size: 48px; height: 104px;" />
 </ui:UXML>

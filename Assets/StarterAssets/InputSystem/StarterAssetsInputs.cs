@@ -15,6 +15,8 @@ namespace StarterAssets
 		public bool fire;
 		public bool change;
 		public bool restart;
+		public bool interact;
+		public bool grab;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -58,6 +60,15 @@ namespace StarterAssets
 		{
 			RestartInput(value.isPressed);
 		}
+		public void OnInteract(InputValue value)
+		{
+			InteractInput(value.isPressed);
+		}
+
+		public void OnGrab(InputValue value)
+		{
+			GrabInput(value.isPressed);
+		}
 #endif
 
 
@@ -91,6 +102,14 @@ namespace StarterAssets
 		public void RestartInput(bool newRestartState)
 		{
 			restart = newRestartState;
+		}
+		public void InteractInput(bool newInteractState)
+		{
+			interact = newInteractState;
+		}
+		public void GrabInput(bool newGrabState)
+		{
+			grab = newGrabState;
 		}
 		
 		private void OnApplicationFocus(bool hasFocus)

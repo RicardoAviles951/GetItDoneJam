@@ -7,20 +7,24 @@ TagManager:
   - CinemachineTarget
   - Enemy
   - Proyectile
+  - Surface_Wood
+  - Surface_Metal
+  - FxTemporaire
+  - Table
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Detectable
   - Water
   - UI
   - Player
   - Proyectile
   - Enemy
   - Obstacle
-  - 
-  - 
-  - 
+  - Camera
+  - Burnable
+  - PlayerHands
   - 
   - 
   - 
