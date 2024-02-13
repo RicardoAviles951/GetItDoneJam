@@ -6,6 +6,7 @@ using UnityEngine;
 public class FireAbility : AbilityBase
 {
     IBurnable burnedObject;
+    bool boomParticlePlayed = false;
 
     public override string Name {get; set;}
 
@@ -17,6 +18,9 @@ public class FireAbility : AbilityBase
     {
         ability.GetAbilityText(Name);
 
+        ParticlePlayer(ability.fireIdle);
+
+
         Debug.Log("Current Ability: Fire");
     }
 
@@ -27,19 +31,17 @@ public class FireAbility : AbilityBase
         {
             Debug.Log("Firing fire");
             //Fire particles if able
-            if(ability.particles != null)
+            ParticleEmitter(ability.fireShoot, ability.FireEmissionCount);
+            if (!boomParticlePlayed)
             {
-                //Placeholder particles being used so this block of code may become obsolete
-                var pm = ability.particles.main;
-                pm.startColor = Color.red;
+                ParticlePlayer(ability.fireOnce);
+                boomParticlePlayed = true;
+            }
 
-                ability.particles.Emit(1);
-            }
-            else
-            {
-                Debug.LogWarning("The player does not have a particle system referenced.");
-            }
-            
+        }
+        else
+        {
+            boomParticlePlayed=true;
         }
 
         //Trigger the burn method on the burnable object.
@@ -54,6 +56,7 @@ public class FireAbility : AbilityBase
         {
             if (ability.abilityData.IsAbilityUnlocked(ability.electricityAbility.Name))
             {
+                StopParticles(ability.fireIdle);
                 ability.ChangeAbility(ability.electricityAbility);
             }
 
@@ -76,4 +79,38 @@ public class FireAbility : AbilityBase
         return false;
     }
 
+
+    void ParticlePlayer(List<ParticleSystem> particles)
+    {
+        foreach (ParticleSystem particle in particles)
+        {
+            if (particle != null)
+            {
+                particle.Play();
+            }
+
+        }
+    }
+    void ParticleEmitter(List<ParticleSystem> particles, int number)
+    {
+        foreach (ParticleSystem particle in particles)
+        {
+            if (particle != null)
+            {
+                particle.Emit(number);
+            }
+
+        }
+    }
+    void StopParticles(List<ParticleSystem> particles)
+    {
+        foreach (ParticleSystem particle in particles)
+        {
+            if (particle != null)
+            {
+                particle.Stop();
+            }
+
+        }
+    }
 }

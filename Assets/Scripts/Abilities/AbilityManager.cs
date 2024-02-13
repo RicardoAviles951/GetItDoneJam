@@ -24,6 +24,18 @@ public class AbilityManager : MonoBehaviour
     [HideInInspector] public CameraDetector detector;
     public ParticleSystem particles;
 
+    [Header("Fire Ability")]
+    public List<ParticleSystem> fireIdle;
+    public List<ParticleSystem> fireOnce;
+    public List<ParticleSystem> fireShoot;
+    public int FireEmissionCount = 1;
+
+    [Header("Electric Ability")]
+    public List<ParticleSystem> electricIdle;
+    public List<ParticleSystem> electricOnce;
+    public List<ParticleSystem> electricShoot;
+    public int ElectricEmissionCount = 1;
+
     // Start is called before the first frame update
     private void Awake()
     {
