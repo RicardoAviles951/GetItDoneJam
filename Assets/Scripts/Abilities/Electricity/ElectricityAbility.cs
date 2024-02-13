@@ -7,6 +7,8 @@ public class ElectricityAbility : AbilityBase
 {
     IElectrifiable electrifiedObject; 
     public override string Name { get; set; }
+
+    private bool boomParticlePlayed = false;
     public ElectricityAbility() 
     {
         Name = "Electricity";
@@ -15,6 +17,8 @@ public class ElectricityAbility : AbilityBase
     public override void Activate(AbilityManager ability)
     {
         ability.GetAbilityText(Name);
+
+        ParticlePlayer(ability.electricIdle);
         Debug.Log("Current Ability: Electricity");
     }
 
@@ -23,20 +27,17 @@ public class ElectricityAbility : AbilityBase
         
         if (ability.input.fire)
         {
-            //Fire particles if able
-            if (ability.particles != null)
+            ParticleEmitter(ability.electricShoot, ability.ElectricEmissionCount);
+            if (!boomParticlePlayed)
             {
-                var pm = ability.particles.main;
-                pm.startColor = Color.blue;
+                ParticlePlayer(ability.electricOnce);
+                boomParticlePlayed = true;
+            }
 
-                ability.particles.Emit(1);
-            }
-            else
-            {
-                Debug.LogWarning("The player does not have a particle system referenced for this ability.");
-            }
-            
-             
+        }
+        else
+        {
+            boomParticlePlayed = false;
         }
 
 
@@ -54,6 +55,8 @@ public class ElectricityAbility : AbilityBase
         {
             if (ability.abilityData.IsAbilityUnlocked(ability.fireAbility.Name))
             {
+                StopParticles(ability.electricIdle);
+                boomParticlePlayed = false;
                 ability.ChangeAbility(ability.fireAbility);
             }
 
@@ -75,5 +78,51 @@ public class ElectricityAbility : AbilityBase
             }
         }
         return false;
+    }
+
+    void ParticlePlayer(List<ParticleSystem> particles)
+    {
+        foreach(ParticleSystem particle in particles)
+        {
+            if(particle != null)
+            {
+                particle.Play();
+            }
+            else
+            {
+                Debug.LogWarning("The player does not have a particle system referenced for this ability.");
+            }
+
+        }
+    }
+    void ParticleEmitter(List<ParticleSystem> particles, int number)
+    {
+        foreach(ParticleSystem particle in particles)
+        {
+            if(particle != null)
+            {
+                particle.Emit(number);
+            }
+            else
+            {
+                Debug.LogWarning("The player does not have a particle system referenced for this ability.");
+            }
+
+        }
+    }
+    void StopParticles(List<ParticleSystem> particles)
+    {
+        foreach (ParticleSystem particle in particles)
+        {
+            if(particle != null)
+            {
+                particle.Stop();
+            }
+            else
+            {
+                Debug.LogWarning("The player does not have a particle system referenced for this ability.");
+            }
+
+        }
     }
 }
