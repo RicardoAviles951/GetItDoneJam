@@ -14,6 +14,8 @@ public class SimpleSwitch : MonoBehaviour, IElectrifiable
     public float cooldown = 0.5f;
     [field: SerializeField] public bool useParticleCollisions { get; set; } = false; //Toggle for particle collisions
 
+    public GameObject redBoxObj, greenBoxObj;
+
     public void Electrify()
     {
         if (isElectrified == false)
@@ -27,6 +29,12 @@ public class SimpleSwitch : MonoBehaviour, IElectrifiable
             else
             {
                 Debug.LogWarning("Switch Object: No particles referenced for object");
+            }
+
+            if (redBoxObj && greenBoxObj)
+            {
+                redBoxObj.SetActive(false);
+                greenBoxObj.SetActive(true);
             }
 
             //Trigger a custom event
@@ -54,5 +62,11 @@ public class SimpleSwitch : MonoBehaviour, IElectrifiable
         Debug.Log("Cooling down...");
         yield return new WaitForSeconds(cooldown);
         isElectrified = false;
+
+        //if (redBoxObj && greenBoxObj)
+        //{
+        //    redBoxObj.SetActive(true);
+        //    greenBoxObj.SetActive(false);
+        //}
     }
 }

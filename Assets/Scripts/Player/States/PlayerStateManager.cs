@@ -175,8 +175,9 @@ public class PlayerStateManager : MonoBehaviour
         }
     }
 
-    void Die() => ChangeState(deathState);
+    public void Die() => ChangeState(deathState);
     public void BackToMove() => ChangeState(moveState);
+
     void ApplyStatus(Outcome status)
     {
         switch (status)
