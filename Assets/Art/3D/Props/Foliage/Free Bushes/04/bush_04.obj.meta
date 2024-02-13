@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: bush_04Mat
-    second: {fileID: 2100000, guid: 452bdbd16967e84429d9dd65e94f7105, type: 2}
+    second: {fileID: 2100000, guid: 72a8387f1f2d67c4da946410b982baff, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
