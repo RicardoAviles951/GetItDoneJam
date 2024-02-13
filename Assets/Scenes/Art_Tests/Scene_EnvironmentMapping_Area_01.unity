@@ -748,6 +748,14 @@ MonoBehaviour:
   input: {fileID: 0}
   detector: {fileID: 85676877}
   particles: {fileID: 1889788259}
+  fireIdle: []
+  fireOnce: []
+  fireShoot: []
+  FireEmissionCount: 1
+  electricIdle: []
+  electricOnce: []
+  electricShoot: []
+  ElectricEmissionCount: 1
 --- !u!114 &85676877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17079,6 +17087,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1703741684}
     m_Modifications:
+    - target: {fileID: 125104918, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 125104918, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543773524, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543773524, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584686090, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584686090, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866598419, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866598419, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093525399, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093525399, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5210776303429410909, guid: ef297982c2162814385e6a6f1bcb5523,
         type: 3}
       propertyPath: m_Name
@@ -17139,7 +17187,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 125104918, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+    - {fileID: 1866598419, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+    - {fileID: 1584686090, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+    - {fileID: 1543773524, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+    - {fileID: 2093525399, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
 --- !u!1001 &8819084986781128622
 PrefabInstance:
