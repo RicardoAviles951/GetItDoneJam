@@ -10273,15 +10273,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 8
   fixRadiusIndicator: 2
-  rangeIndicatorHeight: 1.5
+  rangeIndicatorHeight: 3
   rotationSpeed: 200
   moveSpeed: 2.5
   stopDistance: 5
-  laserDmage: 0
+  laserDmage: 40
   speed: 0
   attackSpeed: 5
   rotationAlas: {fileID: 4914658712488044585}
-  timeBetweenAttacks: 3
+  timeBetweenAttacks: 0
   angle: 120
   playerTag: Player
   playerObject: {fileID: 0}

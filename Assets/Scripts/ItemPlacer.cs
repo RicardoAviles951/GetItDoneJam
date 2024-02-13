@@ -3,15 +3,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ItemPlacer : MonoBehaviour, IPlacer
 {
     public event Action AllItemsPlaced;
+    public UnityEvent AllItemsIn;
     public List<Transform> transformList = new List<Transform>();
     public int itemCount = 0;
     public int maxItemCount;
     public AK.Wwise.Event itemPlaceSound;
     public AK.Wwise.Event allItemsPlacedSound;
+    public AK.Wwise.Event VO_NOItem;
 
     public void PlaceItem(IExaminable i)
     {
@@ -34,9 +37,11 @@ public class ItemPlacer : MonoBehaviour, IPlacer
         if(itemCount == maxItemCount)
         {
             allItemsPlacedSound.Post(gameObject);
+            AllItemsIn.Invoke();
             AllItemsPlaced?.Invoke();
             Debug.Log("All items placed");
         }
+        
         
     }
 
@@ -64,5 +69,10 @@ public class ItemPlacer : MonoBehaviour, IPlacer
                 .SetEase(Ease.Linear);
         }
         
+    }
+
+    public void PlaySound()
+    {
+        VO_NOItem.Post(gameObject);
     }
 }

@@ -62,5 +62,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6105aa8329f19b04096b9f49b45262ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InkJSONAsset: {fileID: 4900000, guid: 6ce23b1b98badbd448692b082bb142bb, type: 3}
   item: {fileID: 9197481963319205126, guid: 7d11867ecc779cf419f4fc8e3934cc98, type: 3}
+  currentOutcome: 4
+  clickSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9c966b52634b7224c873c52a268e5373,
+      type: 2}

@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
 
     public LayerMask playerMask;
     public LayerMask obstaclesMask;
+    public PlayerHealth player;
 
 
 
@@ -46,18 +47,16 @@ public class Enemy : MonoBehaviour
 
     public Vector3 offset;
 
-    private bool isLockOnTarget;
-
     public GameObject rangeIndicator;
 
     private void Start()
     {
         speed = rotationAlas.speed;
         beam.enabled = false;
-        isLockOnTarget = false;
         cooldown = timeBetweenAttacks;
         angleStart = angle;
         playerObject = GameObject.FindGameObjectWithTag(playerTag);
+        player = playerObject.GetComponent<PlayerHealth>();
         rangeIndicator.transform.localScale = new Vector3(radius* fixRadiusIndicator, rangeIndicatorHeight, radius * fixRadiusIndicator);
     }
     private void Update()
@@ -146,7 +145,6 @@ public class Enemy : MonoBehaviour
                         EnemyMovement(target);
                         angle = 360;
 
-                        PlayerHealth player = target.GetComponent<PlayerHealth>();
                         if (player != null)
                         {
                             player.TakeDamage(laserDmage*Time.deltaTime);

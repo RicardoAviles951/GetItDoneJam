@@ -133,6 +133,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpen: 0
   isUnlocked: 0
+  doorSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 233119e890c663c4790ab960e01e6c3a,
+      type: 2}
 --- !u!1001 &4746568730886374485
 PrefabInstance:
   m_ObjectHideFlags: 0

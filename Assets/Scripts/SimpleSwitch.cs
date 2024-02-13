@@ -9,7 +9,7 @@ public class SimpleSwitch : MonoBehaviour, IElectrifiable
 
     [Tooltip("Particles that play when the switch is electrified")]
     public ParticleSystem electricParticles;
-    public bool isElectrified = false;
+    private bool isElectrified = false;
     [Tooltip("How long until the switch can be fired again.")]
     public float cooldown = 0.5f;
     [field: SerializeField] public bool useParticleCollisions { get; set; } = false; //Toggle for particle collisions

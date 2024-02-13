@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{CFBA58F6-7538-4E5E-A5B6-ECA3F9086527}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Puzzle2_Complete_Altered" ID="{C960F860-A4E2-4058-BA80-C8D83626AD67}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Barks" ID="{D8446C12-8D4B-405C-9D79-DFB922B1AB0E}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostPuzzle2_Gas_Run" ID="{B5B6CDF5-AD7A-4076-A2C9-E6A2E9BEA9E1}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Error" ID="{15457EF3-0FFC-4092-B48C-5B36AC2C64C2}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
@@ -24,7 +25,7 @@
 						<ObjectRef Name="Correct" ID="{2D9E00EA-E6DB-4527-BC51-33DE3B7CF921}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Puzzle1_AprroachTheConsole" ID="{CF1A41E6-78A6-45D2-A915-A292556341FA}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Breathing_NormalToPanting_MG" ID="{AB2F1502-4CD1-45F8-88DC-635658143141}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Puzzle2_Complete" ID="{3449BAAA-A984-45F9-AB67-C13BF8B53AEB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Puzzle2_Complete_Proceed" ID="{3449BAAA-A984-45F9-AB67-C13BF8B53AEB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient_Dialogue" ID="{E5795411-C4EB-4690-9270-FA8DE9A9837C}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Button_Push" ID="{C8EE9BC4-825C-46E0-B598-553E3E051CCB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Breathing_Normal_MG" ID="{2AA2A11E-2823-46F3-92DE-77F4608358D4}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
@@ -41,7 +42,9 @@
 						<ObjectRef Name="Hologram_Blast" ID="{C4FA2E14-83DA-4906-92C0-2F5AFFDB7CB3}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="HeatUsage_Hint" ID="{CCC36E34-43ED-4917-973E-92C6CEAABC59}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{EBE0D61D-3824-492B-A99F-0041C9E6F7EC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Puzzle2_Elevator2_Prepared_MG" ID="{A2CC3B94-CC36-4952-B0BC-E82A67F548EB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Breathing_Distressed_MG" ID="{F9B5E61A-D391-49FF-9BE8-B4DDE82117A0}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="NotYet_MG" ID="{D4AD6A36-2AC4-4A7B-82E1-8684B60FADA3}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AirVent_Start" ID="{0997A857-EE31-4ABD-AE4E-315D213A5DC8}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hologram_Impact" ID="{4007E426-11CC-4AE4-88DF-1900232C21FB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI" ID="{BBEEDA5B-02A8-4B26-8886-4302FDBE0664}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
@@ -49,6 +52,7 @@
 						<ObjectRef Name="Health" ID="{D27D3B78-F3B4-4BB3-BACE-C8186AF714DA}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{60EFE13F-FA14-4C22-9CE7-DA28DD4E89F4}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoesntHave_Inventory_Item" ID="{04FBF841-D521-4C2B-8A6F-05BD2C7923FB}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Puzzle1_Intro1_Name" ID="{87B8BEF6-B895-4CDF-B1B0-F4A006A17BA2}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Dynamic Dialogue" ID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" WorkUnitID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostPuzzle2_HallEntry_Fight" ID="{99B29F01-62BD-4D06-A429-6A4AE4B2ED5F}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pause" ID="{6B2B4387-D817-4D68-BE0F-9242F64A175B}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>

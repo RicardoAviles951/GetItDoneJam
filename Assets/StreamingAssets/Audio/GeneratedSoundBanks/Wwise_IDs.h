@@ -37,6 +37,7 @@ namespace AK
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MAP_AMBIENCE = 1898179168U;
         static const AkUniqueID MENU_MUSIC = 4055567060U;
+        static const AkUniqueID NOTYET_MG = 2547478225U;
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
         static const AkUniqueID PLAYERSTUCK_ABILITIESREMINDER_PUZZLE3 = 3198648693U;
@@ -46,9 +47,12 @@ namespace AK
         static const AkUniqueID PREPUZZLE2_HALL = 2501841164U;
         static const AkUniqueID PUZZLE1_ABILITY_OPENDOOR = 668566028U;
         static const AkUniqueID PUZZLE1_APRROACHTHECONSOLE = 2577639323U;
+        static const AkUniqueID PUZZLE1_INTRO1_NAME = 3713640624U;
         static const AkUniqueID PUZZLE1_INTRO2_VITALS = 205048165U;
         static const AkUniqueID PUZZLE1_INTRO3_EVALUATION = 22004205U;
-        static const AkUniqueID PUZZLE2_COMPLETE = 389644749U;
+        static const AkUniqueID PUZZLE2_COMPLETE_ALTERED = 1131469291U;
+        static const AkUniqueID PUZZLE2_COMPLETE_PROCEED = 1510210954U;
+        static const AkUniqueID PUZZLE2_ELEVATOR2_PREPARED_MG = 1569488631U;
         static const AkUniqueID PUZZLE2_EXITCONSOLEEARLY = 2156734264U;
         static const AkUniqueID PUZZLE2_INTRO_SAVEYOURSELF = 2382053509U;
         static const AkUniqueID PUZZLE3_START = 543234601U;

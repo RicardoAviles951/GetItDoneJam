@@ -1,0 +1,24 @@
+newmtl pmat0
+Kd 0.7 0.7 0.7
+Ns 1
+map_Kd bark03.png
+newmtl pmat1
+Kd 0.7 0.7 0.7
+Ns 1
+map_Kd bark03.png
+newmtl pmat2
+Kd 0.7 0.7 0.7
+Ns 1
+map_Kd bark03.png
+newmtl pmat3
+Kd 0.7 0.7 0.7
+Ns 1
+map_Kd bark03.png
+newmtl pmat4
+Kd 0.7 0.7 0.7
+Ns 1
+map_Kd leaf07.png
+newmtl pmat5
+Kd 0.7 0.7 0.7
+Ns 1
+map_Kd flower01.png

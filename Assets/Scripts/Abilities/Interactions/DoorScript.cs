@@ -6,6 +6,7 @@ public class DoorScript : MonoBehaviour
 {
     public bool isOpen, isUnlocked = false;
     private Animator anim;
+    public AK.Wwise.Event doorSound;
 
     private void Start()
     {
@@ -28,7 +29,12 @@ public class DoorScript : MonoBehaviour
 
         if (trig.tag == "Player")
         {
-            isOpen = true;
+            if (!isOpen)
+            {
+                doorSound.Post(gameObject);
+                isOpen = true;
+            }
+            
             ToggleDoor();
         }
     }
@@ -40,7 +46,12 @@ public class DoorScript : MonoBehaviour
 
         if (trig.tag == "Player")
         {
-            isOpen = false;
+            if (isOpen)
+            {
+                doorSound.Post(gameObject);
+                isOpen = false;
+            }
+            
             ToggleDoor();
         }
     }
