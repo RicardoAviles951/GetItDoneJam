@@ -49,6 +49,11 @@ public class GameManager : MonoBehaviour
             WinGame();
         }
 
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            Retry();
+        }
+
         ProcessGameState();
     }
 

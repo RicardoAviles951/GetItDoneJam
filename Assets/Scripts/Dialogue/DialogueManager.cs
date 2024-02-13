@@ -179,6 +179,7 @@ public class DialogueManager : MonoBehaviour
                 PlayerStatusApplied?.Invoke(currentOutcome);
             }
             DialogueFinished?.Invoke();
+            currentOutcome = Outcome.nothing;
             Debug.Log("Story over");
 
             

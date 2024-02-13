@@ -83,7 +83,8 @@ public class Enemy : MonoBehaviour
 
         foreach (Collider col in bunrningChecks)
         {
-            BurningObject burningObject = col.GetComponent<BurningObject>();
+            BurnDestruct burningObject = col.GetComponent< BurnDestruct>();
+           // BurningObject burningObject = col.GetComponent<BurningObject>();
 
             if (burningObject != null && burningObject.isBurning)
             {
