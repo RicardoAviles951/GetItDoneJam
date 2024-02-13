@@ -115,7 +115,7 @@ MonoBehaviour:
   burnParticle: {fileID: 8373065218446234726}
   isBurning: 0
   burnTime: 3
-  canDestruct: 1
+  canDestruct: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1 &1012036592008615010
 GameObject:
