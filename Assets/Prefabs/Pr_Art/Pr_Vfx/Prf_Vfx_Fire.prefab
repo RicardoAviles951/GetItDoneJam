@@ -5277,6 +5277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198796712453205768, guid: b0bc1b6b391734647b9bb142bafc0819,
         type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198796712453205768, guid: b0bc1b6b391734647b9bb142bafc0819,
+        type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
       value: 0.11372549
       objectReference: {fileID: 0}
@@ -5328,7 +5333,7 @@ PrefabInstance:
     - target: {fileID: 4893118513826488098, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: moveWithTransform
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4893118513826488098, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -5343,7 +5348,7 @@ PrefabInstance:
     - target: {fileID: 6294508012652817956, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: moveWithTransform
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6294508012652817957, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -5423,7 +5428,7 @@ PrefabInstance:
     - target: {fileID: 6294508013172393186, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: moveWithTransform
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6294508013172393187, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}

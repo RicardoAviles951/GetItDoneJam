@@ -4794,6 +4794,75 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1001 &1005625604
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8819084986781128623}
+    m_Modifications:
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.622
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.946
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7364688
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.03930482
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6752587
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.009728211
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 85.121
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205825218670750938, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -3.869
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676747560212063146, guid: 2868921437bece147b485c794c0e21d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Handprint Quad (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2868921437bece147b485c794c0e21d0, type: 3}
 --- !u!1001 &1023643348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14016,6 +14085,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe99380a60b7aae4e8f02341a2f083c5, type: 3}
+--- !u!4 &8819084986781128623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 745786570, guid: fe99380a60b7aae4e8f02341a2f083c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8819084986781128622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8946174617598068210
 PrefabInstance:
   m_ObjectHideFlags: 0
