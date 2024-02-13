@@ -190,10 +190,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -45
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8d54113f191801499e77a4e43beabb8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8d54113f191801499e77a4e43beabb8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02b3a383d1741aa48a143aa83cdc230c, type: 2}
     - target: {fileID: 919132149155446097, guid: b8d54113f191801499e77a4e43beabb8,
         type: 3}
       propertyPath: m_Name
       value: PlayerRealHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b8d54113f191801499e77a4e43beabb8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8d54113f191801499e77a4e43beabb8, type: 3}
@@ -280,6 +295,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e02802d1eb925f942972c8d476c20430,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e02802d1eb925f942972c8d476c20430,
         type: 3}
       propertyPath: m_Name
@@ -288,7 +308,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e02802d1eb925f942972c8d476c20430,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e02802d1eb925f942972c8d476c20430, type: 3}
