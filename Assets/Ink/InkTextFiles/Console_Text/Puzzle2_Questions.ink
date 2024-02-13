@@ -3,6 +3,7 @@ VAR turns = 0
 
 
 Welcome Volunteer 732, Citizen Classification Blue X
+
 The sociological assessment will determine your understanding of THE SOCIETY and your acceptance of it. Elevating your position in THE SOCIETY cannot be done lightly. When you are ready, proceed.
 #CLEAR
 
@@ -113,6 +114,8 @@ Thank you Volunteer 732. Your results will be calculated, and you will be reward
 #ActivateFire
 
 When you exit the examination, you will discover your prosthetic has been upgraded. A thanks for your participation.
+
+Follow the hand. It will guide you.
 
 #CLEAR
 
