@@ -6,6 +6,8 @@ Your final assessment will prepare you for your upcoming citizen classification 
 
 The drones guarding your path are trained to attack heat, for instance body heat. Use your abilities to navigate towards the truth and choose your future.
 
+As always, the hand will guide you.
+
 
 *[CONTINUE]
 -->PUZZLE3FINAL

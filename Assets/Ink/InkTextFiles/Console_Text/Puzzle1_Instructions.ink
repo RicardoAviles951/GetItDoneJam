@@ -2,9 +2,9 @@
 
 Welcome Volunter 732, Citizen Classification Blue X
 
-Your first assessment will be a cognitive examination. Search the area for five distinct objects, soon to be hollow reminders of your current citizen classification. Place the objects in the correct order by the door to proceed.
+Your first assessment will be a cognitive examination. Search the area for five distinct objects, soon to be hollow reminders of your current citizen classification. Place the objects on the shelf to the right of the door.
 
-Remember your place, and you shall be rewarded.
+Follow the hand. It will guide you.
 *[CONTINUE]
 -->PUZZLE1FINAL
 
