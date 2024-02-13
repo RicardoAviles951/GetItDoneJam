@@ -1,6 +1,6 @@
 //UI Inventory Text for ID CARD
 
 I.D. CARD 
-Job barely paid. It was meant to keep Blues in order, until it slowly killed us.
+My badge for my Scrapyard Lvl III job. Barely paid. Was only meant to keep Blues in order, as it slowly killed us.
 
 ->END
