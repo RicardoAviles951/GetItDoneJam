@@ -17,6 +17,18 @@
 									<PropertyList>
 										<Property Name="LoopCount" Type="int16" Value="0"/>
 									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{ADC87E2C-E4F8-493C-AC09-D3A2D1C7BD6A}" ShortID="94345155">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="Menu_Music" ID="{CEB24349-C5A7-4EB9-ABD1-77EA0F8315ED}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
 								</MusicPlaylistItem>
 							</Custom>
 						</Reference>
@@ -138,6 +150,18 @@
 									<PropertyList>
 										<Property Name="LoopCount" Type="int16" Value="0"/>
 									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{5BF5D726-23B8-4F1B-8A3C-FCC4BF5E1532}" ShortID="14108652">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="Puzzle_Music" ID="{E2E4BF74-A1D6-4FF4-B1DD-F5E88A00F2CE}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
 								</MusicPlaylistItem>
 							</Custom>
 						</Reference>
