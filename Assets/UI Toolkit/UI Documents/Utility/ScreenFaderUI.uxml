@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/ScreenFade.uss?fileID=7433441132597879392&amp;guid=08a9a1c39bdcf034a817cb75bae73225&amp;type=3#ScreenFade" />
+    <ui:VisualElement name="EntireScreen" class="screen_clear screen_black" />
+</ui:UXML>

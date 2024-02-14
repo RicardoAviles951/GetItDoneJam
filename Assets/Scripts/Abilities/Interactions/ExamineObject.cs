@@ -36,7 +36,7 @@ public class ExamineObject: MonoBehaviour, IExaminable
             //Create and cache instance of item information class to send to UI.
             info = new ItemInfo(lines[0], lines[1]);
         }
-        //Cache starting positoin and rotation.
+        //Cache starting position and rotation.
         originalSize     = transform.localScale;
         originalPosition = transform.position;
     }

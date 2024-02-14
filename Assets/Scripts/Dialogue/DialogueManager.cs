@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Ink.Runtime;
-using Ink.UnityIntegration;
 using System;
 
 public enum Outcome

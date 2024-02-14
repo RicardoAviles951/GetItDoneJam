@@ -84,7 +84,7 @@ public class PlayerStateManager : MonoBehaviour
         triggerVoiceLine   = GetComponent<TriggerVoiceLine>();
 
         //Set state
-        currentState = idleState;
+        currentState = moveState;
 
         currentState.EnterState(this);
     }

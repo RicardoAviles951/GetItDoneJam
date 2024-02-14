@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/buttonMenu.uss?fileID=7433441132597879392&amp;guid=96dbdfe1b79586f4ea2f0da458574a28&amp;type=3#buttonMenu" />
-    <ui:VisualElement name="EntireScreen" style="width: 100%; height: 100%;">
+    <ui:VisualElement name="EntireScreen" style="width: 100%; height: 100%; position: absolute;">
         <ui:VisualElement name="Base" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Art/2D/UI/Main%20background%20no%20fonts%20no%20buttons.png?fileID=2800000&amp;guid=eebfd80c3ccd29a4aa31715117aca092&amp;type=3#Main background no fonts no buttons&apos;); opacity: 1;">
             <ui:VisualElement name="container_presents" style="background-image: url(&apos;project://database/Assets/Art/2D/UI/presents.png?fileID=2800000&amp;guid=5ada3a56ee7c2544d9f22261fc0048b6&amp;type=3#presents&apos;); width: 205px; height: 40px; left: 859px; top: 220px;" />
             <ui:VisualElement name="container_buttons" style="width: 576px; height: 484px; left: 35%; top: 40%; justify-content: space-between; align-items: center; display: flex;">
-                <ui:Button text="START" display-tooltip-when-elided="true" name="start" class="buttonStyle" style="width: 100%; height: 30%;" />
-                <ui:Button text="CREDITS" display-tooltip-when-elided="true" name="credits" class="buttonStyle" style="background-image: url(&apos;project://database/Assets/Art/2D/UI/credits%20button.png?fileID=2800000&amp;guid=a79accdf827aae74299cc11d2a1d30f1&amp;type=3#credits button&apos;);" />
-                <ui:Button text="QUIT GAME" display-tooltip-when-elided="true" name="quit" class="buttonStyle" style="background-image: url(&apos;project://database/Assets/Art/2D/UI/quit%20button.png?fileID=2800000&amp;guid=bbc526e50a4edbd49af512e0fdbda7f9&amp;type=3#quit button&apos;);" />
+                <ui:Button text="START" display-tooltip-when-elided="true" name="playButton" class="buttonStyle" style="width: 100%; height: 30%;" />
+                <ui:Button text="CREDITS" display-tooltip-when-elided="true" name="creditsButton" class="buttonStyle" style="background-image: url(&apos;project://database/Assets/Art/2D/UI/credits%20button.png?fileID=2800000&amp;guid=a79accdf827aae74299cc11d2a1d30f1&amp;type=3#credits button&apos;);" />
+                <ui:Button text="QUIT GAME" display-tooltip-when-elided="true" name="quitButton" class="buttonStyle" style="background-image: url(&apos;project://database/Assets/Art/2D/UI/quit%20button.png?fileID=2800000&amp;guid=bbc526e50a4edbd49af512e0fdbda7f9&amp;type=3#quit button&apos;);" />
             </ui:VisualElement>
             <ui:VisualElement name="container_title" style="background-image: url(&apos;project://database/Assets/Art/2D/UI/The%20Volunteer.png?fileID=2800000&amp;guid=2bc4028bc75af1b4b8150f4d4a94debe&amp;type=3#The Volunteer&apos;); width: 1306px; height: 94px; top: -226px; bottom: 0; justify-content: space-between; left: 308px;" />
         </ui:VisualElement>

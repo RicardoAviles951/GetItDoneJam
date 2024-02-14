@@ -22,9 +22,8 @@ public class ExamineUIManager : MonoBehaviour
     {
         PlayerStateManager.ShowExamineUI += ShowDisplay;
         PlayerStateManager.HideExamineUI += HideDisplay;
-
         ExamineObject.itemInfo += LoadText;
-        
+        HideDisplay();
     }
 
     private void OnDisable()
