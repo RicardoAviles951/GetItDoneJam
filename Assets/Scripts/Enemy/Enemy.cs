@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    public bool onlyRunStartFunction; // for Noah to check the laser issue
+
+
     public float radius = 15f;
     public float fixRadiusIndicator = 1.5f;
     public float rangeIndicatorHeight;
@@ -65,6 +68,9 @@ public class Enemy : MonoBehaviour
         {
             return;
         }
+
+        if (onlyRunStartFunction)
+            return;
 
         FieldOfViewCheck();
 

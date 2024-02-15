@@ -236,8 +236,8 @@ namespace StarterAssets
                 ac_PlayerBase.SetBool("isMoving", isMoving);
             if(ac_PlayerArms)
             {
-                ac_PlayerBase.SetBool("isMoving", isMoving);
-                ac_PlayerBase.SetBool("armIsUp", armIsUp);
+                ac_PlayerArms.SetBool("isMoving", isMoving);
+                ac_PlayerArms.SetBool("armIsUp", armIsUp);
             }
         }
 

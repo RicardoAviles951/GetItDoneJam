@@ -44,17 +44,23 @@ public class BurnDestruct : MonoBehaviour, IBurnable
     void Update()
     {
         //If object is burning, then increment the destruction timer
-        if (isBurning && canDestruct)
+        if (isBurning)
         {
             
             if(timer > burnTime)
             {
-                isBurning = false;
-                burnParticle.Stop();
-                Destruct();
+                StopBurning();
             }
             timer += Time.deltaTime;
         }
+    }
+
+    public void StopBurning()
+    {
+        isBurning = false;
+        burnParticle.Stop();
+        if(canDestruct)
+            Destruct();
     }
 
     //If using particle collisions to trigger 
