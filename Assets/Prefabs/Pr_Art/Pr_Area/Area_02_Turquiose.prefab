@@ -812,6 +812,8 @@ MonoBehaviour:
   acceptableRange: 8
   lazer_LineRen: {fileID: 1392474368}
   originOfLaser: {fileID: 1392474372}
+  optimizeFromPlayerDist: 1
+  playerWithin_40Meters: 0
 --- !u!1 &1008602289
 GameObject:
   m_ObjectHideFlags: 0

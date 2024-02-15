@@ -11,7 +11,7 @@ public class RandomlyActivateBurning : MonoBehaviour
     public List<BurnDestruct> burnableBoxes = new List<BurnDestruct>();
     private float burnTime = 3.0f;
     public Vector2 burnTimeRange;
-    private int curBoxID = 0;
+    private int curBoxID = 0, lastBoxID = 0;
 
     public float acceptableRange = 20;
     public LineRenderer lazer_LineRen;
@@ -19,6 +19,11 @@ public class RandomlyActivateBurning : MonoBehaviour
     private Transform targetOfLaser;
 
     private float timeStamp;
+
+    public bool optimizeFromPlayerDist;
+    private Transform playerObj;
+    private string playerTag = "Player";
+    public bool playerWithin_40Meters;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -33,10 +38,43 @@ public class RandomlyActivateBurning : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (optimizeFromPlayerDist)
+        {
+            FindPlayer();
+            if (!playerWithin_40Meters)
+                return;
+        }
+
         if(Time.time > timeStamp + burnTime)
         {
             BurnABox();
             timeStamp = Time.time;
+        }
+
+    }
+
+    private void FindPlayer()
+    {
+        if(playerObj == null)
+        {
+            GameObject[] listOfPlayerTags = GameObject.FindGameObjectsWithTag(playerTag);
+            if(listOfPlayerTags.Length > 0)
+            {
+                foreach(GameObject playerTag in listOfPlayerTags)
+                {
+                    if(playerTag.transform.name == "PlayerCapsule")
+                    {
+                        playerObj = playerTag.transform;
+                        return;
+                    }
+                }
+            }
+        }
+        else
+        {
+            print("Player is found and checkable");
+            float dist = CheckDistance(originOfLaser.position, playerObj.position);
+            playerWithin_40Meters = IsInRange(dist, 40);
         }
 
     }
@@ -57,8 +95,9 @@ public class RandomlyActivateBurning : MonoBehaviour
     {
         if (lazer_LineRen.enabled)
         {
-            lazer_LineRen.enabled = false;
-            burnableBoxes[curBoxID].StopBurning();
+            // pick a new target
+            StartCoroutine(LazerVisual(0.05f));
+            burnableBoxes[lastBoxID].StopBurning();            
         }
 
         if (burnableBoxes.Count > 0 && burnableBoxes[curBoxID].gameObject.activeSelf == true)
@@ -67,18 +106,22 @@ public class RandomlyActivateBurning : MonoBehaviour
             float dist = CheckDistance(originOfLaser.position, targetOfLaser.position);
             if (IsInRange(dist, acceptableRange))
             {
-                //print($"LAZER FIRE: {curBoxID}\n {burnableBoxes[curBoxID].transform.name}");
-                lazer_LineRen.enabled = true;
+                // fire the lazer
+                StartCoroutine(LazerVisual(0.5f));
                 lazer_LineRen.SetPosition(0, originOfLaser.position);
                 lazer_LineRen.SetPosition(1, targetOfLaser.position);
                 burnableBoxes[curBoxID].Burn();                
             }
         }
-        
+        lastBoxID = curBoxID;
         curBoxID = Random.Range(0, burnableBoxes.Count);
-        //print("LAZER Targetting");
-        //print($"LAZER Targetting: {curBoxID}\n {burnableBoxes[curBoxID].transform.name}");
         burnTime = Random.Range(burnTimeRange.x, burnTimeRange.y);
     }  
+
+    private IEnumerator LazerVisual(float _waitTime)
+    {
+        yield return new WaitForSeconds(_waitTime);
+        lazer_LineRen.enabled = !lazer_LineRen.enabled;
+    }
 
 }// end of RandomlyActivateBurning class

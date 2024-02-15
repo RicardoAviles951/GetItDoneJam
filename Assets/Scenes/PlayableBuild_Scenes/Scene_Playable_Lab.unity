@@ -9075,6 +9075,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1703741684}
     m_Modifications:
+    - target: {fileID: 795551653, guid: fe99380a60b7aae4e8f02341a2f083c5, type: 3}
+      propertyPath: optimizeFromPlayerDist
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8819084986766629281, guid: fe99380a60b7aae4e8f02341a2f083c5,
         type: 3}
       propertyPath: m_Name
