@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E611F05B-88DD-4849-9910-91EF46D390F7}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C5D95825-F6F3-D5E6-F0A6-BF67FEC5BA7F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -98,6 +98,10 @@
 				<File Id="101159521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_PickUp.wav</ShortName>
 					<CachePath>SFX/Item_PickUp_818F3B66.wem</CachePath>
+				</File>
+				<File Id="103474841" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Damage.wav</ShortName>
+					<CachePath>SFX/Damage_818F3B66.wem</CachePath>
 				</File>
 				<File Id="105432845" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Hardwood_04.wav</ShortName>
@@ -315,6 +319,10 @@
 					<ShortName>Jump_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Jump_Concrete_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="674588226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Click_1.wav</ShortName>
+					<CachePath>SFX/Click_1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="686832934" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Concrete_05.wav</ShortName>
 					<CachePath>SFX/Footsteps_Concrete_05_818F3B66.wem</CachePath>
@@ -370,6 +378,10 @@
 				<File Id="849647510" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ElectricDoor.wav</ShortName>
 					<CachePath>SFX/ElectricDoor_818F3B66.wem</CachePath>
+				</File>
+				<File Id="849696221" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Futuristic_Sounds_29.wav</ShortName>
+					<CachePath>SFX/Futuristic_Sounds_29_818F3B66.wem</CachePath>
 				</File>
 				<File Id="851218037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Land_Metal_06.wav</ShortName>
@@ -465,6 +477,11 @@
 				<Event Id="4126251273" Name="Correct" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
 						<MediaRef Id="822432517"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1786804762" Name="Damage" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="103474841"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="351850055" Name="DoesntHave_Inventory_Item" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
@@ -571,6 +588,11 @@
 						<MediaRef Id="87709223"/>
 						<MediaRef Id="134271376"/>
 						<MediaRef Id="196343000"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3821546767" Name="Hover_Tick" DurationType="OneShot" DurationMin="0.14573696" DurationMax="0.14573696">
+					<MediaRefs>
+						<MediaRef Id="674588226"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="566396871" Name="Item_Pickup" DurationType="OneShot" DurationMin="1" DurationMax="1">
@@ -745,6 +767,11 @@
 						<MediaRef Id="60988815"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="1.3734921" DurationMax="1.3734921">
+					<MediaRefs>
+						<MediaRef Id="849696221"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="674522502" Name="Land">
@@ -769,5 +796,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{73DA1F79-D344-3A15-CB99-18A4F5AC24C6}</FileHash>
+	<FileHash>{D868F644-1C22-2BA1-C57F-6F166D858D05}</FileHash>
 </SoundBanksInfo>

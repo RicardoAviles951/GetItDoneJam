@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID BREATHING_NORMALTOPANTING_MG = 3814470798U;
         static const AkUniqueID BUTTON_PUSH = 1965951612U;
         static const AkUniqueID CORRECT = 4126251273U;
+        static const AkUniqueID DAMAGE = 1786804762U;
         static const AkUniqueID DOESNTHAVE_INVENTORY_ITEM = 351850055U;
         static const AkUniqueID DOOR_OPEN_CLOSE = 1873899129U;
         static const AkUniqueID ELECTRIC_ATTACK = 1242796459U;
@@ -31,6 +32,7 @@ namespace AK
         static const AkUniqueID HEATUSAGE_HINT = 2561963336U;
         static const AkUniqueID HOLOGRAM_BLAST = 1472083991U;
         static const AkUniqueID HOLOGRAM_IMPACT = 1733942329U;
+        static const AkUniqueID HOVER_TICK = 3821546767U;
         static const AkUniqueID ITEM_PICKUP = 566396871U;
         static const AkUniqueID ITEM_PUTDOWN = 662770354U;
         static const AkUniqueID JUMP = 3833651337U;
@@ -57,6 +59,7 @@ namespace AK
         static const AkUniqueID PUZZLE2_INTRO_SAVEYOURSELF = 2382053509U;
         static const AkUniqueID PUZZLE3_START = 543234601U;
         static const AkUniqueID PUZZLE_MUSIC = 2221424041U;
+        static const AkUniqueID SUCCESS = 3625060726U;
     } // namespace EVENTS
 
     namespace SWITCHES

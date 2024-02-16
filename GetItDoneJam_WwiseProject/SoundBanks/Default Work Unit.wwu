@@ -57,9 +57,12 @@
 						<ObjectRef Name="PostPuzzle2_HallEntry_Fight" ID="{99B29F01-62BD-4D06-A429-6A4AE4B2ED5F}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pause" ID="{6B2B4387-D817-4D68-BE0F-9242F64A175B}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerStuck_AbilitiesReminder_Puzzle3" ID="{C31145CA-289E-4D97-8465-8EDE3FC00AB1}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hover_Tick" ID="{B8688927-5C18-4DAD-AA04-34A15B37C019}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Poison_Gas" ID="{07865858-3B7B-4E50-B2F5-18F7ABD2C2BC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Puzzle1_Intro3_Evaluation" ID="{01E67255-27C2-4E77-9ECF-430FBA79E527}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Success" ID="{BF96CD2A-7333-4E93-810B-6888EBAEBC03}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Damage" ID="{3DE6CC41-01EE-4EB6-A949-E685CD2A1A6C}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Menu_Music" ID="{ABFA1B0A-0E1C-4F0C-A1E5-82134944F8E7}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Puzzle1" ID="{D3EE24D7-CF8C-4F46-B93C-B0FA28340649}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Puzzle2_ExitConsoleEarly" ID="{8C4AA402-69BB-4F98-818D-67E25F36E181}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>

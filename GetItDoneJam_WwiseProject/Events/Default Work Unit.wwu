@@ -252,6 +252,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Hover_Tick" ID="{B8688927-5C18-4DAD-AA04-34A15B37C019}">
+							<ChildrenList>
+								<Action Name="" ID="{D4FC2EBA-FBF2-43AC-836F-ADF3198C48A1}" ShortID="654276831">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Click_1" ID="{106C07E0-44E6-43CA-9E6A-58FBCE34CAF1}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Damage" ID="{3DE6CC41-01EE-4EB6-A949-E685CD2A1A6C}">
+							<ChildrenList>
+								<Action Name="" ID="{F0019180-D541-4DDE-907E-61A43FFBEE0A}" ShortID="1002411447">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Damage" ID="{8EB32078-F8B4-4ED8-9161-767054F8269B}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Success" ID="{BF96CD2A-7333-4E93-810B-6888EBAEBC03}">
+							<ChildrenList>
+								<Action Name="" ID="{ADCA7D9D-E950-4834-A788-63B34578D017}" ShortID="435886961">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Futuristic_Sounds_29" ID="{A19320F9-F1EB-41D6-90D6-F5D617247C70}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Dialogue" ID="{0EF03E7D-6DCB-47C1-A6E4-14B5EE3E352B}" ShortID="542566731">

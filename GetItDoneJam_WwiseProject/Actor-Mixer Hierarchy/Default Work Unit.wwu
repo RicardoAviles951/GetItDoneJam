@@ -1740,6 +1740,72 @@
 								<ActiveSource Name="Button_Push" ID="{EDD7ABDF-D0AC-4220-8C6B-68C9CCCF3D13}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Click_1" ID="{106C07E0-44E6-43CA-9E6A-58FBCE34CAF1}" ShortID="943609882">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Click_1" ID="{A50404F1-68B6-4A8D-8ADC-37142A7657D8}">
+									<Language>SFX</Language>
+									<AudioFile>Click_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="674588226"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Click_1" ID="{A50404F1-68B6-4A8D-8ADC-37142A7657D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Futuristic_Sounds_29" ID="{A19320F9-F1EB-41D6-90D6-F5D617247C70}" ShortID="449300236">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Futuristic_Sounds_29" ID="{3A5FE5E1-0A70-4AE5-81AE-75097318D247}">
+									<Language>SFX</Language>
+									<AudioFile>Futuristic_Sounds_29.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="849696221"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Futuristic_Sounds_29" ID="{3A5FE5E1-0A70-4AE5-81AE-75097318D247}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Damage" ID="{8EB32078-F8B4-4ED8-9161-767054F8269B}" ShortID="777568309">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Damage" ID="{BF52B292-2BF2-40DD-B749-2EF2BC0D77EE}">
+									<Language>SFX</Language>
+									<AudioFile>Damage.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="103474841"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Damage" ID="{BF52B292-2BF2-40DD-B749-2EF2BC0D77EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{2F7C3064-CDE9-4622-9182-ADC4548BD542}" ShortID="372986561">
