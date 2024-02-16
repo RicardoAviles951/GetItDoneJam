@@ -23,9 +23,11 @@ namespace AK
         static const AkUniqueID DOESNTHAVE_INVENTORY_ITEM = 351850055U;
         static const AkUniqueID DOOR_OPEN_CLOSE = 1873899129U;
         static const AkUniqueID ELECTRIC_ATTACK = 1242796459U;
+        static const AkUniqueID ELECTRIC_LOOP = 1115082013U;
         static const AkUniqueID ELEVATOR_RIDE = 1183628468U;
         static const AkUniqueID ERROR = 1880695829U;
         static const AkUniqueID FIRE_ATTACK = 1422166728U;
+        static const AkUniqueID FIRE_LOOP = 3845165270U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID GAME_COMPLETE = 1343734759U;
         static const AkUniqueID HEALTH = 3677180323U;

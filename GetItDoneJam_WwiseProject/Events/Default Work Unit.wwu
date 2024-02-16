@@ -60,6 +60,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Electric_Loop" ID="{366E0E65-2BD6-408F-B64B-185CE3EF4590}">
+							<ChildrenList>
+								<Action Name="" ID="{34F22018-44A5-41C7-A86E-9E5930BA9F17}" ShortID="43492581">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Electric_Loop" ID="{852E7E9E-66EB-476B-852D-E2C493B5D15B}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_Loop" ID="{4B57D6C3-0D95-4DED-A413-200144670B3C}">
+							<ChildrenList>
+								<Action Name="" ID="{6997656A-D399-4CDD-ACF8-3EA12740F628}" ShortID="844680015">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire_Loop" ID="{26630EE3-1BC6-4D42-B405-0C3CA96E845F}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Environment" ID="{0F611150-4F34-4428-A3FA-7D6790DC868C}" ShortID="1041123809">

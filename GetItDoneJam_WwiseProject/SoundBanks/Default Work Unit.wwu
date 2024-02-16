@@ -8,6 +8,7 @@
 						<ObjectRef Name="Puzzle2_Complete_Altered" ID="{C960F860-A4E2-4058-BA80-C8D83626AD67}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Barks" ID="{D8446C12-8D4B-405C-9D79-DFB922B1AB0E}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostPuzzle2_Gas_Run" ID="{B5B6CDF5-AD7A-4076-A2C9-E6A2E9BEA9E1}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Electric_Loop" ID="{366E0E65-2BD6-408F-B64B-185CE3EF4590}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Error" ID="{15457EF3-0FFC-4092-B48C-5B36AC2C64C2}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Elevator_Ride" ID="{281076C0-B45E-40B1-9BEC-4E5B092B1D56}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Death" ID="{8CA16DB5-BED0-4207-9B5C-4A555CE6663A}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
@@ -58,6 +59,7 @@
 						<ObjectRef Name="Pause" ID="{6B2B4387-D817-4D68-BE0F-9242F64A175B}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerStuck_AbilitiesReminder_Puzzle3" ID="{C31145CA-289E-4D97-8465-8EDE3FC00AB1}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hover_Tick" ID="{B8688927-5C18-4DAD-AA04-34A15B37C019}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Fire_Loop" ID="{4B57D6C3-0D95-4DED-A413-200144670B3C}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Poison_Gas" ID="{07865858-3B7B-4E50-B2F5-18F7ABD2C2BC}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Puzzle1_Intro3_Evaluation" ID="{01E67255-27C2-4E77-9ECF-430FBA79E527}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Success" ID="{BF96CD2A-7333-4E93-810B-6888EBAEBC03}" WorkUnitID="{CEC4AA81-5606-4EAD-ACBC-6FCB2DAAC035}" Origin="Manual" Filter="7"/>

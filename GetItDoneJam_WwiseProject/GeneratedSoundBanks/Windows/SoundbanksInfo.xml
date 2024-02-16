@@ -43,7 +43,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C5D95825-F6F3-D5E6-F0A6-BF67FEC5BA7F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CB774210-7111-7B65-0BEC-A9E34DE692C0}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -167,6 +167,10 @@
 					<ShortName>UI_Health.wav</ShortName>
 					<CachePath>SFX/UI_Health_818F3B66.wem</CachePath>
 				</File>
+				<File Id="259774177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_05.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_05_63280FF3.wem</CachePath>
+				</File>
 				<File Id="306773748" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Error.wav</ShortName>
 					<CachePath>SFX/UI_Error_818F3B66.wem</CachePath>
@@ -174,6 +178,10 @@
 				<File Id="313871865" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Item_PutDown.wav</ShortName>
 					<CachePath>SFX/Item_PutDown_818F3B66.wem</CachePath>
+				</File>
+				<File Id="314921007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_05.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_05_D760C2DD.wem</CachePath>
 				</File>
 				<File Id="323226548" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Death.wav</ShortName>
@@ -186,6 +194,10 @@
 				<File Id="345942114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Hardwood_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Hardwood_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="347013154" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_03.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_03_CB4AD1EB.wem</CachePath>
 				</File>
 				<File Id="348443874" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Puzzle1_Intro2_Vitals.wav</ShortName>
@@ -219,6 +231,10 @@
 					<ShortName>Footsteps_Hardwood_03.wav</ShortName>
 					<CachePath>SFX/Footsteps_Hardwood_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="385260720" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_03.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_03_B805D6DF.wem</CachePath>
+				</File>
 				<File Id="404483168" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Metal_02.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_02_818F3B66.wem</CachePath>
@@ -239,6 +255,10 @@
 					<ShortName>Hologram_Blast_05.wav</ShortName>
 					<CachePath>SFX/Hologram_Blast_05_818F3B66.wem</CachePath>
 				</File>
+				<File Id="469801839" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_02.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_02_4E276AEC.wem</CachePath>
+				</File>
 				<File Id="489096240" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Puzzle1_AprroachTheConsole.wav</ShortName>
 					<CachePath>SFX/Puzzle1_AprroachTheConsole_818F3B66.wem</CachePath>
@@ -246,6 +266,14 @@
 				<File Id="517427919" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_03.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="522036876" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_01.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_01_DBD6F2C7.wem</CachePath>
+				</File>
+				<File Id="542963724" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Electric_04.wav</ShortName>
+					<CachePath>SFX/Attack_Electric_04_C7E4F5E8.wem</CachePath>
 				</File>
 				<File Id="547916028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jump_Metal_06.wav</ShortName>
@@ -435,6 +463,10 @@
 					<ShortName>Footsteps_Metal_04.wav</ShortName>
 					<CachePath>SFX/Footsteps_Metal_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1037720029" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack_Fire_01.wav</ShortName>
+					<CachePath>SFX/Attack_Fire_01_AC86C7ED.wem</CachePath>
+				</File>
 				<File Id="1049261634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Attack_Electric_02.wav</ShortName>
 					<CachePath>SFX/Attack_Electric_02_818F3B66.wem</CachePath>
@@ -503,6 +535,15 @@
 						<MediaRef Id="1049261634"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1115082013" Name="Electric_Loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="314921007"/>
+						<MediaRef Id="385260720"/>
+						<MediaRef Id="469801839"/>
+						<MediaRef Id="522036876"/>
+						<MediaRef Id="542963724"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1183628468" Name="Elevator_Ride" DurationType="OneShot" DurationMin="11.5" DurationMax="11.5">
 					<MediaRefs>
 						<MediaRef Id="95967432"/>
@@ -520,6 +561,13 @@
 						<MediaRef Id="615797749"/>
 						<MediaRef Id="897209008"/>
 						<MediaRef Id="950110775"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3845165270" Name="Fire_Loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="259774177"/>
+						<MediaRef Id="347013154"/>
+						<MediaRef Id="1037720029"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
@@ -796,5 +844,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7B1CD401-CC58-78CF-2D62-EF1FFEE25FD1}</FileHash>
+	<FileHash>{9B017BFD-C5F5-5AAC-92D2-DE36EEF49799}</FileHash>
 </SoundBanksInfo>
