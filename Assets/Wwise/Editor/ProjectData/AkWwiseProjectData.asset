@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584938251058947506
+    m_lastTime: -8584937036295055445
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584938251072719756
+    m_lastTime: -8584937036317672420
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -674,8 +674,8 @@ MonoBehaviour:
         guid: 0a1bfaab1c0e0c4fa1e582134944f8e7
       Path: Events\Default Work Unit\Music\Menu_Music
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: 3fe1ef6014fa224c9ce7da28dd4e89f4
       id: 3991942870
@@ -906,8 +906,8 @@ MonoBehaviour:
         guid: f7b6c35e7b05a847a4dbfe19b2eb031a
       Path: Events\Default Work Unit\Music\Puzzle_Music
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Puzzle1
       guid: d724eed38ccf464fb93cb0fa28340649
       id: 4237507622
@@ -1460,7 +1460,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584950172836580940
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000e00000023000000
+  ExpandedFileSystemItemIds: 02000000030000000e0000003b0000003c0000003d00000041000000440000004f000000
   ExpandedWaapiItemIds: 020000000300000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

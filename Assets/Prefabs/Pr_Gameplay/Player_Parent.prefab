@@ -7396,17 +7396,17 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.061953094
+      value: -4.8984127
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3847001
+      value: 1.3847002
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15737998
+      value: -21.216791
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -7416,7 +7416,7 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -8189,6 +8189,7 @@ MonoBehaviour:
   abilityData: {fileID: 11400000, guid: 3032fc43165170345a84e3d089686734, type: 2}
   input: {fileID: 0}
   detector: {fileID: 3827656771259871604}
+  ac_PlayerArms: {fileID: 4567392426749197000}
   particles: {fileID: 3827656771433637175}
   fireIdle:
   - {fileID: 8870125597613287640}
@@ -8199,6 +8200,11 @@ MonoBehaviour:
   - {fileID: 3086330184330182931}
   - {fileID: 398576100927325951}
   FireEmissionCount: 1
+  fireSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa7ee9b537c01194dbd2fc56220b48cb,
+      type: 2}
   electricIdle:
   - {fileID: 4680308694394977806}
   - {fileID: 3136266542611178934}
@@ -8207,6 +8213,11 @@ MonoBehaviour:
   electricShoot:
   - {fileID: 3811070704535379654}
   ElectricEmissionCount: 1
+  electricSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c80a905fc1a773546b7687b86c8160e7,
+      type: 2}
 --- !u!114 &5004171538648421041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8403,6 +8414,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prf_Vfx_Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 2417703218367537464, guid: 19ebc0ce759f99c4686a1bb7c782accf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2728534482400734625, guid: 19ebc0ce759f99c4686a1bb7c782accf,
         type: 3}
       propertyPath: playOnAwake
@@ -8411,6 +8427,11 @@ PrefabInstance:
     - target: {fileID: 2728534482958059367, guid: 19ebc0ce759f99c4686a1bb7c782accf,
         type: 3}
       propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079583788004250078, guid: 19ebc0ce759f99c4686a1bb7c782accf,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3479597419030999453, guid: 19ebc0ce759f99c4686a1bb7c782accf,
@@ -8486,11 +8507,16 @@ PrefabInstance:
     - target: {fileID: 4036129507531779273, guid: 19ebc0ce759f99c4686a1bb7c782accf,
         type: 3}
       propertyPath: m_Intensity
-      value: 0
+      value: 2.9305463
       objectReference: {fileID: 0}
     - target: {fileID: 4792773341406128819, guid: 19ebc0ce759f99c4686a1bb7c782accf,
         type: 3}
       propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103565835025425962, guid: 19ebc0ce759f99c4686a1bb7c782accf,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5450646173756800559, guid: 19ebc0ce759f99c4686a1bb7c782accf,
@@ -8822,7 +8848,7 @@ PrefabInstance:
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.061953094
+      value: 0.061953
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
@@ -8832,7 +8858,7 @@ PrefabInstance:
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15737998
+      value: 0.15738001
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}

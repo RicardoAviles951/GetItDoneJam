@@ -136,7 +136,7 @@ MonoBehaviour:
   doorSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 233119e890c663c4790ab960e01e6c3a,
+    WwiseObjectReference: {fileID: 11400000, guid: b37acae613ef257449f22019e867228e,
       type: 2}
 --- !u!1001 &4746568730886374485
 PrefabInstance:
