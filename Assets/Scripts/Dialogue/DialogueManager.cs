@@ -33,15 +33,14 @@ public class DialogueManager : MonoBehaviour
     public AK.Wwise.Event clickSound;
   
 
-    private void Awake()
-    {
-        var root         = GetComponent<UIDocument>().rootVisualElement;
-        EntireScreen     = root.Q<VisualElement>("EntireScreen");
-        text             = root.Q<Label>("Text_Paragraph");
-        choicesContainer = root.Q<VisualElement>("Choices");
-    }
+    
     private void OnEnable()
     {
+        var root = GetComponent<UIDocument>().rootVisualElement;
+        EntireScreen = root.Q<VisualElement>("EntireScreen");
+        text = root.Q<Label>("Text_Paragraph");
+        choicesContainer = root.Q<VisualElement>("Choices");
+
         PlayerStateManager.ShowDialogue += ShowDisplay;
         PlayerStateManager.HideDialogue += HideDisplay;
 

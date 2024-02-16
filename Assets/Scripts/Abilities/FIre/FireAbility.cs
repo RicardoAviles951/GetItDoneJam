@@ -7,6 +7,7 @@ public class FireAbility : AbilityBase
 {
     IBurnable burnedObject;
     bool boomParticlePlayed = false;
+    bool soundPlayed = false;
 
     public override string Name {get; set;}
 
@@ -19,7 +20,7 @@ public class FireAbility : AbilityBase
         ability.GetAbilityText(Name);
 
         ParticlePlayer(ability.fireIdle);
-
+        ability.fireSound.Post(ability.gameObject);
 
         Debug.Log("Current Ability: Fire");
     }
@@ -29,7 +30,15 @@ public class FireAbility : AbilityBase
         //Fire ability
         if (ability.input.fire)
         {
+            if (!soundPlayed)
+            {
+                //Start playing looping sound once
+
+                soundPlayed = true;
+            }
+
             Debug.Log("Firing fire");
+            ability.fireSound.Post(ability.gameObject);
             //Fire particles if able
             ParticleEmitter(ability.fireShoot, ability.FireEmissionCount);
             if (!boomParticlePlayed)
@@ -41,6 +50,9 @@ public class FireAbility : AbilityBase
         }
         else
         {
+            //Stop playing looping sound
+
+            soundPlayed = false;
             boomParticlePlayed=true;
         }
 

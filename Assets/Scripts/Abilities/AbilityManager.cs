@@ -22,19 +22,23 @@ public class AbilityManager : MonoBehaviour
     //Reference to input system
     [HideInInspector] public StarterAssetsInputs input;
     [HideInInspector] public CameraDetector detector;
-    public ParticleSystem particles;
+    [Header("Character Animations")]
+    [Tooltip("The animtion controller for the player arms")]
+    public Animator ac_PlayerArms;
 
     [Header("Fire Ability")]
     public List<ParticleSystem> fireIdle;
     public List<ParticleSystem> fireOnce;
     public List<ParticleSystem> fireShoot;
     public int FireEmissionCount = 1;
+    public AK.Wwise.Event fireSound;
 
     [Header("Electric Ability")]
     public List<ParticleSystem> electricIdle;
     public List<ParticleSystem> electricOnce;
     public List<ParticleSystem> electricShoot;
     public int ElectricEmissionCount = 1;
+    public AK.Wwise.Event electricSound;
 
     // Start is called before the first frame update
     private void Awake()
@@ -52,7 +56,8 @@ public class AbilityManager : MonoBehaviour
     public void ActivateAbility()
     {
         currentAbility.UpdateAbility(this);
-
+        
+        HandleAbilitiesAnim();
     }
 
     public void ChangeAbility(AbilityBase ability)
@@ -66,5 +71,22 @@ public class AbilityManager : MonoBehaviour
     public void GetAbilityText(string text)
     {
         SendAbilityUI?.Invoke(text);
+    }
+
+    public void HandleAbilitiesAnim()
+    {
+        if(currentAbility != emptyAbility)
+        {
+            if (input.fire)
+            {
+                ac_PlayerArms.SetTrigger("Fired");
+                ac_PlayerArms.SetBool("isFiring", true);
+            }
+            else
+            {
+                //ac_PlayerArms.SetTrigger("Fired");
+                ac_PlayerArms.SetBool("isFiring", false);
+            }
+        }
     }
 }

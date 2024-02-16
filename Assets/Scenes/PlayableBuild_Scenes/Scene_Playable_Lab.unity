@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 990837760}
-  m_IndirectSpecularColor: {r: 0.07903045, g: 0.073337734, b: 0.13510211, a: 1}
+  m_IndirectSpecularColor: {r: 0.07906376, g: 0.073180504, b: 0.13519317, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7166,6 +7166,16 @@ PrefabInstance:
       propertyPath: m_Lens.m_SensorSize.y
       value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 1343843943020011459, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.061953094
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343843943020011459, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15737998
+      objectReference: {fileID: 0}
     - target: {fileID: 3827656771259871610, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
         type: 3}
       propertyPath: FireEmissionCount
@@ -7229,6 +7239,26 @@ PrefabInstance:
     - target: {fileID: 8062076041176164995, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231321767041479916, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.061953094
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231321767041479916, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3847001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231321767041479916, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15737998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231321767041479916, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8900,6 +8930,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1703741684}
     m_Modifications:
+    - target: {fileID: 63325318, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: VoiceLine.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 63325318, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
+      propertyPath: VoiceLine.Array.data[0].WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f53acbce43d486249b21bd062e16ac6e,
+        type: 2}
     - target: {fileID: 187239034, guid: ef297982c2162814385e6a6f1bcb5523, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4903918
@@ -8999,7 +9038,7 @@ PrefabInstance:
     - target: {fileID: 5210776304361474305, guid: ef297982c2162814385e6a6f1bcb5523,
         type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5210776304361474305, guid: ef297982c2162814385e6a6f1bcb5523,
         type: 3}

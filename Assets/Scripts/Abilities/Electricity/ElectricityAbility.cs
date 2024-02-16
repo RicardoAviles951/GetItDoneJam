@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Drawing.Inspector.PropertyDrawers;
 using UnityEngine;
 using UnityEngine.Rendering.Universal.Internal;
 
 public class ElectricityAbility : AbilityBase
 {
-    IElectrifiable electrifiedObject; 
+    IElectrifiable electrifiedObject;
+    bool soundPlayed = false;
     public override string Name { get; set; }
 
     private bool boomParticlePlayed = false;
@@ -19,6 +21,7 @@ public class ElectricityAbility : AbilityBase
         ability.GetAbilityText(Name);
 
         ParticlePlayer(ability.electricIdle);
+        ability.electricSound.Post(ability.gameObject);
         Debug.Log("Current Ability: Electricity");
     }
 
@@ -27,6 +30,13 @@ public class ElectricityAbility : AbilityBase
         
         if (ability.input.fire)
         {
+            if(!soundPlayed)
+            {
+                //Start playing looping sound once
+
+                soundPlayed = true;
+            }
+            
             ParticleEmitter(ability.electricShoot, ability.ElectricEmissionCount);
             if (!boomParticlePlayed)
             {
@@ -37,9 +47,11 @@ public class ElectricityAbility : AbilityBase
         }
         else
         {
+            //stop looping sound
+
+            soundPlayed = false;
             boomParticlePlayed = false;
         }
-
 
 
         //Trigger the electrify method on the shockable object.
@@ -125,4 +137,5 @@ public class ElectricityAbility : AbilityBase
 
         }
     }
+
 }
