@@ -33,7 +33,7 @@ public class ElectricityAbility : AbilityBase
             if(!soundPlayed)
             {
                 //Start playing looping sound once
-
+                ability.electricLoopSound.Post(ability.gameObject);
                 soundPlayed = true;
             }
             
@@ -48,7 +48,7 @@ public class ElectricityAbility : AbilityBase
         else
         {
             //stop looping sound
-
+            ability.electricLoopSound.Stop(ability.gameObject);
             soundPlayed = false;
             boomParticlePlayed = false;
         }

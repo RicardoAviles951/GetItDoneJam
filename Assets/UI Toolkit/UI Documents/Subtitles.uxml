@@ -12,5 +12,4 @@
             <ui:Label display-tooltip-when-elided="true" name="Label_subs" style="-unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/Art/2D/Fonts/MontserratAlternates-Regular.otf?fileID=12800000&amp;guid=6f43a7f07e452924fa150952d77b7686&amp;type=3#MontserratAlternates-Regular&apos;); font-size: 32px; color: rgb(255, 255, 255); -unity-font-style: bold-and-italic; white-space: normal;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="Fade" class="screen_clear screen_black" />
 </ui:UXML>

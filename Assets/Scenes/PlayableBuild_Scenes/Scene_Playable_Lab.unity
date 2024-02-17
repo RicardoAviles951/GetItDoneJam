@@ -2210,7 +2210,7 @@ Transform:
   - {fileID: 1382945672}
   - {fileID: 1179641279}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &531794804
 PrefabInstance:
@@ -5311,7 +5311,8 @@ MonoBehaviour:
   VoiceLine:
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c5affb5643037924ba2b0f957b71a651,
+      type: 2}
   linePlayed: 0
   timeBetweenLines: 4
 --- !u!1001 &1280131758
@@ -8723,6 +8724,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5247c03ff52344fbe97915b9fd63ee, type: 3}
+--- !u!1001 &2101108638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7982201231436194278, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_Name
+      value: ScreenFader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.713583
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.4768157
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.219048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982201231436194280, guid: 637795ad15cedf043bb9d33fdb0935a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 637795ad15cedf043bb9d33fdb0935a9, type: 3}
 --- !u!1001 &2124067673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8921,6 +8991,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area_03_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 2395221799776439270, guid: d0da03b6b64713742aeb904c7351e47f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0da03b6b64713742aeb904c7351e47f, type: 3}
 --- !u!1001 &5210776303752948668
@@ -9035,6 +9110,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5210776303928256475, guid: ef297982c2162814385e6a6f1bcb5523,
+        type: 3}
+      propertyPath: VO_AllPlaced.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dc69af43865908047bda8b103b3e6f45,
+        type: 2}
+    - target: {fileID: 5210776303928256475, guid: ef297982c2162814385e6a6f1bcb5523,
+        type: 3}
+      propertyPath: allItemsPlacedSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ab32767a5f538a4c8f1d7ea445d8b2d,
+        type: 2}
     - target: {fileID: 5210776304361474305, guid: ef297982c2162814385e6a6f1bcb5523,
         type: 3}
       propertyPath: LinkedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -9119,10 +9206,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1703741684}
     m_Modifications:
+    - target: {fileID: 2763404818216341178, guid: fe99380a60b7aae4e8f02341a2f083c5,
+        type: 3}
+      propertyPath: elevatorSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 16977ce463f41f64fa39995097887c97,
+        type: 2}
     - target: {fileID: 8819084986766629281, guid: fe99380a60b7aae4e8f02341a2f083c5,
         type: 3}
       propertyPath: m_Name
       value: Area_02_Turquiose
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819084986766629281, guid: fe99380a60b7aae4e8f02341a2f083c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8819084986766629310, guid: fe99380a60b7aae4e8f02341a2f083c5,
         type: 3}
@@ -9253,6 +9351,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area_04_Red
       objectReference: {fileID: 0}
+    - target: {fileID: 8946174617204664381, guid: f4e5e0136b5235a46babb213242bb018,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4e5e0136b5235a46babb213242bb018, type: 3}
 --- !u!1001 &8980772655464656058
@@ -9272,6 +9375,12 @@ PrefabInstance:
       propertyPath: particleSystems.Array.size
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 8980772655480273002, guid: c6ad19bf0a6808f4ab34226b80993530,
+        type: 3}
+      propertyPath: gasSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d315acb972ebc094b9416fd267645d78,
+        type: 2}
     - target: {fileID: 8980772655480273002, guid: c6ad19bf0a6808f4ab34226b80993530,
         type: 3}
       propertyPath: particleSystems.Array.data[0]

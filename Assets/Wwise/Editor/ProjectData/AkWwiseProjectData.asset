@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5ae083c2f8f6ed4e8d27d8c520e757e5
     GuidInternal: 
-    m_lastTime: -8584937036295055445
+    m_lastTime: -8584934664602677115
     List:
     - name: Main
       guid: f658bacf38755e4ea5b6eca3f9086527
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584937036317672420
+    m_lastTime: -8584934664616888635
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -282,6 +282,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5
       minDuration: 0.5
+    - name: Damage
+      guid: 41cce63dee01b64ea949e685cd2a1a6c
+      id: 1786804762
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Damage
+        ObjectType: 3
+        guid: 41cce63dee01b64ea949e685cd2a1a6c
+      Path: Events\Default Work Unit\UI\Damage
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
     - name: Dialogue
       guid: 7d3ef00ecb6dc147a6e414b5ee3e352b
       id: 3930136735
@@ -362,6 +382,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Electric_Loop
+      guid: 650e6e36d62b8f40b64b185ce3ef4590
+      id: 1115082013
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Powerups
+        ObjectType: 4
+        guid: fd21b7eab808884b8c29857f93b96ac8
+      - ElementName: Electric_Loop
+        ObjectType: 3
+        guid: 650e6e36d62b8f40b64b185ce3ef4590
+      Path: Events\Default Work Unit\Powerups\Electric_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Elevator_Ride
       guid: c07610285eb4b1409bec4e5b092b1d56
       id: 1183628468
@@ -439,6 +479,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Fire_Loop
+      guid: c3d6574b950ded4da413200144670b3c
+      id: 3845165270
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: Powerups
+        ObjectType: 4
+        guid: fd21b7eab808884b8c29857f93b96ac8
+      - ElementName: Fire_Loop
+        ObjectType: 3
+        guid: c3d6574b950ded4da413200144670b3c
+      Path: Events\Default Work Unit\Powerups\Fire_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Footsteps
       guid: 20f1b40c475ad4489fba41c0228b2672
       id: 2385628198
@@ -562,6 +622,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Hover_Tick
+      guid: 278968b8185cad4daa0434a15b37c019
+      id: 3821546767
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Hover_Tick
+        ObjectType: 3
+        guid: 278968b8185cad4daa0434a15b37c019
+      Path: Events\Default Work Unit\UI\Hover_Tick
+      maxAttenuation: 0
+      maxDuration: 0.14573696
+      minDuration: 0.14573696
     - name: Item_Pickup
       guid: 089b2693537d7047a3ef2780462a3520
       id: 566396871
@@ -1221,6 +1301,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 7
       minDuration: 7
+    - name: Success
+      guid: 2acd96bf3373934e810b6888ebaebc03
+      id: 3625060726
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 81aac4ce0656ad4eacbc6fcb2daac035
+      - ElementName: UI
+        ObjectType: 4
+        guid: 5bdaeebba802264b88864302fdbe0664
+      - ElementName: Success
+        ObjectType: 3
+        guid: 2acd96bf3373934e810b6888ebaebc03
+      Path: Events\Default Work Unit\UI\Success
+      maxAttenuation: 0
+      maxDuration: 1.3734921
+      minDuration: 1.3734921
     - name: UI
       guid: 5bdaeebba802264b88864302fdbe0664
       id: 1551306167
@@ -1460,8 +1560,8 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584950172836580940
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000e0000003b0000003c0000003d00000041000000440000004f000000
-  ExpandedWaapiItemIds: 020000000300000023000000
+  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000070000000f0000001b0000002e00000033000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1

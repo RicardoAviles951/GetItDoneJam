@@ -32,6 +32,7 @@ public class AbilityManager : MonoBehaviour
     public List<ParticleSystem> fireShoot;
     public int FireEmissionCount = 1;
     public AK.Wwise.Event fireSound;
+    public AK.Wwise.Event fireLoopSound;
 
     [Header("Electric Ability")]
     public List<ParticleSystem> electricIdle;
@@ -39,6 +40,7 @@ public class AbilityManager : MonoBehaviour
     public List<ParticleSystem> electricShoot;
     public int ElectricEmissionCount = 1;
     public AK.Wwise.Event electricSound;
+    public AK.Wwise.Event electricLoopSound;
 
     // Start is called before the first frame update
     private void Awake()

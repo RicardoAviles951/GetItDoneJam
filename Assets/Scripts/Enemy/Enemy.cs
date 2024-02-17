@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         speed = rotationAlas.speed;
-        beam.enabled = false;
+        beam.enabled = false; 
         cooldown = timeBetweenAttacks;
         angleStart = angle;
         playerObject = GameObject.FindGameObjectWithTag(playerTag);

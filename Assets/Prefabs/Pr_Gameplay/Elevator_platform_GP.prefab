@@ -154,6 +154,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raisePoint: {fileID: 6645686988266561325}
+  elevatorSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 16977ce463f41f64fa39995097887c97,
+      type: 2}
 --- !u!1001 &42841690124797659
 PrefabInstance:
   m_ObjectHideFlags: 0

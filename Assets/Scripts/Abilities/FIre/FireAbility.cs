@@ -33,12 +33,12 @@ public class FireAbility : AbilityBase
             if (!soundPlayed)
             {
                 //Start playing looping sound once
-
+                ability.fireLoopSound.Post(ability.gameObject);
                 soundPlayed = true;
             }
 
             Debug.Log("Firing fire");
-            ability.fireSound.Post(ability.gameObject);
+            //ability.fireSound.Post(ability.gameObject);
             //Fire particles if able
             ParticleEmitter(ability.fireShoot, ability.FireEmissionCount);
             if (!boomParticlePlayed)
@@ -51,7 +51,7 @@ public class FireAbility : AbilityBase
         else
         {
             //Stop playing looping sound
-
+            ability.fireLoopSound.Stop(ability.gameObject);
             soundPlayed = false;
             boomParticlePlayed=true;
         }

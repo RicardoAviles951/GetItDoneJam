@@ -8,6 +8,7 @@ public class GasController : MonoBehaviour
     public UnityEvent releaseGas;
     public bool hasReleasedGas = false;
     public List<ParticleSystem> particleSystems = new List<ParticleSystem>();
+    public AK.Wwise.Event gasSound;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,6 +30,8 @@ public class GasController : MonoBehaviour
                 }
                 hasReleasedGas = true;
             }
+
+            gasSound.Post(gameObject);
         }
     }
 

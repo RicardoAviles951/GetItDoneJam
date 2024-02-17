@@ -10,6 +10,7 @@ public class Lift : MonoBehaviour
     private Vector3 startingPosition;
     private Vector3 endingPosition;
     private bool isMovingTowardsEnding = false; // Track the direction of movement
+    public AK.Wwise.Event elevatorSound;
 
     // Start is called before the first frame update
     void Start()
@@ -30,15 +31,17 @@ public class Lift : MonoBehaviour
         
         if (!isMovingTowardsEnding)
         {
+            elevatorSound.Post(gameObject);
             isMovingTowardsEnding = true;
-            transform.DOMove(endingPosition, 2.0f).OnComplete(MoveComplete);
+            transform.DOMove(endingPosition, 2.0f).SetEase(Ease.InSine).OnComplete(MoveComplete);
             raisePoint.transform.position = startingPosition;
             Debug.Log("Moving towards ending position");
         }
         else
         {
+            elevatorSound.Post(gameObject);
             isMovingTowardsEnding = false;
-            transform.DOMove(startingPosition, 2.0f).OnComplete(MoveComplete);
+            transform.DOMove(startingPosition, 2.0f).SetEase(Ease.InSine).OnComplete(MoveComplete);
             raisePoint.transform.position = endingPosition;
             Debug.Log("Moving towards starting position");
         }
@@ -47,6 +50,7 @@ public class Lift : MonoBehaviour
     private void MoveComplete()
     {
         // Perform any necessary actions after the elevator movement completes
+        elevatorSound.Stop(gameObject);
     }
 
    

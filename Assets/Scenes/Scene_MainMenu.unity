@@ -427,6 +427,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9c966b52634b7224c873c52a268e5373,
       type: 2}
+  hoverSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a664ac8dcfd81cf43b7ee2cb77e4d268,
+      type: 2}
   screenFader: {fileID: 1658283287}
 --- !u!114 &1658283287 stripped
 MonoBehaviour:

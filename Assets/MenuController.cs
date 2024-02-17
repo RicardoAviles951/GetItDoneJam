@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class MenuController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class MenuController : MonoBehaviour
     public Button playButton;
     public Button creditsButton;
     public Button quitButton;
+    public AK.Wwise.Event hoverSound;
+
     public ScreenFader screenFader;
 
     private bool buttonClicked = false;
@@ -34,6 +37,10 @@ public class MenuController : MonoBehaviour
         playButton.clicked += PlayButtonClicked;
         creditsButton.clicked += CreditsButtonClicked;
         quitButton.clicked += QuitButtonClicked;
+
+        playButton.RegisterCallback<MouseEnterEvent>(OnButtonEnter);
+        creditsButton.RegisterCallback<MouseEnterEvent>(OnButtonEnter);
+        quitButton.RegisterCallback<MouseEnterEvent>(OnButtonEnter);
     }
 
     private void OnDisable()
@@ -41,8 +48,9 @@ public class MenuController : MonoBehaviour
         playButton.clicked -= PlayButtonClicked;
         creditsButton.clicked -= CreditsButtonClicked;
         quitButton.clicked -= QuitButtonClicked;
-    }
 
+    }
+    
     void EndGame()
     {
         Application.Quit();
@@ -84,6 +92,11 @@ public class MenuController : MonoBehaviour
     {
         yield return new WaitForSeconds(screenFader.fadeDuration + .05f);
         SceneManager.LoadScene(sceneName);
+    }
+
+    void OnButtonEnter(MouseEnterEvent evt)
+    {
+        hoverSound.Post(gameObject);
     }
 
 }
