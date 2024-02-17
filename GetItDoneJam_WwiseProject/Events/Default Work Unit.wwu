@@ -276,10 +276,10 @@
 						</Event>
 						<Event Name="Hover_Tick" ID="{B8688927-5C18-4DAD-AA04-34A15B37C019}">
 							<ChildrenList>
-								<Action Name="" ID="{D4FC2EBA-FBF2-43AC-836F-ADF3198C48A1}" ShortID="654276831">
+								<Action Name="" ID="{A1E18465-665A-42B1-9538-A4B5088DADD1}" ShortID="274848080">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Click_1" ID="{106C07E0-44E6-43CA-9E6A-58FBCE34CAF1}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
+											<ObjectRef Name="Click_2" ID="{41266604-C3FC-415C-B1CD-F387A93C355D}" WorkUnitID="{88201009-6FE2-49A3-86A0-BE561A882B09}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

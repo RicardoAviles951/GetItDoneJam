@@ -2090,6 +2090,28 @@
 								<ActiveSource Name="Damage" ID="{BF52B292-2BF2-40DD-B749-2EF2BC0D77EE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Click_2" ID="{41266604-C3FC-415C-B1CD-F387A93C355D}" ShortID="508686600">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8001F21B-56EA-41E9-A879-E10856A4F94E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E6B83374-18E7-4813-A6FE-56EB5501FE66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Click_2" ID="{F448525A-B1A1-41F0-91FB-3DED23AEA6CC}">
+									<Language>SFX</Language>
+									<AudioFile>Click_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="143827928"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Click_2" ID="{F448525A-B1A1-41F0-91FB-3DED23AEA6CC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{2F7C3064-CDE9-4622-9182-ADC4548BD542}" ShortID="372986561">
