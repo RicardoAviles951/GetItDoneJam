@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584934664616888635
+    m_lastTime: -8584933703290399423
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -640,8 +640,8 @@ MonoBehaviour:
         guid: 278968b8185cad4daa0434a15b37c019
       Path: Events\Default Work Unit\UI\Hover_Tick
       maxAttenuation: 0
-      maxDuration: 0.14573696
-      minDuration: 0.14573696
+      maxDuration: 0.11306123
+      minDuration: 0.11306123
     - name: Item_Pickup
       guid: 089b2693537d7047a3ef2780462a3520
       id: 566396871
@@ -1560,9 +1560,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584950172836580940
     List: []
-  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000070000000f0000001b0000002e00000033000000
+  ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

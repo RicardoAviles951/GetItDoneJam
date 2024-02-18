@@ -16,6 +16,7 @@ public class ConsoleController : MonoBehaviour, IDialogue
     public TextAsset InkDialogue;
     public AK.Wwise.Event errorSound;
     private int counter = 0;
+    private bool isBeingUsed = false;
     //--------------------------------------------------------------//
 
     //--------------Interface Implementations-----------------------//
@@ -28,6 +29,7 @@ public class ConsoleController : MonoBehaviour, IDialogue
         //Relays the inkFile information to the DialogueManager
         SendInkFile.Invoke(InkDialogue);
 
+        isBeingUsed = true;
         //For keeping track of non-repeatable consoles.
         counter++;
     }
@@ -70,6 +72,12 @@ public class ConsoleController : MonoBehaviour, IDialogue
     void Awake() => name = gameObject.name;
     void EndingEvent()
     {
-        EndingDialogueEvent.Invoke();
+        if(isBeingUsed) 
+        {
+            EndingDialogueEvent.Invoke();
+            isBeingUsed = false;
+        }
+        
+
     }
 }
