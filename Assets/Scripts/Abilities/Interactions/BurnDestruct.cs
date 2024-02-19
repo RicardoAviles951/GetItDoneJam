@@ -59,6 +59,7 @@ public class BurnDestruct : MonoBehaviour, IBurnable
     {
         isBurning = false;
         burnParticle.Stop();
+        timer = 0;
         if(canDestruct)
             Destruct();
     }

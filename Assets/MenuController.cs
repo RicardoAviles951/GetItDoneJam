@@ -25,7 +25,8 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        menuMusic.Post(gameObject);
+       menuMusic.Post(gameObject);
+       AkSoundEngine.SetState("Transitions", "Menu");
     }
 
     private void OnEnable()
@@ -81,6 +82,8 @@ public class MenuController : MonoBehaviour
             //StartCoroutine(LoadScene("Scene_Ricardo"));
 
             errorSound.Post(gameObject);
+            
+            
         }
         
     }
@@ -93,6 +96,7 @@ public class MenuController : MonoBehaviour
 
     IEnumerator LoadScene(string sceneName)
     {
+        AkSoundEngine.SetState("Transitions", "None");
         yield return new WaitForSeconds(screenFader.fadeDuration + .05f);
         menuMusic.Stop(gameObject);
         SceneManager.LoadScene(sceneName);

@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 81aac4ce0656ad4eacbc6fcb2daac035
     GuidInternal: 
-    m_lastTime: -8584933703290399423
+    m_lastTime: -8584932256621567001
     List:
     - name: AirVent_Start
       guid: 57a8970931eebd4aae4e315d213a5dc8
@@ -1444,7 +1444,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1445452e301a8f42ae8c4aa8b2252567
     GuidInternal: 
-    m_lastTime: -8584948419240240169
+    m_lastTime: -8584932256607368207
     List:
     - name: Ground
       guid: bf629f9a6d185b42946b2341cd59e9f5
@@ -1612,6 +1612,56 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Music_Switch
+      guid: 98047c057c10bf499237794cf2a0dee2
+      id: 2724869341
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1445452e301a8f42ae8c4aa8b2252567
+      - ElementName: Music_Switch
+        ObjectType: 11
+        guid: 98047c057c10bf499237794cf2a0dee2
+      Path: Switches\Default Work Unit\Music_Switch
+      values:
+      - name: Menu
+        guid: 2996abee56b7f046a268532a6010f857
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Music_Switch
+          ObjectType: 11
+          guid: 98047c057c10bf499237794cf2a0dee2
+        - ElementName: Menu
+          ObjectType: 10
+          guid: 2996abee56b7f046a268532a6010f857
+      - name: Puzzle
+        guid: ec096d8d1643664082f6b53349afc640
+        id: 1780448749
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1445452e301a8f42ae8c4aa8b2252567
+        - ElementName: Music_Switch
+          ObjectType: 11
+          guid: 98047c057c10bf499237794cf2a0dee2
+        - ElementName: Puzzle
+          ObjectType: 10
+          guid: ec096d8d1643664082f6b53349afc640
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1626,9 +1676,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584950172836580940
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 020000000300000027000000410000004c0000004f0000005000000051000000
+  ExpandedWaapiItemIds: 40000000410000004c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

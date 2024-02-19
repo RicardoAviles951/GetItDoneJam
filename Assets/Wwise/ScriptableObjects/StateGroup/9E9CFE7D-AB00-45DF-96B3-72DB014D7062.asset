@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c10a6c75a16908841be84f7c7f03bf95, type: 3}
-  m_Name: AbilityUnlocks
+  m_Script: {fileID: 11500000, guid: ea6f0edcd123d4443807fea0f080cdc3, type: 3}
+  m_Name: 9E9CFE7D-AB00-45DF-96B3-72DB014D7062
   m_EditorClassIdentifier: 
-  unlockedAbilities:
-  - Electricity
-  - Fire
+  objectName: Transitions
+  id: 52661923
+  guid: 9E9CFE7D-AB00-45DF-96B3-72DB014D7062
