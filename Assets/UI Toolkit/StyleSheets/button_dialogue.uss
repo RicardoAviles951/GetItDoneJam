@@ -6,21 +6,22 @@
     -unity-font-style: bold;
     font-size: 32px;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 249, 249);
     -unity-font-definition: initial;
     -unity-font: url('project://database/Assets/Art/2D/Fonts/Varino%20-%20Normal.otf?fileID=12800000&guid=446a55c15e1b78f49ba69e13161c42a9&type=3#Varino - Normal');
-    background-image: none;
+    background-image: url('project://database/Assets/Art/2D/UI/Dialogue/Dialogue%20system%20button2.png?fileID=2800000&guid=21084c97caed80944a2330a7b32a2995&type=3#Dialogue system button2');
 }
 
 .button_dialogue:hover {
     scale: 1.05 1.05;
     transition-timing-function: ease-out-elastic;
     transition-duration: 0.5s;
+    mix-blend-mode: vivid-light;
+    background-image: url('project://database/Assets/Art/2D/UI/Dialogue/Dialogue%20system%20button1.png?fileID=2800000&guid=62089e4572121f948be106be9e763b04&type=3#Dialogue system button1');
 }
 
 .button_dialogue:active {
     scale: 1 0.8;
     transition-duration: 0s;
     transition-timing-function: ease;
-    background-color: rgba(219, 219, 219, 255);
+    background-color: rgb(219, 219, 219);
 }

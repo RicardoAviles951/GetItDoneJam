@@ -34,6 +34,15 @@ public class PlayerIdleState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager player)
     {
+        SwitchToMove(player);
+    }
+
+    void SwitchToMove(PlayerStateManager player)
+    {
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            player.ChangeState(player.moveState);
+        }
         
     }
 

@@ -1364,8 +1364,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0a933c593427f3499de37131beb18770
     GuidInternal: 
-    m_lastTime: -8584950172836600810
-    List: []
+    m_lastTime: -8584932805263420309
+    List:
+    - name: Transitions
+      guid: 7dfe9c9e00abdf4596b372db014d7062
+      id: 52661923
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0a933c593427f3499de37131beb18770
+      - ElementName: Transitions
+        ObjectType: 9
+        guid: 7dfe9c9e00abdf4596b372db014d7062
+      Path: States\Default Work Unit\Transitions
+      values:
+      - name: Menu
+        guid: 78857effdb6c934593cf6fcc12fa8448
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0a933c593427f3499de37131beb18770
+        - ElementName: Transitions
+          ObjectType: 9
+          guid: 7dfe9c9e00abdf4596b372db014d7062
+        - ElementName: Menu
+          ObjectType: 8
+          guid: 78857effdb6c934593cf6fcc12fa8448
+      - name: None
+        guid: c3d9332c3dce2948b591061de85aeb2b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0a933c593427f3499de37131beb18770
+        - ElementName: Transitions
+          ObjectType: 9
+          guid: 7dfe9c9e00abdf4596b372db014d7062
+        - ElementName: None
+          ObjectType: 8
+          guid: c3d9332c3dce2948b591061de85aeb2b
+      - name: Puzzle
+        guid: 0a684b4492667d42808ca6e63f189e92
+        id: 1780448749
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0a933c593427f3499de37131beb18770
+        - ElementName: Transitions
+          ObjectType: 9
+          guid: 7dfe9c9e00abdf4596b372db014d7062
+        - ElementName: Puzzle
+          ObjectType: 8
+          guid: 0a684b4492667d42808ca6e63f189e92
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -1564,5 +1630,5 @@ MonoBehaviour:
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
