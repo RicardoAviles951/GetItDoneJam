@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    //Scriptable object that holds data on locked and unlocked abilties. 
+    public SO_AbilityData abilityData;
 
     //Added by Ricardo
     //Event for when the game is over
@@ -68,6 +70,8 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
+        //Reset unlocked abilities by locking fire again
+        abilityData.LockAbility("Fire");
         SceneManager.LoadScene(currentSceneName);
     }
 
@@ -76,6 +80,7 @@ public class GameManager : MonoBehaviour
     void WinGame()
     {
         wonGame = true;
+        //Send out a message to UI
         GameOver?.Invoke(wonGame);
     }
 

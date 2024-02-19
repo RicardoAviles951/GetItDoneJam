@@ -10,6 +10,7 @@ public class MenuController : MonoBehaviour
     [Header("Music and Sounds")]
     public AK.Wwise.Event menuMusic;
     public AK.Wwise.Event confirmSound;
+    public AK.Wwise.Event errorSound;
 
     public VisualElement EntireScreen;
     public Button playButton;
@@ -64,7 +65,7 @@ public class MenuController : MonoBehaviour
             screenFader.FadeOut(screenFader.fadeDuration);
             buttonClicked = true;
             // Load your desired scene, replace "GameScene" with the actual scene name
-            StartCoroutine(LoadScene("Scene_Ricardo"));
+            StartCoroutine(LoadScene("Scene_Playable_Lab"));
         }
         
     }
@@ -73,11 +74,13 @@ public class MenuController : MonoBehaviour
     {
         if(!buttonClicked)
         {
-            confirmSound.Post(gameObject);
-            screenFader.FadeOut(screenFader.fadeDuration);
-            buttonClicked = true;
-            // Load your desired scene, replace "CreditsScene" with the actual scene name
-            StartCoroutine(LoadScene("Scene_Ricardo"));
+            //confirmSound.Post(gameObject);
+            //screenFader.FadeOut(screenFader.fadeDuration);
+            //buttonClicked = true;
+            //// Load your desired scene, replace "CreditsScene" with the actual scene name
+            //StartCoroutine(LoadScene("Scene_Ricardo"));
+
+            errorSound.Post(gameObject);
         }
         
     }
@@ -91,6 +94,7 @@ public class MenuController : MonoBehaviour
     IEnumerator LoadScene(string sceneName)
     {
         yield return new WaitForSeconds(screenFader.fadeDuration + .05f);
+        menuMusic.Stop(gameObject);
         SceneManager.LoadScene(sceneName);
     }
 

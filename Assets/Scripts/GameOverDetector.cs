@@ -8,21 +8,18 @@ public class GameOverDetector : MonoBehaviour
     private VisualElement EntireScreen;
     private Label GameOverText;
     private Button button;
+   
 
-    private void Awake()
+    private void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
         EntireScreen = root.Q<VisualElement>("EntireScreen");
         GameOverText = root.Q<Label>("Label_gameover");
         button = root.Q<Button>("Button");
 
-    }
-
-   
-
-    private void OnEnable()
-    {
+        //Subscribe to game manager to check when the game is over
         GameManager.GameOver += ToggleGameOver;
+        //Create a button event lambda expression
         button.clicked += () => GameManager.instance.Retry();
 
     }

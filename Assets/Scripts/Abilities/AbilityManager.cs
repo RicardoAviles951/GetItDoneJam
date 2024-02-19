@@ -68,7 +68,11 @@ public class AbilityManager : MonoBehaviour
         ability.Activate(this);
     }
 
-    
+    public void ChangeToFire()
+    {
+        currentAbility = fireAbility;
+        fireAbility.Activate(this);
+    }
 
     public void GetAbilityText(string text)
     {

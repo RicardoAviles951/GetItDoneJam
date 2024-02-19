@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Drawing.Inspector.PropertyDrawers;
 using UnityEngine;
-using UnityEngine.Rendering.Universal.Internal;
 
 public class ElectricityAbility : AbilityBase
 {
@@ -84,7 +82,7 @@ public class ElectricityAbility : AbilityBase
             IElectrifiable electrifiable = ability.detector.hit.collider.gameObject.GetComponent<IElectrifiable>();
             if (electrifiable != null && electrifiable.useParticleCollisions == false)
             {
-                Debug.Log("Electrifiable detected");
+                //Debug.Log("Electrifiable detected");
                 electrifiedObject = electrifiable;
                 return true;
             }

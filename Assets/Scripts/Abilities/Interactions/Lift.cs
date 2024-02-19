@@ -5,7 +5,6 @@ using DG.Tweening;
 
 public class Lift : MonoBehaviour
 {
-    private Animator animator;
     public GameObject raisePoint;
     private Vector3 startingPosition;
     private Vector3 endingPosition;
@@ -15,15 +14,8 @@ public class Lift : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
         startingPosition = transform.position;
         endingPosition = raisePoint.transform.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void ActivateElevator()

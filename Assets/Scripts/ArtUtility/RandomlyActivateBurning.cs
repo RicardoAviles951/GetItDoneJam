@@ -72,7 +72,7 @@ public class RandomlyActivateBurning : MonoBehaviour
         }
         else
         {
-            print("Player is found and checkable");
+            //print("Player is found and checkable");
             float dist = CheckDistance(originOfLaser.position, playerObj.position);
             playerWithin_40Meters = IsInRange(dist, 40);
         }

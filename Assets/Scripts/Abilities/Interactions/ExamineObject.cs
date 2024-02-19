@@ -73,11 +73,11 @@ public class ExamineObject: MonoBehaviour, IExaminable
         //Load the description
         lines.Add(currentStory.Continue());
 
-        //Prints item information to console for debugging.
-        foreach(string line in lines)
-        {
-            Debug.Log("Line: " + line);
-        }
+        ////Prints item information to console for debugging.
+        //foreach(string line in lines)
+        //{
+        //    Debug.Log("Line: " + line);
+        //}
     }
 
     //Toggles the examinable object's active status. 

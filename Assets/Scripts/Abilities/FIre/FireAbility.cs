@@ -37,7 +37,7 @@ public class FireAbility : AbilityBase
                 soundPlayed = true;
             }
 
-            Debug.Log("Firing fire");
+           // Debug.Log("Firing fire");
             //ability.fireSound.Post(ability.gameObject);
             //Fire particles if able
             ParticleEmitter(ability.fireShoot, ability.FireEmissionCount);

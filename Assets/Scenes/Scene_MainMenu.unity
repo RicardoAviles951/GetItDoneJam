@@ -427,6 +427,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9c966b52634b7224c873c52a268e5373,
       type: 2}
+  errorSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bd57223dae4b574ebe256de0a38d283,
+      type: 2}
   hoverSound:
     idInternal: 0
     valueGuidInternal: 

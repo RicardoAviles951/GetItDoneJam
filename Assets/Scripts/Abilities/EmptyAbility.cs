@@ -9,7 +9,7 @@ public class EmptyAbility : AbilityBase
     public override void Activate(AbilityManager ability)
     {
         ability.GetAbilityText(Name);
-        Debug.Log("No ability");
+        //Debug.Log("No ability");
     }
 
     public override void UpdateAbility(AbilityManager ability)

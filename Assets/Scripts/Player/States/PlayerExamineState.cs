@@ -10,6 +10,7 @@ public class PlayerExamineState : PlayerBaseState
     Quaternion originalRotation;
     public override void EnterState(PlayerStateManager player)
     {
+        //Alot of this can be turned into methods for better organization
         Debug.Log("Current state: Examine State");
         if(player.CurrentObject != null)
         {

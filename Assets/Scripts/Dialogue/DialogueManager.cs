@@ -31,9 +31,12 @@ public class DialogueManager : MonoBehaviour
     public Outcome currentOutcome; 
     //Sounds
     public AK.Wwise.Event clickSound;
-  
 
-    
+    private void Awake()
+    {
+        
+    }
+
     private void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
@@ -63,6 +66,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Start with the dialogue screen not showing
         EntireScreen.style.display = DisplayStyle.None;
         currentOutcome = Outcome.nothing;
     }

@@ -16,7 +16,7 @@ public class BurnDestruct : MonoBehaviour, IBurnable
     {
         if (isBurning == false)
         {
-            Debug.Log("Burning!");
+            //Debug.Log("Burning!");
             if (burnParticle != null)
             {
                 burnParticle.Play();
@@ -29,7 +29,7 @@ public class BurnDestruct : MonoBehaviour, IBurnable
         }
         else
         {
-            Debug.Log("Already burning!");
+            //Debug.Log("Already burning!");
         }
 
     }

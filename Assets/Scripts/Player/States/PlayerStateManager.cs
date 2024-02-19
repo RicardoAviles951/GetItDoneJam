@@ -21,24 +21,25 @@ public class PlayerStateManager : MonoBehaviour
     public static UnityAction ShowOpeningUI;
     public static UnityAction HideOpeningUI;
 
-
-
-
-
+    //Reference to our current state
     PlayerBaseState currentState;
 
+    //Instances of our states
     public PlayerMoveState moveState         = new PlayerMoveState();
     public PlayerExamineState examineState   = new PlayerExamineState();
     public PlayerDialogueState dialogueState = new PlayerDialogueState();
     public PlayerDeathState deathState       = new PlayerDeathState();
     public PlayerIdleState idleState         = new PlayerIdleState();
-
+    
+    //Components attached to the player. Must be public to be accessed by our state scripts
     [HideInInspector] public _FirstPersonController movementController;
     [HideInInspector] public StarterAssetsInputs input;
     [HideInInspector] public AbilityManager abilityManager;
     [HideInInspector] public CameraDetector detector;
     [HideInInspector] public PlayerHealth health;
     [HideInInspector] public TriggerVoiceLine triggerVoiceLine;
+
+    //Particles for getting effects
     public ParticleSystem buffParticles;
     public ParticleSystem debuffParticles;
     
@@ -48,7 +49,6 @@ public class PlayerStateManager : MonoBehaviour
     //State Variables 
     [Header("Examine State")]
     public GameObject CurrentObject;
-    public bool isExamining = false;
     [HideInInspector ]public Transform examinedObject;
     public GameObject examinePos;
     public AK.Wwise.Event itemPickupSound;
@@ -62,6 +62,7 @@ public class PlayerStateManager : MonoBehaviour
     [HideInInspector] public IDialogue currentConsole;
     private void OnEnable()
     {
+        //Events for to listen for
         PlayerHealth.OnDeath += Die;
         DialogueManager.DialogueFinished += BackToMove;
         DialogueManager.PlayerStatusApplied += ApplyStatus;
@@ -84,7 +85,7 @@ public class PlayerStateManager : MonoBehaviour
         triggerVoiceLine   = GetComponent<TriggerVoiceLine>();
 
         //Set state
-        currentState = moveState;
+        currentState = idleState;
 
         currentState.EnterState(this);
     }
@@ -118,6 +119,8 @@ public class PlayerStateManager : MonoBehaviour
         currentState = state;
         state.EnterState(this);
     }
+
+    //UI Event Methods
     public void ToggleExamineUI(string toggleUI)
     {
         switch (toggleUI)
@@ -156,6 +159,7 @@ public class PlayerStateManager : MonoBehaviour
         }
     }
 
+    //Reset input Booleans. 
     void InputResets()
     {
         //The input system as configured does not reset the isPressed value when the input is released. So we have to do it manually.
@@ -175,6 +179,7 @@ public class PlayerStateManager : MonoBehaviour
         }
     }
 
+    //Subscribed events functions
     public void Die() => ChangeState(deathState);
     public void BackToMove() => ChangeState(moveState);
 

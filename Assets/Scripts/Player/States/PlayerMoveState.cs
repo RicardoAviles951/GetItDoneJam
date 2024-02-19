@@ -7,7 +7,7 @@ public class PlayerMoveState : PlayerBaseState
 {
     public override void EnterState(PlayerStateManager player)
     {
-        Debug.Log("Current state: Move State");
+        //Debug.Log("Current state: Move State");
         player.TogglePlayerHUD("show");
         CursorReturn(player);
     }

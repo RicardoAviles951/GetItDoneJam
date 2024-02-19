@@ -101,7 +101,7 @@ public class PlayerHUDManager : MonoBehaviour
         DOTween.To(() => healthBar.style.width.value.value, x => healthBar.style.width = Length.Percent(x), healtbarInfo.currentHealth, duration).SetEase(Ease.OutCubic);
 
         // Log incoming health value
-        Debug.Log("Incoming Health: " + healtbarInfo.currentHealth);
+        //Debug.Log("Incoming Health: " + healtbarInfo.currentHealth);
     }
 
 }
