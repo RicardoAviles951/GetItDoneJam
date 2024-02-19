@@ -52,6 +52,7 @@ Event	ID	Name			Wwise Object Path	Notes
 Switch Group	ID	Name			Wwise Object Path	Notes
 	674522502	Land			\Default Work Unit\Land	
 	2528658256	Ground			\Default Work Unit\Ground	
+	2724869341	Music_Switch			\Default Work Unit\Music_Switch	
 	3833651337	Jump			\Default Work Unit\Jump	
 
 Switch	ID	Name	Switch Group			Notes
@@ -60,6 +61,8 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Ground			
 	2473969246	Metal	Ground			
 	3598975185	Hardwood	Ground			
+	1780448749	Puzzle	Music_Switch			
+	2607556080	Menu	Music_Switch			
 	841620460	Concrete	Jump			
 	2473969246	Metal	Jump			
 

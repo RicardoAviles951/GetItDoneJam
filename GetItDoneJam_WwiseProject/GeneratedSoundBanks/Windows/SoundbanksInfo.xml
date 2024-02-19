@@ -44,6 +44,12 @@
 						<Switch Id="3598975185" Name="Hardwood"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2724869341" Name="Music_Switch">
+					<Switches>
+						<Switch Id="1780448749" Name="Puzzle"/>
+						<Switch Id="2607556080" Name="Menu"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3833651337" Name="Jump">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
@@ -52,7 +58,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1E54FED0-A0FF-D9B8-6909-870D6A0BC8D5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{400BFEE2-5FF9-CA69-B001-9BAF3350C844}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -720,9 +726,30 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="4055567060" Name="Menu_Music" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="56883088"/>
-					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="52661923" Id="2607556080"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="2724869341" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="56883088"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="52661923" Id="1780448749"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="2724869341" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="60988815"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2547478225" Name="NotYet_MG" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
@@ -830,6 +857,15 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="52661923" Name="Transitions">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1780448749" Name="Puzzle"/>
+						<State Id="2607556080" Name="Menu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="674522502" Name="Land">
 					<Switches>
@@ -844,6 +880,12 @@
 						<Switch Id="3598975185" Name="Hardwood"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2724869341" Name="Music_Switch">
+					<Switches>
+						<Switch Id="1780448749" Name="Puzzle"/>
+						<Switch Id="2607556080" Name="Menu"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3833651337" Name="Jump">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
@@ -853,5 +895,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A7C37668-5793-D461-0B43-18A9CD9BCCC6}</FileHash>
+	<FileHash>{EA58E9EB-22AB-D904-A171-8A14A2EF599B}</FileHash>
 </SoundBanksInfo>

@@ -209,7 +209,7 @@
 								<Action Name="" ID="{DD9192E6-EA3E-4359-ACD1-3049F671BE17}" ShortID="640380657">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Menu_Music_Loop" ID="{2C8CC451-C6BA-4E59-B558-948D047E238D}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
+											<ObjectRef Name="Music" ID="{0C868ABC-5BE0-4DFE-95FC-3022C9DB0E65}" WorkUnitID="{D873962A-98D1-4A46-B249-F7F2F982F726}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

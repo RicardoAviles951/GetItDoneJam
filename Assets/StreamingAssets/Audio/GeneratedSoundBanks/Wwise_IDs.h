@@ -116,6 +116,17 @@ namespace AK
             } // namespace SWITCH
         } // namespace LAND
 
+        namespace MUSIC_SWITCH
+        {
+            static const AkUniqueID GROUP = 2724869341U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID PUZZLE = 1780448749U;
+            } // namespace SWITCH
+        } // namespace MUSIC_SWITCH
+
     } // namespace SWITCHES
 
     namespace BANKS

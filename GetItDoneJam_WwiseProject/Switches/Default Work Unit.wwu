@@ -22,6 +22,12 @@
 						<Switch Name="Metal" ID="{72CBCE49-63BD-4411-AE70-2E04A51B323F}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Music_Switch" ID="{057C0498-107C-49BF-9237-794CF2A0DEE2}">
+					<ChildrenList>
+						<Switch Name="Menu" ID="{EEAB9629-B756-46F0-A268-532A6010F857}"/>
+						<Switch Name="Puzzle" ID="{8D6D09EC-4316-4066-82F6-B53349AFC640}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
