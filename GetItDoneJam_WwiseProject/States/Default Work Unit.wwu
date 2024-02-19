@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{593C930A-2734-49F3-9DE3-7131BEB18770}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{593C930A-2734-49F3-9DE3-7131BEB18770}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{593C930A-2734-49F3-9DE3-7131BEB18770}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Transitions" ID="{9E9CFE7D-AB00-45DF-96B3-72DB014D7062}">
+					<ChildrenList>
+						<State Name="None" ID="{2C33D9C3-CE3D-4829-B591-061DE85AEB2B}"/>
+						<State Name="Menu" ID="{FF7E8578-6CDB-4593-93CF-6FCC12FA8448}"/>
+						<State Name="Puzzle" ID="{444B680A-6692-427D-808C-A6E63F189E92}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

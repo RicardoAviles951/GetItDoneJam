@@ -63,14 +63,22 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Jump			
 	2473969246	Metal	Jump			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	52661923	Transitions			\Default Work Unit\Transitions	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Transitions			
+	1780448749	Puzzle	Transitions			
+	2607556080	Menu	Transitions			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4635829	Jump_Metal_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Metal_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Metal\Jump_Metal_03		48096
 	17317871	Jump_Concrete_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Jump_Concrete_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Concrete\Jump_Concrete_02		96096
 	20874511	Attack_Fire_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Attack_Fire_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Powerups\Fire\Attack_Fire_02		96096
 	21278020	Puzzle2_ExitConsoleEarly	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle2_ExitConsoleEarly_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Barks\Puzzle2_ExitConsoleEarly		576096
 	30365554	Hologram_Blast_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Blast_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Blast\Hologram_Blast_02		192096
-	56883088	Menu_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Menu_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Menu_Music_Loop\Menu_Music\Menu_Music		14178556
-	60988815	Puzzle_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Puzzle_Music_Loop\Puzzle_Music\Puzzle_Music		9701148
+	56883088	Menu_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Menu_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu_Music_Loop\Menu_Music\Menu_Music		14178556
+	60988815	Puzzle_Music	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Puzzle_Music_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Puzzle_Music_Loop\Puzzle_Music\Puzzle_Music		9701148
 	62944129	Footsteps_Concrete_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Footsteps_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_Concrete_03		48096
 	82065718	Hologram_Blast_03	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Blast_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Blast\Hologram_Blast_03		192096
 	87709223	Hologram_Impact_02	C:\Users\Ace\Documents\GitHub\GetItDoneJam\GetItDoneJam_WwiseProject\.cache\Windows\SFX\Hologram_Impact_02_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Hologram_Impact\Hologram_Impact_02		1008096

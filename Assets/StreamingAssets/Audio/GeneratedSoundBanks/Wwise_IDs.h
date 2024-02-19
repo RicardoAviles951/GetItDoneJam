@@ -64,6 +64,22 @@ namespace AK
         static const AkUniqueID SUCCESS = 3625060726U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace TRANSITIONS
+        {
+            static const AkUniqueID GROUP = 52661923U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PUZZLE = 1780448749U;
+            } // namespace STATE
+        } // namespace TRANSITIONS
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace GROUND
