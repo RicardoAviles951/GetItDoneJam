@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface IBurnable : IAffectable
 {
+    bool isBurning { get; set; }
     void Burn();
 }

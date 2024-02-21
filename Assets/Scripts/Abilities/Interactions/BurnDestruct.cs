@@ -5,12 +5,11 @@ using UnityEngine;
 public class BurnDestruct : MonoBehaviour, IBurnable
 {
     public ParticleSystem burnParticle;
-    public bool isBurning = false;
     private float timer;
     public float burnTime = 3.0f;
     public bool canDestruct = true;
     [field: SerializeField] public bool useParticleCollisions { get; set; } = false;
-
+    public bool isBurning {get; set;}
 
     public void Burn()
     {

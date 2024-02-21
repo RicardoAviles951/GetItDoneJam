@@ -463,7 +463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 1515874705}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -543,7 +542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1 &120398289
 GameObject:
@@ -595,7 +593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 954822358}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -675,7 +672,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1 &123855630
 GameObject:
@@ -727,7 +723,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 781695653}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -807,7 +802,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1 &139989790
 GameObject:
@@ -859,7 +853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 571745071}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -939,7 +932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &163535949
 PrefabInstance:
@@ -1365,7 +1357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 733514660}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -1445,7 +1436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1 &287798168
 GameObject:
@@ -1497,7 +1487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 1684518194}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -1577,7 +1566,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &304066853
 PrefabInstance:
@@ -2089,7 +2077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 186563569}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -2169,7 +2156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &442881453
 PrefabInstance:
@@ -2730,7 +2716,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 80236464}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -2810,7 +2795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &617548802
 PrefabInstance:
@@ -2957,7 +2941,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 1580697039}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -3037,7 +3020,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!4 &640907682 stripped
 Transform:
@@ -4091,7 +4073,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 2124067675}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -4171,7 +4152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1 &763815108
 GameObject:
@@ -4313,7 +4293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 2004897624}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -4393,7 +4372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &776770823
 PrefabInstance:
@@ -6756,7 +6734,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 756672793}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -6836,7 +6813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &1350764566
 PrefabInstance:
@@ -7283,7 +7259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 304066855}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -7363,7 +7338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &1476361189
 PrefabInstance:
@@ -8055,7 +8029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 163535951}
-  isBurning: 0
   burnTime: 10
   canDestruct: 1
   <useParticleCollisions>k__BackingField: 1
@@ -8135,7 +8108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnParticle: {fileID: 0}
-  isBurning: 0
   <useParticleCollisions>k__BackingField: 1
 --- !u!1001 &1651589618
 PrefabInstance:
@@ -10375,7 +10347,7 @@ PrefabInstance:
     - target: {fileID: 8946174617204664381, guid: f4e5e0136b5235a46babb213242bb018,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4e5e0136b5235a46babb213242bb018, type: 3}

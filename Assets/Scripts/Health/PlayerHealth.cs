@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
     public static event Action<HealthBarInfo> OnHealthChange;
     //Sends message when player is out of health
     public static event Action OnDeath;
+    public UnityEvent CamShake;
+
     //Custom class to hold information about health UI
     private HealthBarInfo healthBarInfo;
     
@@ -71,6 +74,7 @@ public class PlayerHealth : MonoBehaviour
             //Reset regen timer. 
             timer = 0;
             isHurt = true;
+            CamShake.Invoke();
 
             //For UI updates
 

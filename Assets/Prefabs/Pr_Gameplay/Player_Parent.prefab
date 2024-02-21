@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 3827656771026883349}
   - component: {fileID: 3827656771026883351}
   - component: {fileID: 3827656771026883350}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ViewPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5225,7 +5225,7 @@ GameObject:
   - component: {fileID: 3827656771536597064}
   - component: {fileID: 3827656771536597071}
   - component: {fileID: 3827656771536597070}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: rightHand
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -7396,17 +7396,17 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.8984127
+      value: -2.0750818
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3847002
+      value: 2.519968
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.216791
+      value: -10.65146
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -8013,6 +8013,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40124821d9f79ae4c83da987b9c1c56e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CamShake:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 441439506648213995}
+        m_TargetAssemblyTypeName: CameraShake, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   buffParticles: {fileID: 5309263190927993237}
   debuffParticles: {fileID: 6343454554495831869}
   regen: 3
@@ -8022,7 +8037,7 @@ MonoBehaviour:
   damageSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8bd57223dae4b574ebe256de0a38d283,
+    WwiseObjectReference: {fileID: 11400000, guid: 70cbfe34eb255384189b9b487fbdaaa8,
       type: 2}
   regenSound:
     idInternal: 0
@@ -8104,7 +8119,6 @@ MonoBehaviour:
   buffParticles: {fileID: 5309263190927993237}
   debuffParticles: {fileID: 6343454554495831869}
   CurrentObject: {fileID: 0}
-  isExamining: 0
   examinedObject: {fileID: 0}
   examinePos: {fileID: 3827656771026883348}
   itemPickupSound:
@@ -8227,33 +8241,6 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 42888d66a1246e64f91307a737fe4f59,
       type: 2}
---- !u!114 &5004171538648421041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3699495554134330859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40124821d9f79ae4c83da987b9c1c56e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buffParticles: {fileID: 5309263190927993237}
-  debuffParticles: {fileID: 6343454554495831869}
-  regen: 2
-  totalHealth: 100
-  currentHealth: 100
-  regenDelay: 2
-  damageSound:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c1c30c4b3307a304c9feae3d3848bca9,
-      type: 2}
-  regenSound:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!4 &4043369587304044369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
@@ -8926,6 +8913,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+--- !u!1 &1343843943020011068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395077, guid: 9c489a8547f4d9e4387da15a4ff82c81,
+    type: 3}
+  m_PrefabInstance: {fileID: 7728087096619666105}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &441439506648213995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343843943020011068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8849b8427596bc469d8355ab31e7559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 1.5
+  duration: 0.5
 --- !u!4 &1343843943020011459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,

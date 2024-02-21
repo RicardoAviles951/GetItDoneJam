@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ItemBurner : MonoBehaviour, IBurnable
 {
-    private bool isBurning;
+    public bool isBurning { get; set; } = false; 
     public bool burnReady = false;
     private ItemPlacer itemPlacer;
     public ParticleSystem burnParticles;
