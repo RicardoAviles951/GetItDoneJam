@@ -17,7 +17,8 @@ public class FireAbility : AbilityBase
     }
     public override void Activate(AbilityManager ability)
     {
-        ability.GetAbilityText(Name);
+        ability.currentIcon = "fire_power";
+        ability.GetAbilityText();
 
         ParticlePlayer(ability.fireIdle);
         ability.fireSound.Post(ability.gameObject);

@@ -1,27 +1,23 @@
-.health_bar {
-
+.healthBarContainer {
+    position: relative;
+    background-image: url('project://database/Assets/Art/2D/UI/HUD/HealthBar/Health_circle_up.png?fileID=2800000&guid=0e2873ee1bf187b48bf588dd6e8e4b30&type=3#Health_circle_up');
+    width: 100%;
+    height: 100%;
+    left: 178px;
+    top: 42px;
 }
 
-.unity-progress-bar__container
-{
-	min-height: 50%;
-	max-height: 100%;
-	max-width:100%;
-	width: 100%;
-	height: 50%;
-}
-
-.unity-progress-bar__progress
-{
-	border-radius: 4px;
-	width: 50%;
-	background-color: #ff1414; /*Red*/
-}
-
-.unity-progress-bar__background
-{
-	border-radius: 4px;
-	height: 100%;
-	width: 50%;
-	background-color: #444444;
+.healthBarProgress {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(159, 54, 35);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
 }

@@ -8,7 +8,8 @@ public class EmptyAbility : AbilityBase
 
     public override void Activate(AbilityManager ability)
     {
-        ability.GetAbilityText(Name);
+        ability.currentIcon = "base_power";
+        ability.GetAbilityText();
         //Debug.Log("No ability");
     }
 

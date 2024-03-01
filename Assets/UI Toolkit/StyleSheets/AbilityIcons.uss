@@ -1,0 +1,17 @@
+.OnScreen {
+    background-image: url('project://database/Assets/Art/2D/UI/HUD/Abilities/base_power.png?fileID=2800000&guid=a2a4b2e23af6cf34a8c0ea7d8dbe5d95&type=3#base_power');
+    width: 100%;
+    height: 75%;
+    -unity-background-scale-mode: scale-to-fit;
+    display: flex;
+    position: absolute;
+    translate: 0 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.OffScreen {
+    translate: -100% 0;
+    transition-timing-function: ease;
+    transition-duration: 0.25s;
+}
