@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     //Added by Ricardo
     //Create events that other classes can subscribe to
     public static event Action<HealthBarInfo> OnHealthChange;
+    public static event Action<float> OnHealthEffect;
     //Sends message when player is out of health
     public static event Action OnDeath;
     public UnityEvent CamShake;
@@ -142,6 +143,8 @@ public class PlayerHealth : MonoBehaviour
     {
         healthBarInfo.currentHealth = currentHealth;
         healthBarInfo.maxHealth     = totalHealth;
+        healthRatio = currentHealth / totalHealth;
+
         healthBarInfo.healthRatio   = healthRatio;
 
     }
@@ -153,20 +156,34 @@ public class PlayerHealth : MonoBehaviour
         switch (status)
         {
             case Outcome.healthDown:
-                currentHealth -= 20f;
-                totalHealth = 80;
+                //This makes the total health reduce by 20 percent to account for different amounts of max health values. 
+                float adjustedTotalHealth = totalHealth - Mathf.Round(totalHealth * .20f);
+                //Set total health
+                totalHealth = adjustedTotalHealth;
+
+                float adjustedCurrentHealth = currentHealth - Mathf.Round(currentHealth * .20f);
+                currentHealth = adjustedCurrentHealth;
+
                 GetHealthRatio();
+                OnHealthEffect?.Invoke(-20f);
                 OnHealthChange?.Invoke(healthBarInfo);
+                //Visuals
                 debuffParticles.Play();
                 Debug.Log("Health dropped by 20");
                 break;
 
             case Outcome.healthUp:
-                totalHealth = 120;
-                currentHealth += 20f;
+                //This makes the total health reduce by 20 percent to account for different amounts of max health values. 
+                float adjustedTotal = totalHealth + Mathf.Round(totalHealth * .20f);
+                //Set total health
+                totalHealth = adjustedTotal;
+
+                float adjustedCurrent = currentHealth + Mathf.Round(currentHealth * .20f);
+                currentHealth = adjustedCurrent;
+
                 GetHealthRatio();
+                OnHealthEffect?.Invoke(20f);
                 OnHealthChange?.Invoke(healthBarInfo);
-                buffParticles.Play();
                 Debug.Log("Health increased by 20");
                 break;
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class ElectricityAbility : AbilityBase
@@ -16,7 +17,9 @@ public class ElectricityAbility : AbilityBase
 
     public override void Activate(AbilityManager ability)
     {
-        ability.GetAbilityText(Name);
+        ability.currentIcon = "electric_power";
+        
+        ability.GetAbilityText();
 
         ParticlePlayer(ability.electricIdle);
         ability.electricSound.Post(ability.gameObject);

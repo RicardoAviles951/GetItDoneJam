@@ -7,7 +7,7 @@ using UnityEngine;
 public class AbilityManager : MonoBehaviour
 {
 
-    public static event Action<string> SendAbilityUI;
+    public static event Action<AbilityInfo> SendAbilityUI;
 
     AbilityBase currentAbility;
 
@@ -16,6 +16,8 @@ public class AbilityManager : MonoBehaviour
     public FireAbility fireAbility               = new FireAbility();
     public EmptyAbility emptyAbility             = new EmptyAbility();
 
+    public AbilityInfo abilityInfo;
+
     public SO_AbilityData abilityData;
 
     
@@ -23,7 +25,7 @@ public class AbilityManager : MonoBehaviour
     [HideInInspector] public StarterAssetsInputs input;
     [HideInInspector] public CameraDetector detector;
     [Header("Character Animations")]
-    [Tooltip("The animtion controller for the player arms")]
+    [Tooltip("The animation controller for the player arms")]
     public Animator ac_PlayerArms;
 
     [Header("Fire Ability")]
@@ -42,6 +44,9 @@ public class AbilityManager : MonoBehaviour
     public AK.Wwise.Event electricSound;
     public AK.Wwise.Event electricLoopSound;
 
+
+    public string currentIcon;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -49,9 +54,11 @@ public class AbilityManager : MonoBehaviour
     }
     void Start()
     {
+        abilityInfo = new AbilityInfo(currentIcon,currentAbility.Name);
         currentAbility.Activate(this);
         detector = GetComponent<CameraDetector>();
         input    = GetComponent<StarterAssetsInputs>();
+        
     }
 
     // Update is called once per frame
@@ -74,9 +81,11 @@ public class AbilityManager : MonoBehaviour
         fireAbility.Activate(this);
     }
 
-    public void GetAbilityText(string text)
+    public void GetAbilityText()
     {
-        SendAbilityUI?.Invoke(text);
+        abilityInfo.file = currentIcon;
+        abilityInfo.Name = currentAbility.Name;
+        SendAbilityUI?.Invoke(abilityInfo);
     }
 
     public void HandleAbilitiesAnim()

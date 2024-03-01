@@ -7396,17 +7396,17 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0750818
+      value: 0.061953
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.519968
+      value: 1.3847001
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.65146
+      value: 0.15738001
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -8223,6 +8223,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8099c961bb8b4f447afad3b5be17e163,
       type: 2}
+  fireIcon: {fileID: 2800000, guid: f65f8c02f2772c84088134362cb0b266, type: 3}
   electricIdle:
   - {fileID: 4680308694394977806}
   - {fileID: 3136266542611178934}
@@ -8241,6 +8242,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 42888d66a1246e64f91307a737fe4f59,
       type: 2}
+  electricIcon: {fileID: 2800000, guid: 1841f052ed0dca94a947ae8815cde66e, type: 3}
+  emptyIcon: {fileID: 2800000, guid: 40770ad334d45db41b64131437e1ce4e, type: 3}
+  currentIcon: {fileID: 2800000, guid: 40770ad334d45db41b64131437e1ce4e, type: 3}
+  abilityText: 
 --- !u!4 &4043369587304044369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
