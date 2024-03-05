@@ -11,6 +11,8 @@ TagManager:
   - Surface_Metal
   - FxTemporaire
   - Table
+  - Electric
+  - Fire
   layers:
   - Default
   - TransparentFX

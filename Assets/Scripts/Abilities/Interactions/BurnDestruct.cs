@@ -33,12 +33,6 @@ public class BurnDestruct : MonoBehaviour, IBurnable
 
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -66,14 +60,11 @@ public class BurnDestruct : MonoBehaviour, IBurnable
     //If using particle collisions to trigger 
     void OnParticleCollision(GameObject other)
     {
-        if (useParticleCollisions)
+        if (useParticleCollisions && other.tag == "Fire")
         {
             Burn();
         }
     }
 
-    void Destruct()
-    {
-        Destroy(gameObject);
-    }
+    void Destruct() => Destroy(gameObject);
 }

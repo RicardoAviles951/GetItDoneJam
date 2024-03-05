@@ -8146,15 +8146,40 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15737998
       objectReference: {fileID: 0}
+    - target: {fileID: 3811070704535379654, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811070704535379654, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811070704535379654, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3827656771259871610, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
         type: 3}
       propertyPath: FireEmissionCount
-      value: 10
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827656771259871610, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: ElectricEmissionCount
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6298563084945717267, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
         type: 3}
       propertyPath: m_Name
       value: Player_Parent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717415062783924414, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Electric
       objectReference: {fileID: 0}
     - target: {fileID: 8062076041176164995, guid: 1d1815cfccee6fe4bb49cc7a93fcbf9a,
         type: 3}
@@ -8625,7 +8650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c104f54994570446953dfa6fb4a92bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityData: {fileID: 0}
+  abilityData: {fileID: 11400000, guid: 3032fc43165170345a84e3d089686734, type: 2}
   winCount: 0
   isGameOver: 0
   lostGame: 0

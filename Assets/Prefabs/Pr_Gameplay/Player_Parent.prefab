@@ -8212,7 +8212,7 @@ MonoBehaviour:
   fireShoot:
   - {fileID: 3086330184330182931}
   - {fileID: 398576100927325951}
-  FireEmissionCount: 1
+  FireEmissionCount: 50
   fireSound:
     idInternal: 0
     valueGuidInternal: 
@@ -8223,7 +8223,6 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8099c961bb8b4f447afad3b5be17e163,
       type: 2}
-  fireIcon: {fileID: 2800000, guid: f65f8c02f2772c84088134362cb0b266, type: 3}
   electricIdle:
   - {fileID: 4680308694394977806}
   - {fileID: 3136266542611178934}
@@ -8242,10 +8241,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 42888d66a1246e64f91307a737fe4f59,
       type: 2}
-  electricIcon: {fileID: 2800000, guid: 1841f052ed0dca94a947ae8815cde66e, type: 3}
-  emptyIcon: {fileID: 2800000, guid: 40770ad334d45db41b64131437e1ce4e, type: 3}
-  currentIcon: {fileID: 2800000, guid: 40770ad334d45db41b64131437e1ce4e, type: 3}
-  abilityText: 
+  currentIcon: 
 --- !u!4 &4043369587304044369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
@@ -8434,6 +8430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164359185851154962, guid: 19ebc0ce759f99c4686a1bb7c782accf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fire
       objectReference: {fileID: 0}
     - target: {fileID: 3479597419030999453, guid: 19ebc0ce759f99c4686a1bb7c782accf,
         type: 3}

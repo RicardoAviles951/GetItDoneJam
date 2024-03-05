@@ -51,10 +51,12 @@ public class SimpleSwitch : MonoBehaviour, IElectrifiable
     //If using particle collisions to trigger 
     void OnParticleCollision(GameObject other)
     {
-        if (useParticleCollisions)
+       //The particle systems are tagged 'Fire' or 'Electric'
+        if (useParticleCollisions && other.tag == "Electric")
         {
             Electrify();
         }
+        Debug.Log("Collided");
     }
 
     IEnumerator CoolDown()
@@ -62,11 +64,5 @@ public class SimpleSwitch : MonoBehaviour, IElectrifiable
         Debug.Log("Cooling down...");
         yield return new WaitForSeconds(cooldown);
         isElectrified = false;
-
-        //if (redBoxObj && greenBoxObj)
-        //{
-        //    redBoxObj.SetActive(true);
-        //    greenBoxObj.SetActive(false);
-        //}
     }
 }
